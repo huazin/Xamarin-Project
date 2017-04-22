@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GuideForDDOn.Views.Sobre"
+             Title="Sobre">
+    <StackLayout Orientation="Vertical">
+        <Label Text="Guide For DDOn Desenvolvido por:" TextColor="#00FF7F"/>
+        <Label Text="Robson Rodrigues e Tarciso Junior"/>
+        <Label Text=""/>
+        <Label Text="Versão 1.0" TextColor="#00FF7F"/>
+        <Label Text=""/>
+        <Label Text="Informações e traduções feitas dos seguites sites:" TextColor="#00FF7F"/>
+        <Label Text="http://dd-on-rookies.com/"/>
+        <Label Text="http://dogmaonlineyyy.wiki.fc2.com/"/>
+        <Label Text="https://members.dd-on.jp/"/>
+        <Label Text=""/>
+        <Label Text="Equipe de Design:" TextColor="#00FF7F"/>
+        <Label Text="Jessica Rodrigues"/>
+        <Label Text=""/>
+        <Label Text="Equipe de Tradução:" TextColor="#00FF7F"/>
+        <Label Text="Wellinton da Silva e com Danny Évora e Samuel Rick por da suporte nas Traduções com o Wellinton"/>
+    </StackLayout>
+</ContentPage>

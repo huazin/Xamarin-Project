@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GuideForDDOn.Views.MonstroDetalhes"
+             xmlns:controls="clr-namespace:GuideForDDOn.Date;assembly=GuideForDDOn.Droid"
+             Title="Detalhe dos Monstros">
+    <StackLayout Orientation= "Vertical" VerticalOptions="FillAndExpand">
+        <ListView ItemsSource="{Binding ListRef}" VerticalOptions="FillAndExpand" HasUnevenRows="true" SeparatorColor="AliceBlue">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <ViewCell.View>
+                            <StackLayout Orientation= "Vertical" VerticalOptions="FillAndExpand">
+                                <Label Text= "{Binding nome}" TextColor="#228B22" FontSize="18" HorizontalOptions="Center"/>
+                                <StackLayout Orientation="Horizontal">
+                                    <Label Text= "Apelido: " TextColor="#00FF7F"/>
+                                    <Label Text= "{Binding apelido}"/>
+                                </StackLayout>
+                                <StackLayout Orientation="Horizontal" VerticalOptions="FillAndExpand">
+                                    <Label Text= "Especie: " TextColor="#00FF7F"/>
+                                    <Label Text= "{Binding especie}"/>
+                                </StackLayout>
+                                <Label Text= "Ponto Fraco: " TextColor="#00FF7F"/>
+                                <Label Text= "{Binding pontoFraco}"/>
+                                <Label Text= "Elementos: " TextColor="#00FF7F"/>
+                                <Label Text= "{Binding elementoFraco}"/>
+                                <Label Text= "Drops: " TextColor="#00FF7F"/>
+                                <Label Text= "{Binding drop}"/>
+                                <Label Text=""/>
+                                <Label Text= "Localizações: " TextColor="#00FF7F"/>
+                                <Label Text= "{Binding localizacao}"/>
+                                <Label Text=""/>
+                            </StackLayout>
+                        </ViewCell.View>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <Grid RowSpacing="0" VerticalOptions="End">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50"/>
+            </Grid.RowDefinitions>
+            <controls:MyBanner Grid.Row="0"/>
+        </Grid>
+    </StackLayout>
+</ContentPage>

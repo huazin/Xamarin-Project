@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GuideForDDOn.Views.HabilidadeDetalhes"
+             Title="Detalhes da Habilidade">
+    <StackLayout Orientation= "Vertical" VerticalOptions="FillAndExpand">
+        <ScrollView Orientation="Vertical" VerticalOptions="FillAndExpand">
+            <StackLayout Orientation= "Vertical" VerticalOptions="FillAndExpand">
+                <Label Text= "{Binding ListRef[0].nome}" TextColor="#228B22" FontSize="18" HorizontalOptions="Center"/>
+                <Label Text= "Descrição: " TextColor="#00FF7F"/>
+                <Label Text= "{Binding ListRef[0].descricao}"/>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text= "Nivel: " TextColor="#00FF7F"/>
+                    <Label Text= "{Binding ListRef[0].nivel}"/>
+                </StackLayout>
+                <!--
+                <Label Text= "Observação: " TextColor="#00FF7F"/>
+                    <Label Text= "{Binding ListRef[0].obs}"/>-->
+                
+                <Label Text= "Efeito Level Up: " TextColor="#00FF7F"/>
+                <Label Text= "{Binding ListRef[0].addUp}"/>
+                <!-- <Label Text= "Nivel Necessario para nivel 6 " TextColor="#00FF7F"/>
+                <Label Text= "{Binding ListRef[0].nivelForSix}"/>-->
+                <Label Text= "Efeito Nivel 6: " TextColor="#00FF7F"/> 
+                <Label Text= "{Binding ListRef[0].add6}"/>
+                <Label Text= ""/>
+                <Label Text= "Monstros para Subi de Nivel" TextColor="#228B22" FontSize="18" HorizontalOptions="Center"/>
+                <Label Text= "Nivel 5 pro 6: " TextColor="#00FF7F"/>
+                <Label Text= "{Binding ListRef[0].monster5}">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer 
+                            Command="{Binding Monstro}"
+                            CommandParameter="{Binding ListRef[0].monster5}"/>
+                    </Label.GestureRecognizers>
+                </Label>
+                <Label Text= "Nivel 6 pro 7: " TextColor="#00FF7F"/>
+                <Label Text= "{Binding ListRef[0].monster6}">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer 
+                            Command="{Binding Monstro}"
+                            CommandParameter="{Binding ListRef[0].monster6}"/>
+                    </Label.GestureRecognizers>
+                </Label>
+                <Label Text= "Nivel 7 pro 8: " TextColor="#00FF7F"/>
+                <Label Text= "{Binding ListRef[0].monster7}">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer 
+                            Command="{Binding Monstro}"
+                            CommandParameter="{Binding ListRef[0].monster7}"/>
+                    </Label.GestureRecognizers>
+                </Label>
+                <Label Text= "Nivel 8 pro 9: " TextColor="#00FF7F"/>
+                <Label Text= "{Binding ListRef[0].monster8}">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer 
+                            Command="{Binding Monstro}"
+                            CommandParameter="{Binding ListRef[0].monster8}"/>
+                    </Label.GestureRecognizers>
+                </Label>
+                <Label Text= "Nivel 9 pro 10: " TextColor="#00FF7F"/>
+                <Label Text= "{Binding ListRef[0].monster9}">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer 
+                            Command="{Binding Monstro}"
+                            CommandParameter="{Binding ListRef[0].monster9}"/>
+                    </Label.GestureRecognizers>
+                </Label>
+                <Label Text= "Informação: A quantidade de monstros requeridos na quest podem varia para menos em jogo, a CAP fez algumas modificações" TextColor="#00FF7F" FontSize="8"/>
+            </StackLayout>
+        </ScrollView>
+    </StackLayout>
+</ContentPage>

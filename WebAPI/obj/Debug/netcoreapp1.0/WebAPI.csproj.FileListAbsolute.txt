@@ -1,0 +1,9 @@
+C:\Users\huazi\Documents\Estudo\Git\GuideForDDOn\WebAPI\bin\Debug\netcoreapp1.0\WebAPI.deps.json
+C:\Users\huazi\Documents\Estudo\Git\GuideForDDOn\WebAPI\bin\Debug\netcoreapp1.0\WebAPI.runtimeconfig.json
+C:\Users\huazi\Documents\Estudo\Git\GuideForDDOn\WebAPI\bin\Debug\netcoreapp1.0\WebAPI.runtimeconfig.dev.json
+C:\Users\huazi\Documents\Estudo\Git\GuideForDDOn\WebAPI\bin\Debug\netcoreapp1.0\WebAPI.dll
+C:\Users\huazi\Documents\Estudo\Git\GuideForDDOn\WebAPI\obj\Debug\netcoreapp1.0\WebAPI.csprojResolveAssemblyReference.cache
+C:\Users\huazi\Documents\Estudo\Git\GuideForDDOn\WebAPI\obj\Debug\netcoreapp1.0\WebAPI.AssemblyInfo.cs
+C:\Users\huazi\Documents\Estudo\Git\GuideForDDOn\WebAPI\bin\Debug\netcoreapp1.0\WebAPI.pdb
+C:\Users\huazi\Documents\Estudo\Git\GuideForDDOn\WebAPI\obj\Debug\netcoreapp1.0\WebAPI.dll
+C:\Users\huazi\Documents\Estudo\Git\GuideForDDOn\WebAPI\obj\Debug\netcoreapp1.0\WebAPI.pdb

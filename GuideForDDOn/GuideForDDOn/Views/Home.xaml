@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:controls="clr-namespace:GuideForDDOn.Date;assembly=GuideForDDOn.Droid"
+             x:Class="GuideForDDOn.Views.Home"
+             xmlns:xfg="clr-namespace:XFGloss;assembly=XFGloss"
+             Title="Home">
+    <xfg:ContentPageGloss.BackgroundGradient>
+        <xfg:Gradient Rotation="0">
+            <xfg:GradientStep StepColor="#a5d3f3" StepPercentage="0" />
+            <xfg:GradientStep StepColor="#a5d3f3" StepPercentage=".2" />
+            <xfg:GradientStep StepColor="#3f6197" StepPercentage=".7" />
+            <xfg:GradientStep StepColor="#3f6197" StepPercentage="1" />
+        </xfg:Gradient>
+    </xfg:ContentPageGloss.BackgroundGradient>
+    <ScrollView>
+        <StackLayout>
+            <Image Source="LogoHome.png"/>
+            <Grid VerticalOptions="StartAndExpand">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="5*"/>
+                    <ColumnDefinition Width="90*"/>
+                    <ColumnDefinition Width="5*"/>
+                </Grid.ColumnDefinitions>
+                <Button Grid.Row="0" Grid.Column="1" Text="Classes" Command="{Binding Classes}" BackgroundColor="#99c9e4f8"/>
+                <Button Grid.Row="1" Grid.Column="1" Text="Monstros" Command="{Binding SmallMonster}" BackgroundColor="#99c9e4f8"/>
+                <Button Grid.Row="2" Grid.Column="1" Text="Boss/Mini Boss" Command="{Binding BigMonster}" BackgroundColor="#99c9e4f8"/>
+                <Button Grid.Row="3" Grid.Column="1" Text="Sobre" Command="{Binding Sobre}" BackgroundColor="#99c9e4f8"/>
+            </Grid>
+
+            <Grid RowSpacing="0" VerticalOptions="End">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="50"/>
+                </Grid.RowDefinitions>
+                <controls:MyBanner Grid.Row="0"/>
+            </Grid>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

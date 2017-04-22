@@ -1,0 +1,214 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>a2df5538-f1ea-425c-8f16-2fa0bf04a8c3</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>GuideForDDOn</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Date\ExecptionNula.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Date\HabilidadeDAO.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Date\ISqLite.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Date\JobDAO.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Date\MonstroDAO.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Date\MyBanner.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Date\PassivasDAO.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Model\Habilidades.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\Job.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\Monstro.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\Passivas.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModel\ClassesModelView.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModel\HabilidadeDetalhesModelView.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModel\HomeViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModel\InfoHabilidadesViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModel\InfoJobViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModel\InfoPassivasModelView.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModel\MonstroDetalhesViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModel\MonstroSelecaoViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModel\PassivasDetalheViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModel\TreinaModelView.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\Classes.xaml.cs">
+      <DependentUpon>Classes.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\HabilidadeDetalhes.xaml.cs">
+      <DependentUpon>HabilidadeDetalhes.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\Home.xaml.cs">
+      <DependentUpon>Home.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\InfoDasJobs.xaml.cs">
+      <DependentUpon>InfoDasJobs.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\InfoHabilidades.xaml.cs">
+      <DependentUpon>InfoHabilidades.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\InfoPassivas.xaml.cs">
+      <DependentUpon>InfoPassivas.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\MonstroDetalhes.xaml.cs">
+      <DependentUpon>MonstroDetalhes.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\MonstroSelecao.xaml.cs">
+      <DependentUpon>MonstroSelecao.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\MonstrosSeparacao.xaml.cs">
+      <DependentUpon>MonstrosSeparacao.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\NovaTelaClasses.xaml.cs">
+      <DependentUpon>NovaTelaClasses.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\NovoInfoJob.xaml.cs">
+      <DependentUpon>NovoInfoJob.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\PassivasDetalhes.xaml.cs">
+      <DependentUpon>PassivasDetalhes.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\Sobre.xaml.cs">
+      <DependentUpon>Sobre.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\Treino.xaml.cs">
+      <DependentUpon>Treino.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\treino1.xaml.cs">
+      <DependentUpon>treino1.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)MainPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)App.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\Classes.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\HabilidadeDetalhes.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\Home.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\InfoDasJobs.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\InfoHabilidades.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\InfoPassivas.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\MonstroDetalhes.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\MonstroSelecao.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\MonstrosSeparacao.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="$(MSBuildThisFileDirectory)GradBlue.png" />
+    <Content Include="$(MSBuildThisFileDirectory)GradPink.png" />
+    <Content Include="$(MSBuildThisFileDirectory)GradRed.png" />
+    <Content Include="$(MSBuildThisFileDirectory)GradYell.png" />
+    <Content Include="$(MSBuildThisFileDirectory)IconHabilidades.png" />
+    <Content Include="$(MSBuildThisFileDirectory)IconInfo.png" />
+    <Content Include="$(MSBuildThisFileDirectory)IconPassivas.png" />
+    <Content Include="$(MSBuildThisFileDirectory)ImagemTelaClasses.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)LogoHome.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="$(MSBuildThisFileDirectory)DDON.db3" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\PassivasDetalhes.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\Sobre.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\NovaTelaClasses.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\Treino.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\NovoInfoJob.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\treino1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+</Project>

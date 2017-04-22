@@ -1,0 +1,194 @@
+c:\Users\huazi\Documents\Visual Studio 2017\Projects\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\bin\Debug\GuideForDDOn.Droid.dll
+c:\Users\huazi\Documents\Visual Studio 2017\Projects\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\bin\Debug\GuideForDDOn.Droid.pdb
+c:\Users\huazi\Documents\Visual Studio 2017\Projects\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\bin\Debug\GuideForDDOn.Droid.apk
+c:\Users\huazi\Documents\Visual Studio 2017\Projects\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\bin\Debug\GuideForDDOn.Droid-Signed.apk
+c:\Users\huazi\Documents\Visual Studio 2017\Projects\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\bin\Debug\FormsViewGroup.dll
+c:\Users\huazi\Documents\Visual Studio 2017\Projects\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\bin\Debug\Xamarin.Android.Support.Animated.Vector.Drawable.dll
+c:\Users\huazi\Documents\Visual Studio 2017\Projects\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\bin\Debug\Xamarin.Android.Support.Design.dll
+c:\Users\huazi\Documents\Visual Studio 2017\Projects\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\bin\Debug\Xamarin.Android.Support.v4.dll
+c:\Users\huazi\Documents\Visual Studio 2017\Projects\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\bin\Debug\Xamarin.Android.Support.v7.AppCompat.dll
+c:\Users\huazi\Documents\Visual Studio 2017\Projects\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\bin\Debug\Xamarin.Android.Support.v7.CardView.dll
+c:\Users\huazi\Documents\Visual Studio 2017\Projects\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\bin\Debug\Xamarin.Android.Support.v7.MediaRouter.dll
+c:\Users\huazi\Documents\Visual Studio 2017\Projects\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\bin\Debug\Xamarin.Android.Support.v7.RecyclerView.dll
+c:\Users\huazi\Documents\Visual Studio 2017\Projects\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\bin\Debug\Xamarin.Android.Support.Vector.Drawable.dll
+c:\Users\huazi\Documents\Visual Studio 2017\Projects\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\bin\Debug\Xamarin.Forms.Core.dll
+c:\Users\huazi\Documents\Visual Studio 2017\Projects\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\bin\Debug\Xamarin.Forms.Platform.Android.dll
+c:\Users\huazi\Documents\Visual Studio 2017\Projects\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\bin\Debug\Xamarin.Forms.Platform.dll
+c:\Users\huazi\Documents\Visual Studio 2017\Projects\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\bin\Debug\Xamarin.Forms.Xaml.dll
+c:\Users\huazi\Documents\Visual Studio 2017\Projects\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\bin\Debug\FormsViewGroup.pdb
+c:\Users\huazi\Documents\Visual Studio 2017\Projects\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\bin\Debug\Xamarin.Forms.Core.pdb
+c:\Users\huazi\Documents\Visual Studio 2017\Projects\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\bin\Debug\Xamarin.Forms.Core.xml
+c:\Users\huazi\Documents\Visual Studio 2017\Projects\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\bin\Debug\Xamarin.Forms.Platform.Android.pdb
+c:\Users\huazi\Documents\Visual Studio 2017\Projects\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\bin\Debug\Xamarin.Forms.Xaml.pdb
+c:\Users\huazi\Documents\Visual Studio 2017\Projects\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\bin\Debug\Xamarin.Forms.Xaml.xml
+c:\Users\huazi\Documents\Visual Studio 2017\Projects\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\obj\Debug\GuideForDDOn.Droid.csprojResolveAssemblyReference.cache
+c:\Users\huazi\Documents\Visual Studio 2017\Projects\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\obj\Debug\GuideForDDOn.Droid.MainPage.xaml.g.cs
+c:\Users\huazi\Documents\Visual Studio 2017\Projects\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\obj\Debug\GuideForDDOn.Droid.App.xaml.g.cs
+c:\Users\huazi\Documents\Visual Studio 2017\Projects\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\obj\Debug\GuideForDDOn.Droid.dll
+c:\Users\huazi\Documents\Visual Studio 2017\Projects\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\obj\Debug\GuideForDDOn.Droid.pdb
+c:\Users\huazi\Documents\Visual Studio 2017\Projects\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\obj\Debug\android\bin\GuideForDDOn.Droid.apk
+c:\Users\huazi\Documents\Visual Studio 2017\Projects\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\obj\Debug\res\drawable\icon.png
+c:\Users\huazi\Documents\Visual Studio 2017\Projects\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\obj\Debug\R.cs.flag
+c:\Users\huazi\Documents\Visual Studio 2017\Projects\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\obj\Debug\uploadflags.txt
+c:\Users\huazi\Documents\Visual Studio 2017\Projects\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\bin\Debug\FormsViewGroup.dll.mdb
+c:\Users\huazi\Documents\Visual Studio 2017\Projects\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\bin\Debug\Xamarin.Forms.Core.dll.mdb
+c:\Users\huazi\Documents\Visual Studio 2017\Projects\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\bin\Debug\Xamarin.Forms.Platform.Android.dll.mdb
+c:\Users\huazi\Documents\Visual Studio 2017\Projects\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\bin\Debug\Xamarin.Forms.Xaml.dll.mdb
+C:\Users\huazi\documents\visual studio 2017\Projects\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\obj\Debug\GuideForDDOn.Droid.Views.Classes.xaml.g.cs
+C:\Users\huazi\documents\visual studio 2017\Projects\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\obj\Debug\GuideForDDOn.Droid.Views.HabilidadeDetalhes.xaml.g.cs
+C:\Users\huazi\documents\visual studio 2017\Projects\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\obj\Debug\GuideForDDOn.Droid.Views.Home.xaml.g.cs
+C:\Users\huazi\documents\visual studio 2017\Projects\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\obj\Debug\GuideForDDOn.Droid.Views.InfoDasJobs.xaml.g.cs
+C:\Users\huazi\documents\visual studio 2017\Projects\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\obj\Debug\GuideForDDOn.Droid.Views.InfoHabilidades.xaml.g.cs
+C:\Users\huazi\documents\visual studio 2017\Projects\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\obj\Debug\GuideForDDOn.Droid.Views.InfoPassivas.xaml.g.cs
+C:\Users\huazi\documents\visual studio 2017\Projects\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\obj\Debug\GuideForDDOn.Droid.Views.MonstroDetalhes.xaml.g.cs
+C:\Users\huazi\documents\visual studio 2017\Projects\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\obj\Debug\GuideForDDOn.Droid.Views.MonstroSelecao.xaml.g.cs
+C:\Users\huazi\documents\visual studio 2017\Projects\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\obj\Debug\GuideForDDOn.Droid.Views.MonstrosSeparacao.xaml.g.cs
+C:\Users\huazi\documents\visual studio 2017\Projects\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\bin\Debug\SQLite-net.dll
+C:\Users\huazi\documents\visual studio 2017\Projects\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\bin\Debug\SQLitePCLRaw.batteries_green.dll
+C:\Users\huazi\documents\visual studio 2017\Projects\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\bin\Debug\SQLitePCLRaw.batteries_v2.dll
+C:\Users\huazi\documents\visual studio 2017\Projects\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\bin\Debug\SQLitePCLRaw.core.dll
+C:\Users\huazi\documents\visual studio 2017\Projects\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\bin\Debug\SQLitePCLRaw.lib.e_sqlite3.dll
+C:\Users\huazi\documents\visual studio 2017\Projects\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\bin\Debug\SQLitePCLRaw.provider.e_sqlite3.dll
+C:\Users\huazi\documents\visual studio 2017\Projects\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\bin\Debug\SQLite-net.xml
+C:\Users\huazi\documents\visual studio 2017\Projects\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\bin\Debug\SQLite-net.dll.mdb
+C:\Users\huazi\documents\visual studio 2017\Projects\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\obj\Debug\res\drawable\logohome.png
+C:\Users\huazi\Documents\Visual Studio 2017\Projects\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\bin\Debug\Xamarin.GooglePlayServices.Ads.dll
+C:\Users\huazi\Documents\Visual Studio 2017\Projects\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\bin\Debug\Xamarin.GooglePlayServices.Basement.dll
+C:\Users\huazi\Documents\Visual Studio 2017\Projects\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\bin\Debug\GuideForDDOn.Droid.dll.mdb
+C:\Users\huazi\Documents\Visual Studio 2017\Projects\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\bin\Debug\Java.Interop.dll.mdb
+C:\Users\huazi\Documents\Visual Studio 2017\Projects\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\bin\Debug\Mono.Android.dll.mdb
+C:\Users\huazi\Documents\Visual Studio 2017\Projects\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\bin\Debug\mscorlib.dll.mdb
+C:\Users\huazi\Documents\Visual Studio 2017\Projects\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\bin\Debug\System.ComponentModel.Composition.dll.mdb
+C:\Users\huazi\Documents\Visual Studio 2017\Projects\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\bin\Debug\System.Core.dll.mdb
+C:\Users\huazi\Documents\Visual Studio 2017\Projects\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\bin\Debug\System.dll.mdb
+C:\Users\huazi\Documents\Visual Studio 2017\Projects\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\bin\Debug\System.IO.Compression.dll.mdb
+C:\Users\huazi\Documents\Visual Studio 2017\Projects\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\bin\Debug\System.Net.Http.dll.mdb
+C:\Users\huazi\Documents\Visual Studio 2017\Projects\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\bin\Debug\System.Runtime.Serialization.dll.mdb
+C:\Users\huazi\Documents\Visual Studio 2017\Projects\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\bin\Debug\System.ServiceModel.Internals.dll.mdb
+C:\Users\huazi\Documents\Visual Studio 2017\Projects\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\bin\Debug\System.Xml.dll.mdb
+C:\Users\huazi\Documents\Visual Studio 2017\Projects\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\bin\Debug\System.Xml.Linq.dll.mdb
+C:\Users\huazi\Documents\Visual Studio 2017\Projects\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\obj\Debug\android\assets\FormsViewGroup.dll.mdb
+C:\Users\huazi\Documents\Visual Studio 2017\Projects\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\obj\Debug\android\assets\GuideForDDOn.Droid.dll.mdb
+C:\Users\huazi\Documents\Visual Studio 2017\Projects\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\obj\Debug\android\assets\Java.Interop.dll.mdb
+C:\Users\huazi\Documents\Visual Studio 2017\Projects\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\obj\Debug\android\assets\Mono.Android.dll.mdb
+C:\Users\huazi\Documents\Visual Studio 2017\Projects\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\obj\Debug\android\assets\mscorlib.dll.mdb
+C:\Users\huazi\Documents\Visual Studio 2017\Projects\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\obj\Debug\android\assets\SQLite-net.dll.mdb
+C:\Users\huazi\Documents\Visual Studio 2017\Projects\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\obj\Debug\android\assets\System.ComponentModel.Composition.dll.mdb
+C:\Users\huazi\Documents\Visual Studio 2017\Projects\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\obj\Debug\android\assets\System.Core.dll.mdb
+C:\Users\huazi\Documents\Visual Studio 2017\Projects\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\obj\Debug\android\assets\System.dll.mdb
+C:\Users\huazi\Documents\Visual Studio 2017\Projects\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\obj\Debug\android\assets\System.IO.Compression.dll.mdb
+C:\Users\huazi\Documents\Visual Studio 2017\Projects\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\obj\Debug\android\assets\System.Net.Http.dll.mdb
+C:\Users\huazi\Documents\Visual Studio 2017\Projects\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\obj\Debug\android\assets\System.Runtime.Serialization.dll.mdb
+C:\Users\huazi\Documents\Visual Studio 2017\Projects\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\obj\Debug\android\assets\System.ServiceModel.Internals.dll.mdb
+C:\Users\huazi\Documents\Visual Studio 2017\Projects\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\obj\Debug\android\assets\System.Xml.dll.mdb
+C:\Users\huazi\Documents\Visual Studio 2017\Projects\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\obj\Debug\android\assets\System.Xml.Linq.dll.mdb
+C:\Users\huazi\Documents\Visual Studio 2017\Projects\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\obj\Debug\android\assets\Xamarin.Forms.Core.dll.mdb
+C:\Users\huazi\Documents\Visual Studio 2017\Projects\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\obj\Debug\android\assets\Xamarin.Forms.Platform.Android.dll.mdb
+C:\Users\huazi\Documents\Visual Studio 2017\Projects\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\obj\Debug\android\assets\Xamarin.Forms.Xaml.dll.mdb
+C:\Users\huazi\Documents\Visual Studio 2017\Projects\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\obj\Debug\GuideForDDOn.Droid.Views.PassivasDetalhes.xaml.g.cs
+C:\Users\huazi\Documents\Visual Studio 2017\Projects\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\obj\Debug\GuideForDDOn.Droid.dll.mdb
+C:\Users\huazi\Documents\Estudo\Git\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\bin\Debug\GuideForDDOn.Droid.dll
+C:\Users\huazi\Documents\Estudo\Git\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\bin\Debug\GuideForDDOn.Droid.pdb
+C:\Users\huazi\Documents\Estudo\Git\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\bin\Debug\GuideForDDOn.Droid.apk
+C:\Users\huazi\Documents\Estudo\Git\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\bin\Debug\GuideForDDOn.Droid-Signed.apk
+C:\Users\huazi\Documents\Estudo\Git\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\bin\Debug\FormsViewGroup.dll
+C:\Users\huazi\Documents\Estudo\Git\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\bin\Debug\SQLite-net.dll
+C:\Users\huazi\Documents\Estudo\Git\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\bin\Debug\SQLitePCLRaw.batteries_green.dll
+C:\Users\huazi\Documents\Estudo\Git\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\bin\Debug\SQLitePCLRaw.batteries_v2.dll
+C:\Users\huazi\Documents\Estudo\Git\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\bin\Debug\SQLitePCLRaw.core.dll
+C:\Users\huazi\Documents\Estudo\Git\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\bin\Debug\SQLitePCLRaw.lib.e_sqlite3.dll
+C:\Users\huazi\Documents\Estudo\Git\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\bin\Debug\SQLitePCLRaw.provider.e_sqlite3.dll
+C:\Users\huazi\Documents\Estudo\Git\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\bin\Debug\Xamarin.Android.Support.Animated.Vector.Drawable.dll
+C:\Users\huazi\Documents\Estudo\Git\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\bin\Debug\Xamarin.Android.Support.Design.dll
+C:\Users\huazi\Documents\Estudo\Git\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\bin\Debug\Xamarin.Android.Support.v4.dll
+C:\Users\huazi\Documents\Estudo\Git\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\bin\Debug\Xamarin.Android.Support.v7.AppCompat.dll
+C:\Users\huazi\Documents\Estudo\Git\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\bin\Debug\Xamarin.Android.Support.v7.CardView.dll
+C:\Users\huazi\Documents\Estudo\Git\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\bin\Debug\Xamarin.Android.Support.v7.MediaRouter.dll
+C:\Users\huazi\Documents\Estudo\Git\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\bin\Debug\Xamarin.Android.Support.v7.RecyclerView.dll
+C:\Users\huazi\Documents\Estudo\Git\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\bin\Debug\Xamarin.Android.Support.Vector.Drawable.dll
+C:\Users\huazi\Documents\Estudo\Git\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\bin\Debug\Xamarin.Forms.Core.dll
+C:\Users\huazi\Documents\Estudo\Git\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\bin\Debug\Xamarin.Forms.Platform.Android.dll
+C:\Users\huazi\Documents\Estudo\Git\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\bin\Debug\Xamarin.Forms.Platform.dll
+C:\Users\huazi\Documents\Estudo\Git\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\bin\Debug\Xamarin.Forms.Xaml.dll
+C:\Users\huazi\Documents\Estudo\Git\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\bin\Debug\Xamarin.GooglePlayServices.Ads.dll
+C:\Users\huazi\Documents\Estudo\Git\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\bin\Debug\Xamarin.GooglePlayServices.Basement.dll
+C:\Users\huazi\Documents\Estudo\Git\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\bin\Debug\FormsViewGroup.pdb
+C:\Users\huazi\Documents\Estudo\Git\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\bin\Debug\FormsViewGroup.dll.mdb
+C:\Users\huazi\Documents\Estudo\Git\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\bin\Debug\SQLite-net.xml
+C:\Users\huazi\Documents\Estudo\Git\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\bin\Debug\SQLite-net.dll.mdb
+C:\Users\huazi\Documents\Estudo\Git\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\bin\Debug\Xamarin.Forms.Core.pdb
+C:\Users\huazi\Documents\Estudo\Git\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\bin\Debug\Xamarin.Forms.Core.xml
+C:\Users\huazi\Documents\Estudo\Git\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\bin\Debug\Xamarin.Forms.Core.dll.mdb
+C:\Users\huazi\Documents\Estudo\Git\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\bin\Debug\Xamarin.Forms.Platform.Android.pdb
+C:\Users\huazi\Documents\Estudo\Git\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\bin\Debug\Xamarin.Forms.Platform.Android.dll.mdb
+C:\Users\huazi\Documents\Estudo\Git\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\bin\Debug\Xamarin.Forms.Xaml.pdb
+C:\Users\huazi\Documents\Estudo\Git\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\bin\Debug\Xamarin.Forms.Xaml.xml
+C:\Users\huazi\Documents\Estudo\Git\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\bin\Debug\Xamarin.Forms.Xaml.dll.mdb
+C:\Users\huazi\Documents\Estudo\Git\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\obj\Debug\GuideForDDOn.Droid.MainPage.xaml.g.cs
+C:\Users\huazi\Documents\Estudo\Git\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\obj\Debug\GuideForDDOn.Droid.App.xaml.g.cs
+C:\Users\huazi\Documents\Estudo\Git\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\obj\Debug\GuideForDDOn.Droid.Views.Classes.xaml.g.cs
+C:\Users\huazi\Documents\Estudo\Git\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\obj\Debug\GuideForDDOn.Droid.Views.HabilidadeDetalhes.xaml.g.cs
+C:\Users\huazi\Documents\Estudo\Git\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\obj\Debug\GuideForDDOn.Droid.Views.Home.xaml.g.cs
+C:\Users\huazi\Documents\Estudo\Git\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\obj\Debug\GuideForDDOn.Droid.Views.InfoDasJobs.xaml.g.cs
+C:\Users\huazi\Documents\Estudo\Git\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\obj\Debug\GuideForDDOn.Droid.Views.InfoHabilidades.xaml.g.cs
+C:\Users\huazi\Documents\Estudo\Git\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\obj\Debug\GuideForDDOn.Droid.Views.InfoPassivas.xaml.g.cs
+C:\Users\huazi\Documents\Estudo\Git\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\obj\Debug\GuideForDDOn.Droid.Views.MonstroDetalhes.xaml.g.cs
+C:\Users\huazi\Documents\Estudo\Git\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\obj\Debug\GuideForDDOn.Droid.Views.MonstroSelecao.xaml.g.cs
+C:\Users\huazi\Documents\Estudo\Git\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\obj\Debug\GuideForDDOn.Droid.Views.MonstrosSeparacao.xaml.g.cs
+C:\Users\huazi\Documents\Estudo\Git\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\obj\Debug\GuideForDDOn.Droid.Views.PassivasDetalhes.xaml.g.cs
+C:\Users\huazi\Documents\Estudo\Git\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\obj\Debug\GuideForDDOn.Droid.Views.Sobre.xaml.g.cs
+C:\Users\huazi\Documents\Estudo\Git\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\obj\Debug\GuideForDDOn.Droid.dll
+C:\Users\huazi\Documents\Estudo\Git\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\obj\Debug\GuideForDDOn.Droid.pdb
+C:\Users\huazi\Documents\Estudo\Git\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\obj\Debug\android\bin\GuideForDDOn.Droid.apk
+C:\Users\huazi\Documents\Estudo\Git\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\obj\Debug\res\drawable\icon.png
+C:\Users\huazi\Documents\Estudo\Git\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\obj\Debug\res\drawable\logohome.png
+C:\Users\huazi\Documents\Estudo\Git\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\obj\Debug\R.cs.flag
+C:\Users\huazi\Documents\Estudo\Git\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\obj\Debug\uploadflags.txt
+C:\Users\huazi\Documents\Estudo\Git\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\bin\Debug\GuideForDDOn.Droid.dll.mdb
+C:\Users\huazi\Documents\Estudo\Git\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\bin\Debug\Java.Interop.dll.mdb
+C:\Users\huazi\Documents\Estudo\Git\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\bin\Debug\Mono.Android.dll.mdb
+C:\Users\huazi\Documents\Estudo\Git\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\bin\Debug\mscorlib.dll.mdb
+C:\Users\huazi\Documents\Estudo\Git\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\bin\Debug\System.ComponentModel.Composition.dll.mdb
+C:\Users\huazi\Documents\Estudo\Git\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\bin\Debug\System.Core.dll.mdb
+C:\Users\huazi\Documents\Estudo\Git\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\bin\Debug\System.dll.mdb
+C:\Users\huazi\Documents\Estudo\Git\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\bin\Debug\System.IO.Compression.dll.mdb
+C:\Users\huazi\Documents\Estudo\Git\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\bin\Debug\System.Net.Http.dll.mdb
+C:\Users\huazi\Documents\Estudo\Git\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\bin\Debug\System.Runtime.Serialization.dll.mdb
+C:\Users\huazi\Documents\Estudo\Git\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\bin\Debug\System.ServiceModel.Internals.dll.mdb
+C:\Users\huazi\Documents\Estudo\Git\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\bin\Debug\System.Xml.dll.mdb
+C:\Users\huazi\Documents\Estudo\Git\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\bin\Debug\System.Xml.Linq.dll.mdb
+C:\Users\huazi\Documents\Estudo\Git\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\obj\Debug\android\assets\FormsViewGroup.dll.mdb
+C:\Users\huazi\Documents\Estudo\Git\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\obj\Debug\android\assets\GuideForDDOn.Droid.dll.mdb
+C:\Users\huazi\Documents\Estudo\Git\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\obj\Debug\android\assets\Java.Interop.dll.mdb
+C:\Users\huazi\Documents\Estudo\Git\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\obj\Debug\android\assets\Mono.Android.dll.mdb
+C:\Users\huazi\Documents\Estudo\Git\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\obj\Debug\android\assets\mscorlib.dll.mdb
+C:\Users\huazi\Documents\Estudo\Git\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\obj\Debug\android\assets\SQLite-net.dll.mdb
+C:\Users\huazi\Documents\Estudo\Git\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\obj\Debug\android\assets\System.Core.dll.mdb
+C:\Users\huazi\Documents\Estudo\Git\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\obj\Debug\android\assets\System.dll.mdb
+C:\Users\huazi\Documents\Estudo\Git\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\obj\Debug\android\assets\System.Net.Http.dll.mdb
+C:\Users\huazi\Documents\Estudo\Git\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\obj\Debug\android\assets\System.Runtime.Serialization.dll.mdb
+C:\Users\huazi\Documents\Estudo\Git\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\obj\Debug\android\assets\System.ServiceModel.Internals.dll.mdb
+C:\Users\huazi\Documents\Estudo\Git\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\obj\Debug\android\assets\System.Xml.dll.mdb
+C:\Users\huazi\Documents\Estudo\Git\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\obj\Debug\android\assets\Xamarin.Forms.Core.dll.mdb
+C:\Users\huazi\Documents\Estudo\Git\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\obj\Debug\android\assets\Xamarin.Forms.Platform.Android.dll.mdb
+C:\Users\huazi\Documents\Estudo\Git\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\obj\Debug\android\assets\Xamarin.Forms.Xaml.dll.mdb
+C:\Users\huazi\Documents\Estudo\Git\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\obj\Debug\GuideForDDOn.Droid.csprojResolveAssemblyReference.cache
+C:\Users\huazi\Documents\Estudo\Git\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\obj\Debug\android\assets\System.IO.Compression.dll.mdb
+C:\Users\huazi\Documents\Estudo\Git\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\bin\Debug\XFGloss.dll
+C:\Users\huazi\Documents\Estudo\Git\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\bin\Debug\XFGloss.Droid.dll
+C:\Users\huazi\Documents\Estudo\Git\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\bin\Debug\XFGloss.xml
+C:\Users\huazi\Documents\Estudo\Git\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\bin\Debug\XFGloss.Droid.xml
+C:\Users\huazi\Documents\Estudo\Git\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\obj\Debug\GuideForDDOn.Droid.Views.NovaTelaClasses.xaml.g.cs
+C:\Users\huazi\Documents\Estudo\Git\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\obj\Debug\GuideForDDOn.Droid.Views.Treino.xaml.g.cs
+C:\Users\huazi\Documents\Estudo\Git\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\obj\Debug\res\drawable\imagemtelaclasses.jpg
+C:\Users\huazi\Documents\Estudo\Git\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\obj\Debug\GuideForDDOn.Droid.Views.NovoInfoJob.xaml.g.cs
+C:\Users\huazi\Documents\Estudo\Git\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\obj\Debug\res\drawable\gradred.png
+C:\Users\huazi\Documents\Estudo\Git\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\obj\Debug\res\drawable\gradyell.png
+C:\Users\huazi\Documents\Estudo\Git\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\obj\Debug\res\drawable\gradblue.png
+C:\Users\huazi\Documents\Estudo\Git\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\obj\Debug\res\drawable\gradpink.png
+C:\Users\huazi\Documents\Estudo\Git\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\obj\Debug\res\drawable\iconpassivas.png
+C:\Users\huazi\Documents\Estudo\Git\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\obj\Debug\res\drawable\iconinfo.png
+C:\Users\huazi\Documents\Estudo\Git\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\obj\Debug\res\drawable\iconhabilidades.png
+C:\Users\huazi\Documents\Estudo\Git\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\obj\Debug\GuideForDDOn.Droid.Views.treino1.xaml.g.cs
+C:\Users\huazi\Documents\Estudo\Git\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\obj\Debug\GuideForDDOn.Droid.dll.mdb
+C:\Users\huazi\Documents\Estudo\Git\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\bin\Debug\GuideForDDOn.Droid.dll.mdb

@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:controls="clr-namespace:GuideForDDOn.Date;assembly=GuideForDDOn.Droid"
+             x:Class="GuideForDDOn.Views.PassivasDetalhes"
+             Title="Passiva Detalhe">
+    <StackLayout Orientation= "Vertical" VerticalOptions="FillAndExpand">
+        <ScrollView Orientation="Vertical" VerticalOptions="FillAndExpand">
+            <StackLayout Orientation= "Vertical" VerticalOptions="FillAndExpand">
+                <Label Text= "{Binding ListRef[0].nome}" TextColor="#228B22" FontSize="18" HorizontalOptions="Center"/>
+                <Label Text= "Descrição: " TextColor="#00FF7F"/>
+                <Label Text= "{Binding ListRef[0].descricao}"/>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text= "Nivel: " TextColor="#00FF7F"/>
+                    <Label Text= "{Binding ListRef[0].nivel}"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text= "AP: " TextColor="#00FF7F"/>
+                    <Label Text= "{Binding ListRef[0].ap}"/>
+                </StackLayout>
+                <Label Text= ""/>
+                <Label Text= "Monstros para Subi de Nivel" TextColor="#228B22" FontSize="18" HorizontalOptions="Center"/>
+                <Label Text= "Nivel 4 pro 5: " TextColor="#00FF7F"/>
+                <Label Text= "{Binding ListRef[0].monster5}">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer 
+                            Command="{Binding Monstro}"
+                            CommandParameter="{Binding ListRef[0].monster5}"/>
+                    </Label.GestureRecognizers>
+                </Label>
+                <Label Text= "Nivel 5 pro 6: " TextColor="#00FF7F"/>
+                <Label Text= "{Binding ListRef[0].monster6}">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer 
+                            Command="{Binding Monstro}"
+                            CommandParameter="{Binding ListRef[0].monster6}"/>
+                    </Label.GestureRecognizers>
+                </Label>
+                <Label Text= "Informação: A quantidade de monstros requeridos na quest podem varia para menos em jogo, a CAP fez algumas modificações" TextColor="#00FF7F" FontSize="8"/>
+                <Grid RowSpacing="0" VerticalOptions="End">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="50"/>
+                    </Grid.RowDefinitions>
+                    <controls:MyBanner Grid.Row="0"/>
+                </Grid>
+            </StackLayout>
+        </ScrollView>
+    </StackLayout>
+</ContentPage>

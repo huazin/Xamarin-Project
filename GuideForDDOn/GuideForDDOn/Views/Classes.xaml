@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GuideForDDOn.Views.Classes"
+             xmlns:xfg="clr-namespace:XFGloss;assembly=XFGloss"
+             Title ="Classes">
+    <xfg:ContentPageGloss.BackgroundGradient>
+        <xfg:Gradient Rotation="0">
+            <xfg:GradientStep StepColor="#a5d3f3" StepPercentage="0" />
+            <xfg:GradientStep StepColor="#a5d3f3" StepPercentage=".2" />
+            <xfg:GradientStep StepColor="#3f6197" StepPercentage=".7" />
+            <xfg:GradientStep StepColor="#3f6197" StepPercentage="1" />
+        </xfg:Gradient>
+    </xfg:ContentPageGloss.BackgroundGradient>
+    <ScrollView>
+        <StackLayout>
+            <ListView ItemsSource= "{Binding ListRef}" x:Name="ListaDaView" SelectedItem="{Binding ItemSelecao, Mode=TwoWay}" SeparatorColor="AliceBlue">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Orientation= "Horizontal" HorizontalOptions="Center" VerticalOptions="FillAndExpand">
+                                <Label Text= "Tipo:" FontSize= "15" TextColor="#00FF7F"/>
+                                <Label Text= "{Binding Nome}" FontSize= "15"/>
+                                <Label Text= "Tipo:" FontSize= "15" TextColor="#00FF7F"/>
+                                <Label Text= "{Binding Tipo}" FontSize= "15"/>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
