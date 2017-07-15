@@ -2,14 +2,14 @@
 <Paths>
   <Jars></Jars>
   <ResolvedResourceDirectories>
-    <ResolvedResourceDirectory>C:\Users\huazi\Documents\Estudo\Git\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\obj\Debug\__library_projects__\SQLitePCLRaw.batteries_green\library_project_imports\res</ResolvedResourceDirectory>
-    <ResolvedResourceDirectory>C:\Users\huazi\Documents\Estudo\Git\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\obj\Debug\__library_projects__\SQLitePCLRaw.batteries_v2\library_project_imports\res</ResolvedResourceDirectory>
-    <ResolvedResourceDirectory>C:\Users\huazi\Documents\Estudo\Git\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\obj\Debug\__library_projects__\SQLitePCLRaw.core\library_project_imports\res</ResolvedResourceDirectory>
-    <ResolvedResourceDirectory>C:\Users\huazi\Documents\Estudo\Git\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\obj\Debug\__library_projects__\SQLitePCLRaw.lib.e_sqlite3\library_project_imports\res</ResolvedResourceDirectory>
-    <ResolvedResourceDirectory>C:\Users\huazi\Documents\Estudo\Git\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\obj\Debug\__library_projects__\SQLitePCLRaw.provider.e_sqlite3\library_project_imports\res</ResolvedResourceDirectory>
-    <ResolvedResourceDirectory>C:\Users\huazi\Documents\Estudo\Git\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\obj\Debug\__library_projects__\Xamarin.Forms.Platform.Android\library_project_imports\res</ResolvedResourceDirectory>
-    <ResolvedResourceDirectory>C:\Users\huazi\Documents\Estudo\Git\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\obj\Debug\__library_projects__\Xamarin.Forms.Platform\library_project_imports\res</ResolvedResourceDirectory>
-    <ResolvedResourceDirectory>C:\Users\huazi\Documents\Estudo\Git\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\obj\Debug\__library_projects__\XFGloss.Droid\library_project_imports\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>C:\Users\huazi\Documents\Git\Xamarin-Project\GuideForDDOn\GuideForDDOn.Droid\obj\Debug\__library_projects__\SQLitePCLRaw.batteries_green\library_project_imports\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>C:\Users\huazi\Documents\Git\Xamarin-Project\GuideForDDOn\GuideForDDOn.Droid\obj\Debug\__library_projects__\SQLitePCLRaw.batteries_v2\library_project_imports\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>C:\Users\huazi\Documents\Git\Xamarin-Project\GuideForDDOn\GuideForDDOn.Droid\obj\Debug\__library_projects__\SQLitePCLRaw.core\library_project_imports\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>C:\Users\huazi\Documents\Git\Xamarin-Project\GuideForDDOn\GuideForDDOn.Droid\obj\Debug\__library_projects__\SQLitePCLRaw.lib.e_sqlite3\library_project_imports\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>C:\Users\huazi\Documents\Git\Xamarin-Project\GuideForDDOn\GuideForDDOn.Droid\obj\Debug\__library_projects__\SQLitePCLRaw.provider.e_sqlite3\library_project_imports\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>C:\Users\huazi\Documents\Git\Xamarin-Project\GuideForDDOn\GuideForDDOn.Droid\obj\Debug\__library_projects__\Xamarin.Forms.Platform.Android\library_project_imports\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>C:\Users\huazi\Documents\Git\Xamarin-Project\GuideForDDOn\GuideForDDOn.Droid\obj\Debug\__library_projects__\Xamarin.Forms.Platform\library_project_imports\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>C:\Users\huazi\Documents\Git\Xamarin-Project\GuideForDDOn\GuideForDDOn.Droid\obj\Debug\__library_projects__\XFGloss.Droid\library_project_imports\res</ResolvedResourceDirectory>
   </ResolvedResourceDirectories>
   <ResolvedAssetDirectories>
     <ResolvedAssetDirectory>obj\Debug\__library_projects__\SQLitePCLRaw.batteries_green\library_project_imports\assets</ResolvedAssetDirectory>
@@ -23,13 +23,13 @@
   </ResolvedAssetDirectories>
   <ResolvedEnvironmentFiles />
   <ResolvedResourceDirectoryStamps>
-    <ResolvedResourceDirectoryStamp>C:\Users\huazi\Documents\Estudo\Git\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\obj\Debug\__library_projects__\SQLitePCLRaw.batteries_green.stamp</ResolvedResourceDirectoryStamp>
-    <ResolvedResourceDirectoryStamp>C:\Users\huazi\Documents\Estudo\Git\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\obj\Debug\__library_projects__\SQLitePCLRaw.batteries_v2.stamp</ResolvedResourceDirectoryStamp>
-    <ResolvedResourceDirectoryStamp>C:\Users\huazi\Documents\Estudo\Git\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\obj\Debug\__library_projects__\SQLitePCLRaw.core.stamp</ResolvedResourceDirectoryStamp>
-    <ResolvedResourceDirectoryStamp>C:\Users\huazi\Documents\Estudo\Git\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\obj\Debug\__library_projects__\SQLitePCLRaw.lib.e_sqlite3.stamp</ResolvedResourceDirectoryStamp>
-    <ResolvedResourceDirectoryStamp>C:\Users\huazi\Documents\Estudo\Git\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\obj\Debug\__library_projects__\SQLitePCLRaw.provider.e_sqlite3.stamp</ResolvedResourceDirectoryStamp>
-    <ResolvedResourceDirectoryStamp>C:\Users\huazi\Documents\Estudo\Git\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\obj\Debug\__library_projects__\Xamarin.Forms.Platform.Android.stamp</ResolvedResourceDirectoryStamp>
-    <ResolvedResourceDirectoryStamp>C:\Users\huazi\Documents\Estudo\Git\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\obj\Debug\__library_projects__\Xamarin.Forms.Platform.stamp</ResolvedResourceDirectoryStamp>
-    <ResolvedResourceDirectoryStamp>C:\Users\huazi\Documents\Estudo\Git\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\obj\Debug\__library_projects__\XFGloss.Droid.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>C:\Users\huazi\Documents\Git\Xamarin-Project\GuideForDDOn\GuideForDDOn.Droid\obj\Debug\__library_projects__\SQLitePCLRaw.batteries_green.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>C:\Users\huazi\Documents\Git\Xamarin-Project\GuideForDDOn\GuideForDDOn.Droid\obj\Debug\__library_projects__\SQLitePCLRaw.batteries_v2.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>C:\Users\huazi\Documents\Git\Xamarin-Project\GuideForDDOn\GuideForDDOn.Droid\obj\Debug\__library_projects__\SQLitePCLRaw.core.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>C:\Users\huazi\Documents\Git\Xamarin-Project\GuideForDDOn\GuideForDDOn.Droid\obj\Debug\__library_projects__\SQLitePCLRaw.lib.e_sqlite3.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>C:\Users\huazi\Documents\Git\Xamarin-Project\GuideForDDOn\GuideForDDOn.Droid\obj\Debug\__library_projects__\SQLitePCLRaw.provider.e_sqlite3.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>C:\Users\huazi\Documents\Git\Xamarin-Project\GuideForDDOn\GuideForDDOn.Droid\obj\Debug\__library_projects__\Xamarin.Forms.Platform.Android.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>C:\Users\huazi\Documents\Git\Xamarin-Project\GuideForDDOn\GuideForDDOn.Droid\obj\Debug\__library_projects__\Xamarin.Forms.Platform.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>C:\Users\huazi\Documents\Git\Xamarin-Project\GuideForDDOn\GuideForDDOn.Droid\obj\Debug\__library_projects__\XFGloss.Droid.stamp</ResolvedResourceDirectoryStamp>
   </ResolvedResourceDirectoryStamps>
 </Paths>

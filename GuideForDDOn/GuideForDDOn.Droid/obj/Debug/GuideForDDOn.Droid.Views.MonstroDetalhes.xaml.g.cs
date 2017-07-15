@@ -11,8 +11,8 @@
 namespace GuideForDDOn.Views {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Users\\huazi\\Documents\\Estudo\\Git\\GuideForDDOn\\GuideForDDOn\\GuideForDDOn\\Views\\" +
-        "MonstroDetalhes.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Users\\huazi\\Documents\\Git\\Xamarin-Project\\GuideForDDOn\\GuideForDDOn\\Views\\Mons" +
+        "troDetalhes.xaml")]
     public partial class MonstroDetalhes : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]

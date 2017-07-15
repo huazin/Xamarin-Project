@@ -11,8 +11,8 @@
 namespace GuideForDDOn.Views {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Users\\huazi\\Documents\\Estudo\\Git\\GuideForDDOn\\GuideForDDOn\\GuideForDDOn\\Views\\" +
-        "Treino.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Users\\huazi\\Documents\\Git\\Xamarin-Project\\GuideForDDOn\\GuideForDDOn\\Views\\Trei" +
+        "no.xaml")]
     public partial class Treino : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]

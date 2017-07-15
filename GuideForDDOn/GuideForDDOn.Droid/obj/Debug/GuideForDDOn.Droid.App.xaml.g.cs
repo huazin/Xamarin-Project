@@ -11,8 +11,7 @@
 namespace GuideForDDOn {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Users\\huazi\\Documents\\Estudo\\Git\\GuideForDDOn\\GuideForDDOn\\GuideForDDOn\\App.xa" +
-        "ml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Users\\huazi\\Documents\\Git\\Xamarin-Project\\GuideForDDOn\\GuideForDDOn\\App.xaml")]
     public partial class App : global::Xamarin.Forms.Application {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]

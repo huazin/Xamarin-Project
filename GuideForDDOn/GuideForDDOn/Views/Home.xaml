@@ -23,10 +23,11 @@
                     <ColumnDefinition Width="90*"/>
                     <ColumnDefinition Width="5*"/>
                 </Grid.ColumnDefinitions>
-                <Button Grid.Row="0" Grid.Column="1" Text="Classes" Command="{Binding Classes}" BackgroundColor="#99c9e4f8"/>
-                <Button Grid.Row="1" Grid.Column="1" Text="Monstros" Command="{Binding SmallMonster}" BackgroundColor="#99c9e4f8"/>
-                <Button Grid.Row="2" Grid.Column="1" Text="Boss/Mini Boss" Command="{Binding BigMonster}" BackgroundColor="#99c9e4f8"/>
-                <Button Grid.Row="3" Grid.Column="1" Text="Sobre" Command="{Binding Sobre}" BackgroundColor="#99c9e4f8"/>
+                <Button Grid.Row="0" Grid.Column="1" Text="{Binding Labels.classes}" Command="{Binding Classes}" BackgroundColor="#99c9e4f8"/>
+                <Button Grid.Row="1" Grid.Column="1" Text="{Binding Labels.MonstrosPequenos}" Command="{Binding SmallMonster}" BackgroundColor="#99c9e4f8"/>
+                <Button Grid.Row="2" Grid.Column="1" Text="{Binding Labels.MonstrosGrandes}" Command="{Binding BigMonster}" BackgroundColor="#99c9e4f8"/>
+                <Button Grid.Row="3" Grid.Column="1" Text="{Binding Labels.Opcao}" Command="{Binding Opcao}" BackgroundColor="#99c9e4f8"/>
+                <Button Grid.Row="4" Grid.Column="1" Text="{Binding Labels.Sobre}" Command="{Binding Sobre}" BackgroundColor="#99c9e4f8"/>
             </Grid>
 
             <Grid RowSpacing="0" VerticalOptions="End">

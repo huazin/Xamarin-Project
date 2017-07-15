@@ -45,8 +45,8 @@ namespace GuideForDDOn.Droid
 
         private static void CopyDatabaseIfNotExists(string dbPath)
         {
-                if (!File.Exists(dbPath))
-                {
+                //if (!File.Exists(dbPath))
+                //{
                     using (var br = new BinaryReader(Android.App.Application.Context.Assets.Open("DDON.db3")))
                     {
                         using (var bw = new BinaryWriter(new FileStream(dbPath, FileMode.Create)))
@@ -59,7 +59,7 @@ namespace GuideForDDOn.Droid
                             }
                         }
                     }
-                }
+                //}
         }
     }
 }
