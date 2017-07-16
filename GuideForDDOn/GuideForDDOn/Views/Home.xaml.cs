@@ -13,11 +13,10 @@ namespace GuideForDDOn.Views
 {
 	public partial class Home : ContentPage
 	{
-        public Home()
+        public Home(SQLiteConnection con)
         {
             InitializeComponent();
            
-            SQLiteConnection con = DependencyService.Get<ISqLite>().GetConnection(); ;
             HomeViewModel vm = new HomeViewModel(this, con);
             BindingContext = vm;
         }

@@ -17,7 +17,7 @@ namespace GuideForDDOn
             InitializeComponent();
             SQLiteConnection con = DependencyService.Get<ISqLite>().GetConnection();
             ConfiguracaoDAO confi = new ConfiguracaoDAO(con);
-            Home page = new Home();
+            Home page = new Home(con);
             NavigationPage tela = new NavigationPage(page);
             MainPage = tela;
         }

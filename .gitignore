@@ -82,3 +82,17 @@ GuideForDDOn/GuideForDDOn.Droid/obj/Debug/GuideForDDOn.Droid.csprojResolveAssemb
 *.mdb
 *.pdb
 *.cache
+GuideForDDOn/GuideForDDOn.Droid/bin/Debug/GuideForDDOn.Droid.apk
+*.apk
+*.dll
+*.mdb
+*.pdb
+*.class
+*.java
+*.xml
+*.txt
+*.cache
+*.json
+*.config
+*.dll
+*.dex

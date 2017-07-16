@@ -16,7 +16,7 @@ namespace GuideForDDOn.Views
 	{
 		public ConfiguracaoSistema (SQLiteConnection con)
 		{
-            ConfiguracaoSistemaViewModel vm = new ConfiguracaoSistemaViewModel(con);
+            ConfiguracaoSistemaViewModel vm = new ConfiguracaoSistemaViewModel(con, this);
             BindingContext = vm;
             InitializeComponent();
         }

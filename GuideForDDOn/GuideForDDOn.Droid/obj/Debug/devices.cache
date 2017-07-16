@@ -1,21 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Devices>
-  <Device id="420089f0cc416300">
-    <ResultingAbi>armeabi-v7a</ResultingAbi>
-    <SdkVersion>22</SdkVersion>
-  </Device>
-  <Device id="0023994906">
-    <ResultingAbi>armeabi-v7a</ResultingAbi>
-    <SdkVersion>24</SdkVersion>
-  </Device>
-  <Device id="LGK2003579821f">
-    <ResultingAbi>armeabi-v7a</ResultingAbi>
-    <SdkVersion>23</SdkVersion>
-  </Device>
-  <Device id="emulator-5554">
-    <ResultingAbi>x86</ResultingAbi>
-    <SdkVersion>23</SdkVersion>
-  </Device>
   <Device id="6de9d64c">
     <ResultingAbi>armeabi-v7a</ResultingAbi>
     <SdkVersion>21</SdkVersion>

@@ -8,7 +8,7 @@ namespace GuideForDDOn.Date
 {
     public class ConfiguracaoDAO
     {
-        SQLiteConnection conexao;
+        static SQLiteConnection conexao;
 
         public static int Idioma { get; set; }
 
@@ -18,9 +18,10 @@ namespace GuideForDDOn.Date
             Idioma = conexao.Table<Configuracao>().First().IdiomaPadrao;
         }
 
-        public void MudarIdioma(int i)
+        public static void MudarIdioma(int i)
         {
             Idioma = i;
+            conexao.Update(new Configuracao { Configuracaoid = 1,IdiomaPadrao = i });
         }
     }
 }

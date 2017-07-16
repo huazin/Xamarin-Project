@@ -17,7 +17,7 @@
     <ContentPage.Content>
         <StackLayout Orientation="Vertical" VerticalOptions="StartAndExpand">
             <Label Text="{Binding Lab}"/>
-            <Picker ItemsSource="{Binding IdiomaTxt}"/>
+            <Picker ItemsSource="{Binding IdiomaTxt}" SelectedIndex="{Binding SelectedIndex, Mode=TwoWay}"/>
 
             <Grid VerticalOptions="StartAndExpand">
                 <Grid.ColumnDefinitions>
