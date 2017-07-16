@@ -17,14 +17,14 @@ namespace GuideForDDOn
             InitializeComponent();
             SQLiteConnection con = DependencyService.Get<ISqLite>().GetConnection();
             ConfiguracaoDAO confi = new ConfiguracaoDAO(con);
-            Home page = new Home(con);
+            Home page = new Home();
             NavigationPage tela = new NavigationPage(page);
             MainPage = tela;
         }
 
         protected override void OnStart()
         {
-            // Handle when your app starts
+            // Handle when your app start
         }
 
         protected override void OnSleep()

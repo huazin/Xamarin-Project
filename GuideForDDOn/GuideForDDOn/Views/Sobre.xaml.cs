@@ -1,4 +1,5 @@
-﻿using System;
+﻿using GuideForDDOn.ViewModel;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,6 +14,8 @@ namespace GuideForDDOn.Views
 		public Sobre ()
 		{
 			InitializeComponent ();
+            SobreViewModel vm = new SobreViewModel();
+            BindingContext = vm;
 		}
 	}
 }

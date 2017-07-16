@@ -15,7 +15,7 @@
         </xfg:Gradient>
     </xfg:ContentPageGloss.BackgroundGradient>
     <ContentPage.Content>
-        <StackLayout Orientation="Vertical" VerticalOptions="StartAndExpand">
+        <StackLayout Orientation="Vertical">
             <Label Text="{Binding Lab}"/>
             <Picker ItemsSource="{Binding IdiomaTxt}" SelectedIndex="{Binding SelectedIndex, Mode=TwoWay}"/>
 

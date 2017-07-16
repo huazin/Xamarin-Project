@@ -9,20 +9,18 @@ namespace GuideForDDOn.Date
 {
     public class LabelsIdiomasDAO
     {
-        SQLiteConnection conexao;
-        public LabelsIdiomasDAO(SQLiteConnection con)
+        public LabelsIdiomasDAO()
         {
-            conexao = con;
         }
 
         public LabelsIdiomas Get()
         {
-            return conexao.Get<LabelsIdiomas>(p => p.idiomaid == ConfiguracaoDAO.Idioma);
+            return ConfiguracaoDAO.conexao.Get<LabelsIdiomas>(p => p.idiomaid == ConfiguracaoDAO.Conf.IdiomaPadrao);
         }
 
         public List<LabelsIdiomas> GetAll()
         {
-            return new List<LabelsIdiomas>(conexao.Table<LabelsIdiomas>());
+            return new List<LabelsIdiomas>(ConfiguracaoDAO.conexao.Table<LabelsIdiomas>());
         }
     }
 }

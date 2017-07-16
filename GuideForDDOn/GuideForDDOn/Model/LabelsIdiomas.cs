@@ -16,8 +16,16 @@ namespace GuideForDDOn.Model
         public string monstrosgrandes { get; set; }
         public string opcao { get; set; }
         public string sobre { get; set; }
-        public string idiomalabel { get; set; }//Configuracao de Sistema
+
+        //Configuracao de Sistema
+        public string idiomalabel { get; set; }
         public string botaoconfirmar { get; set; }
+
+        //Sobre
+        public string Devs { get; set; }
+        public string Versao { get; set; }
+        public string Links { get; set; }
+        public string Equip { get; set; }
 
     }
 }

@@ -14,9 +14,9 @@ namespace GuideForDDOn.Views
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class ConfiguracaoSistema : ContentPage
 	{
-		public ConfiguracaoSistema (SQLiteConnection con)
+		public ConfiguracaoSistema ()
 		{
-            ConfiguracaoSistemaViewModel vm = new ConfiguracaoSistemaViewModel(con, this);
+            ConfiguracaoSistemaViewModel vm = new ConfiguracaoSistemaViewModel(this);
             BindingContext = vm;
             InitializeComponent();
         }

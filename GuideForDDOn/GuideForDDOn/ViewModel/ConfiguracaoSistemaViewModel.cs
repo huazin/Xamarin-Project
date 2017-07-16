@@ -12,7 +12,6 @@ namespace GuideForDDOn.ViewModel
 {
     public class ConfiguracaoSistemaViewModel
     {
-        private SQLiteConnection con;
         private ObservableCollection<string> idiomaTxt;
         private int idiomaIndex;
         private List<LabelsIdiomas> Labels;
@@ -47,12 +46,11 @@ namespace GuideForDDOn.ViewModel
             set { IdiomaIndex = value; }
         }
 
-        public ConfiguracaoSistemaViewModel(SQLiteConnection Con, ContentPage page)
+        public ConfiguracaoSistemaViewModel(ContentPage page)
         {
             Page = page;
-            con = Con;
-            SelectedIndex = ConfiguracaoDAO.Idioma -1;
-            Labels = new LabelsIdiomasDAO(con).GetAll();
+            SelectedIndex = ConfiguracaoDAO.Idioma - 1;
+            Labels = new LabelsIdiomasDAO().GetAll();
             idiomaTxt = new ObservableCollection<string>();
             foreach(var lab in Labels)
             {

@@ -2,22 +2,36 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="GuideForDDOn.Views.Sobre"
-             Title="Sobre">
-    <StackLayout Orientation="Vertical">
-        <Label Text="Guide For DDOn Desenvolvido por:" TextColor="#00FF7F"/>
-        <Label Text="Robson Rodrigues e Tarciso Junior"/>
-        <Label Text=""/>
-        <Label Text="Versão 1.0" TextColor="#00FF7F"/>
-        <Label Text=""/>
-        <Label Text="Informações e traduções feitas dos seguites sites:" TextColor="#00FF7F"/>
-        <Label Text="http://dd-on-rookies.com/"/>
-        <Label Text="http://dogmaonlineyyy.wiki.fc2.com/"/>
-        <Label Text="https://members.dd-on.jp/"/>
-        <Label Text=""/>
-        <Label Text="Equipe de Design:" TextColor="#00FF7F"/>
-        <Label Text="Jessica Rodrigues"/>
-        <Label Text=""/>
-        <Label Text="Equipe de Tradução:" TextColor="#00FF7F"/>
-        <Label Text="Wellinton da Silva e com Danny Évora e Samuel Rick por da suporte nas Traduções com o Wellinton"/>
-    </StackLayout>
+             xmlns:controls="clr-namespace:GuideForDDOn.Date;assembly=GuideForDDOn.Droid"
+             xmlns:xfg="clr-namespace:XFGloss;assembly=XFGloss"
+             Title="About">
+    <xfg:ContentPageGloss.BackgroundGradient>
+        <xfg:Gradient Rotation="0">
+            <xfg:GradientStep StepColor="#a5d3f3" StepPercentage="0" />
+            <xfg:GradientStep StepColor="#a5d3f3" StepPercentage=".2" />
+            <xfg:GradientStep StepColor="#3f6197" StepPercentage=".7" />
+            <xfg:GradientStep StepColor="#3f6197" StepPercentage="1" />
+        </xfg:Gradient>
+    </xfg:ContentPageGloss.BackgroundGradient>
+    <ScrollView>
+        <StackLayout  Orientation="Vertical">
+            <Label Text="{Binding Labels.Devs}"/>
+            <Label Text="{Binding Sobre.Devs}" TextColor="#FFFFFF"/>
+            <Label Text=""/>
+            <Label Text="{Binding Versao}"/>
+            <Label Text=""/>
+            <Label Text="{Binding Labels.Links}"/>
+            <Label Text="{Binding Sobre.Links}" TextColor="#FFFFFF"/>
+            <Label Text=""/>
+            <Label Text="{Binding Labels.Equip}"/>
+            <Label Text="{Binding Sobre.Equip}" TextColor="#FFFFFF" VerticalOptions="StartAndExpand"/>
+
+            <Grid RowSpacing="0" VerticalOptions="End">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="50"/>
+                </Grid.RowDefinitions>
+                <controls:MyBanner Grid.Row="0"/>
+            </Grid>
+        </StackLayout>
+    </ScrollView>
 </ContentPage>

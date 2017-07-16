@@ -13,11 +13,11 @@ namespace GuideForDDOn.Views
 {
 	public partial class Home : ContentPage
 	{
-        public Home(SQLiteConnection con)
+        public Home()
         {
             InitializeComponent();
            
-            HomeViewModel vm = new HomeViewModel(this, con);
+            HomeViewModel vm = new HomeViewModel(this);
             BindingContext = vm;
         }
     }

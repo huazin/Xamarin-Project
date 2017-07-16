@@ -10,5 +10,6 @@ namespace GuideForDDOn.Model
         [PrimaryKey]
         public int Configuracaoid { get; set; }
         public int IdiomaPadrao { get; set; } // 0 pt-br // 1 USA
+        public double Versao { get; set; }
     }
 }

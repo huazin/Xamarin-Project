@@ -8,20 +8,22 @@ namespace GuideForDDOn.Date
 {
     public class ConfiguracaoDAO
     {
-        static SQLiteConnection conexao;
+        public static SQLiteConnection conexao;
+        public static Configuracao Conf;
 
-        public static int Idioma { get; set; }
+        public static int Idioma { get { return Conf.IdiomaPadrao; } }
+        public static double Versao { get { return Conf.Versao; } }
 
         public ConfiguracaoDAO(SQLiteConnection con)
         {
             conexao = con;
-            Idioma = conexao.Table<Configuracao>().First().IdiomaPadrao;
+            Conf = conexao.Table<Configuracao>().First();
         }
 
         public static void MudarIdioma(int i)
         {
-            Idioma = i;
-            conexao.Update(new Configuracao { Configuracaoid = 1,IdiomaPadrao = i });
+            Conf.IdiomaPadrao = i;
+            conexao.Update(Conf);
         }
     }
 }
