@@ -17,7 +17,12 @@ namespace GuideForDDOn.Date
 
         public LabelsIdiomas Get()
         {
-            return conexao.Get<LabelsIdiomas>(p => p.IdiomaId == ConfiguracaoDAO.Idioma);
+            return conexao.Get<LabelsIdiomas>(p => p.idiomaid == ConfiguracaoDAO.Idioma);
+        }
+
+        public List<LabelsIdiomas> GetAll()
+        {
+            return new List<LabelsIdiomas>(conexao.Table<LabelsIdiomas>());
         }
     }
 }

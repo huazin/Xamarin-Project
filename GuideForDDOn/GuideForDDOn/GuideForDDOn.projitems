@@ -31,6 +31,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Model\Monstro.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\Passivas.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\ClassesModelView.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModel\ConfiguracaoSistemaViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\HabilidadeDetalhesModelView.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\HomeViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\InfoHabilidadesViewModel.cs" />
@@ -42,6 +43,10 @@
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\TreinaModelView.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Views\Classes.xaml.cs">
       <DependentUpon>Classes.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\ConfiguracaoSistema.xaml.cs">
+      <DependentUpon>ConfiguracaoSistema.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Views\HabilidadeDetalhes.xaml.cs">
@@ -177,9 +182,6 @@
     <Content Include="$(MSBuildThisFileDirectory)LogoHome.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="$(MSBuildThisFileDirectory)DDON.db3" />
-  </ItemGroup>
-  <ItemGroup>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\PassivasDetalhes.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
@@ -211,6 +213,12 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\treino1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\ConfiguracaoSistema.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>

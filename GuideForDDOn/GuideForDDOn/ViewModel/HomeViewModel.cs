@@ -67,14 +67,8 @@ namespace GuideForDDOn.ViewModel
             });
             opcao = new Command(() =>
             {
-                //MonstrosSeparacao Tela = new MonstrosSeparacao();
-                //MonstroDAO dao = new MonstroDAO(con);
-                //ObservableCollection<Monstro> listRef = dao.GetAllEspecie(2);
-                //foreach (var a in listRef)
-                //{
-                //    Tela.Children.Add(new MonstroSelecao(con, 2, a.especie));
-                //}
-                //this.page.Navigation.PushAsync(Tela);
+                ConfiguracaoSistema Tela = new ConfiguracaoSistema(con);
+                this.page.Navigation.PushAsync(Tela);
             });
         }
     }

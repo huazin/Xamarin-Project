@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GuideForDDOn.Views.ConfiguracaoSistema"
+             xmlns:xfg="clr-namespace:XFGloss;assembly=XFGloss"
+             xmlns:controls="clr-namespace:GuideForDDOn.Date;assembly=GuideForDDOn.Droid"
+             Title="Option">
+
+    <xfg:ContentPageGloss.BackgroundGradient>
+        <xfg:Gradient Rotation="0">
+            <xfg:GradientStep StepColor="#a5d3f3" StepPercentage="0" />
+            <xfg:GradientStep StepColor="#a5d3f3" StepPercentage=".2" />
+            <xfg:GradientStep StepColor="#3f6197" StepPercentage=".7" />
+            <xfg:GradientStep StepColor="#3f6197" StepPercentage="1" />
+        </xfg:Gradient>
+    </xfg:ContentPageGloss.BackgroundGradient>
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical" VerticalOptions="StartAndExpand">
+            <Label Text="{Binding Lab}"/>
+            <Picker ItemsSource="{Binding IdiomaTxt}"/>
+
+            <Grid VerticalOptions="StartAndExpand">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="5*"/>
+                    <ColumnDefinition Width="90*"/>
+                    <ColumnDefinition Width="5*"/>
+                </Grid.ColumnDefinitions>
+                <Button Grid.Row="0" Grid.Column="1" Text="{Binding LabBotao}" Command="{Binding Confirmar}" BackgroundColor="#99c9e4f8"/>
+            </Grid>
+
+            <Grid RowSpacing="0" VerticalOptions="End">
+                    <Grid.RowDefinitions>
+                    <RowDefinition Height="50"/>
+                </Grid.RowDefinitions>
+                <controls:MyBanner Grid.Row="0"/>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

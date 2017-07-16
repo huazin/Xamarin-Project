@@ -9,13 +9,15 @@ namespace GuideForDDOn.Model
     {
         [PrimaryKey, AutoIncrement]
         //Home
-        public int IdiomaId { get; set; }
-        public string Nome { get; set; }
+        public int idiomaid { get; set; }
+        public string nome { get; set; }
         public string classes { get; set; }
-        public string MonstrosPequenos { get; set; }
-        public string MonstrosGrandes { get; set; }
-        public string Opcao { get; set; }
-        public string Sobre { get; set; }
+        public string monstrospequenos { get; set; }
+        public string monstrosgrandes { get; set; }
+        public string opcao { get; set; }
+        public string sobre { get; set; }
+        public string idiomalabel { get; set; }//Configuracao de Sistema
+        public string botaoconfirmar { get; set; }
 
     }
 }
