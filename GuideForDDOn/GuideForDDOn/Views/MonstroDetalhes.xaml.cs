@@ -12,21 +12,15 @@ namespace GuideForDDOn.Views
 {
 	public partial class MonstroDetalhes : ContentPage
 	{
-        public MonstroDetalhes(SQLiteConnection Con, List<string> Nome)
+        public MonstroDetalhes(List<string> Nome)
         {
-            MonstroDetalhesViewModel vm = new MonstroDetalhesViewModel(Con, Nome,this);
+            MonstroDetalhesViewModel vm = new MonstroDetalhesViewModel(Nome,this);
             BindingContext = vm;
             InitializeComponent();
         }
-        public MonstroDetalhes(SQLiteConnection Con, int x)
+        public MonstroDetalhes(int x)
         {
-            MonstroDetalhesViewModel vm = new MonstroDetalhesViewModel(Con, x);
-            BindingContext = vm;
-            InitializeComponent();
-        }
-        public MonstroDetalhes(int x, SQLiteConnection Con)
-        {
-            MonstroDetalhesViewModel vm = new MonstroDetalhesViewModel(x, Con);
+            MonstroDetalhesViewModel vm = new MonstroDetalhesViewModel(x);
             BindingContext = vm;
             InitializeComponent();
         }

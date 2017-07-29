@@ -1,4 +1,5 @@
 ﻿using GuideForDDOn.Model;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -9,7 +10,7 @@ namespace GuideForDDOn.Date
     {
         public Sobres Get()
         {
-            return ConfiguracaoDAO.conexao.Get<Sobres>(p => p.IdiomaId == ConfiguracaoDAO.Idioma);
+            return JsonConvert.DeserializeObject<Sobres>(WebService.Get("Sobre", ConfiguracaoDAO.Conf.IdiomaPadrao.ToString()));
         }
     }
 }

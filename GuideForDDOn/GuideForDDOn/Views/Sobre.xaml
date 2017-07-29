@@ -4,7 +4,7 @@
              x:Class="GuideForDDOn.Views.Sobre"
              xmlns:controls="clr-namespace:GuideForDDOn.Date;assembly=GuideForDDOn.Droid"
              xmlns:xfg="clr-namespace:XFGloss;assembly=XFGloss"
-             Title="About">
+             Title="{Binding Labels.TitleSobre}">
     <xfg:ContentPageGloss.BackgroundGradient>
         <xfg:Gradient Rotation="0">
             <xfg:GradientStep StepColor="#a5d3f3" StepPercentage="0" />

@@ -16,8 +16,7 @@ namespace GuideForDDOn.ViewModel
         private ContentPage page;
         private LabelsIdiomas labels;
 
-        private SQLiteConnection con { get { return ConfiguracaoDAO.conexao; } }
-        public LabelsIdiomas Labels { get { return labels; } }
+        public LabelsIdiomas Labels { get { return LabelsIdiomasDAO.Label; } }
 
         public ICommand Classes { get; protected set; }
         public ICommand SmallMonster { get; protected set; }
@@ -37,30 +36,32 @@ namespace GuideForDDOn.ViewModel
         }
         public void ClassesFun()
         {
-            Views.NovaTelaClasses tela = new NovaTelaClasses(con);
-            this.page.Navigation.PushAsync(tela);
+            //Views.NovaTelaClasses tela = new NovaTelaClasses(con);
+            //this.page.Navigation.PushAsync(tela);
+
+
             //Views.Classes Tela = new Views.Classes(con);
             //this.page.Navigation.PushAsync(Tela);
         }
         public void SmallFun()
         {
             MonstrosSeparacao Tela = new MonstrosSeparacao();
-            MonstroDAO dao = new MonstroDAO(con);
-            ObservableCollection<Monstro> listRef = dao.GetAllEspecie(1);
+            MonstroDAO dao = new MonstroDAO();
+            ObservableCollection<Monstro> listRef = dao.GetAllEspecie(1, ConfiguracaoDAO.Conf.IdiomaPadrao);
             foreach (var a in listRef)
             {
-                Tela.Children.Add(new MonstroSelecao(con, 1, a.especie));
+                Tela.Children.Add(new MonstroSelecao( a.categoria, a.especie));
             }
             this.page.Navigation.PushAsync(Tela);
         }
         public void BigFun()
         {
             MonstrosSeparacao Tela = new MonstrosSeparacao();
-            MonstroDAO dao = new MonstroDAO(con);
-            ObservableCollection<Monstro> listRef = dao.GetAllEspecie(2);
+            MonstroDAO dao = new MonstroDAO();
+            ObservableCollection<Monstro> listRef = dao.GetAllEspecie(2, ConfiguracaoDAO.Conf.IdiomaPadrao);
             foreach (var a in listRef)
             {
-                Tela.Children.Add(new MonstroSelecao(con, 2, a.especie));
+                Tela.Children.Add(new MonstroSelecao(2, a.especie));
             }
             this.page.Navigation.PushAsync(Tela);
         }
@@ -68,8 +69,6 @@ namespace GuideForDDOn.ViewModel
         public HomeViewModel(ContentPage home)
         {
             this.page = home;
-
-            labels = new LabelsIdiomasDAO().Get();
 
             Sobre = new Command(SobreFun);
             Classes = new Command(ClassesFun);

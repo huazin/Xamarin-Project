@@ -10,13 +10,12 @@ namespace GuideForDDOn.ViewModel
     public class SobreViewModel
     {
         public Sobres Sobre{ get; set; }
-        public LabelsIdiomas Labels { get; set; }
-        public string Versao { get { return (Labels.Versao + " " + ConfiguracaoDAO.Versao).Replace(",","."); } }
+        public LabelsIdiomas Labels { get { return LabelsIdiomasDAO.Label; } }
+       // public string Versao { get { return (Labels.Versao + " " + ConfiguracaoDAO.Versao).Replace(",","."); } }
 
         public SobreViewModel()
         {
             Sobre = new SobresDAO().Get();
-            Labels = new LabelsIdiomasDAO().Get();
         }
     }
 }

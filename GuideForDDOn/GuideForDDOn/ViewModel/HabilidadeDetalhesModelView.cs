@@ -55,7 +55,7 @@ namespace GuideForDDOn.ViewModel
             else
             {
                     List<string> nomes = GuideForDDOn.Model.Monstro.SeparandoNomes(parametro);
-                    MonstroDetalhes tela = new MonstroDetalhes(con, nomes);
+                    MonstroDetalhes tela = new MonstroDetalhes(nomes);
                     this.page.Navigation.PushAsync(tela);
             }
         }

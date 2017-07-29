@@ -20,11 +20,8 @@ namespace GuideForDDOn.Model
         public string elementoFraco { get; private set; }
         public string drop { get; private set; }
         public string localizacao { get; private set; }
+        public int idiomaid { get; set; }
 
-        public Monstro()
-        {
-
-        }
 
         public static List<string> SeparandoNomes(Object x)
         {

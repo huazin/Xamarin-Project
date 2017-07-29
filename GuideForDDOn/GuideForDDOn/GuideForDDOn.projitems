@@ -22,6 +22,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Date\MyBanner.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Date\PassivasDAO.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Date\SobresDAO.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Date\WebService.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>

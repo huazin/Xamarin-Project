@@ -100,6 +100,7 @@ class MonoPackageManager_Resources {
 		/* We need to ensure that "GuideForDDOn.Droid.dll" comes first in this list. */
 		"GuideForDDOn.Droid.dll",
 		"FormsViewGroup.dll",
+		"Newtonsoft.Json.dll",
 		"SQLite-net.dll",
 		"SQLitePCLRaw.batteries_v2.dll",
 		"SQLitePCLRaw.core.dll",

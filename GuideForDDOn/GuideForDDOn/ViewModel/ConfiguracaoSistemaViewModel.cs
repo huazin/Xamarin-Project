@@ -65,7 +65,7 @@ namespace GuideForDDOn.ViewModel
             ConfiguracaoDAO.MudarIdioma(SelectedIndex + 1);
             if (ConfiguracaoDAO.Idioma == 1) Page.DisplayAlert("Alerta", "Por Favor Reinicie o App", "Confirmar");
             else if (ConfiguracaoDAO.Idioma == 2) Page.DisplayAlert("Alert", "Please Reboot App!", "Confirm");
-            
+            LabelsIdiomasDAO.Reload();           
         }
 
         public ICommand Confirmar { get; protected set; }

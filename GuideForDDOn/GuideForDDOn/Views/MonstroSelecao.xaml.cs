@@ -12,9 +12,9 @@ namespace GuideForDDOn.Views
 {
 	public partial class MonstroSelecao : ContentPage
 	{
-        public MonstroSelecao(SQLiteConnection Con, int tipo, string especie)
+        public MonstroSelecao(int tipo, string especie)
         {
-            MonstroSelecaoViewModel vm = new MonstroSelecaoViewModel(Con, tipo, especie, this);
+            MonstroSelecaoViewModel vm = new MonstroSelecaoViewModel(tipo, especie, this);
             BindingContext = vm;
             InitializeComponent();
         }

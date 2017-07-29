@@ -1,4 +1,5 @@
 ﻿using GuideForDDOn.Model;
+using Newtonsoft.Json;
 using SQLite;
 using System;
 using System.Collections.Generic;
@@ -9,72 +10,26 @@ namespace GuideForDDOn.Date
 {
     public class MonstroDAO
     {
-        SQLiteConnection conexao;
-
-        public MonstroDAO(SQLiteConnection con)
-        {
-            this.conexao = con;
-        }
-
         public Monstro GetMonstroExpecifico(string x)
         {
-            try
-            {
-                Monstro OMonstro = conexao.Query<Monstro>("select * from Monstro where apelido = '"  + x + "'")[0];
-                return OMonstro;
-            }
-            catch (ArgumentOutOfRangeException e)
-            {
-                throw new ExceptionNula();
-            }
+                Monstro Obj = JsonConvert.DeserializeObject<Monstro>(WebService.Get("Monstro", "?nome="+ x + "&idioma=" + ConfiguracaoDAO.Conf.IdiomaPadrao)); ;
+                return Obj;
         }
-        public ObservableCollection<Monstro> GetExpecifico(int x)
+        public ObservableCollection<Monstro> GetExpecifico(int id)
         {
-            try
-            {
-                ObservableCollection<Monstro> OMonstro = new ObservableCollection<Monstro>(conexao.Query<Monstro>("select * from Monstro where id_Monstro = " + x));
-                return OMonstro;
-            }
-            catch (ArgumentOutOfRangeException e)
-            {
-                throw new ExceptionNula();
-            }
+            ObservableCollection<Monstro> Obj = JsonConvert.DeserializeObject<ObservableCollection<Monstro>>(WebService.Get("Monstro", ""+ id));
+            return Obj;
         }
 
-        internal ObservableCollection<Monstro> GetOne(int x)
+        internal ObservableCollection<Monstro> GetAllEspecie(int categoria,int idioma)
         {
-            try
-            {
-                ObservableCollection<Monstro> OMonstro = new ObservableCollection<Monstro>(conexao.Query<Monstro>("select * from Monstro where categoria = " + x));
-                return OMonstro;
-            }
-            catch (Exception e)
-            {
-                throw new ExceptionNula();
-            }
+            return JsonConvert.DeserializeObject<ObservableCollection<Monstro>>(WebService.Get("MonstrosEspecies", "?categoria=" + categoria + "&idioma=" + idioma));
+
         }
 
-        internal ObservableCollection<Monstro> GetAllEspecie(int x)
+        internal ObservableCollection<Monstro> GetAllForEspecie(int categoria, string especie)
         {
-            try
-            {
-                ObservableCollection<Monstro> OMonstro = new ObservableCollection<Monstro>(conexao.Query<Monstro>("select * from Monstro where categoria = " + x + " group by especie order by id_Monstro"));
-                return OMonstro;
-            }
-            catch (Exception e)
-            {
-                throw new ExceptionNula();
-            }
-        }
-
-        internal ObservableCollection<Monstro> GetAllForEspecie(int x, string y)
-        {
-            ObservableCollection<Monstro> OMonstro = new ObservableCollection<Monstro>(conexao.Query<Monstro>("select * from Monstro where categoria = " + x + " and especie = '" + y + "' order by id_Monstro"));
-            if (OMonstro[0].apelido == null)
-            {
-                throw new ExceptionNula();
-            }
-            return OMonstro;
+            return JsonConvert.DeserializeObject<ObservableCollection<Monstro>>(WebService.Get("MonstrosEspecies", "?categoria=" + categoria + "&especie=" + especie + "&idioma=" + ConfiguracaoDAO.Conf.IdiomaPadrao));
         }
     }
 }

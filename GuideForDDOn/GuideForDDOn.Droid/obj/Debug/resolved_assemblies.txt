@@ -1,5 +1,6 @@
 C:\Users\huazi\Documents\Git\Xamarin-Project\GuideForDDOn\GuideForDDOn.Droid\obj\Debug\android\assets\GuideForDDOn.Droid.dll
 C:\Users\huazi\Documents\Git\Xamarin-Project\GuideForDDOn\GuideForDDOn.Droid\obj\Debug\android\assets\FormsViewGroup.dll
+C:\Users\huazi\Documents\Git\Xamarin-Project\GuideForDDOn\GuideForDDOn.Droid\obj\Debug\android\assets\Newtonsoft.Json.dll
 C:\Users\huazi\Documents\Git\Xamarin-Project\GuideForDDOn\GuideForDDOn.Droid\obj\Debug\android\assets\SQLite-net.dll
 C:\Users\huazi\Documents\Git\Xamarin-Project\GuideForDDOn\GuideForDDOn.Droid\obj\Debug\android\assets\SQLitePCLRaw.batteries_v2.dll
 C:\Users\huazi\Documents\Git\Xamarin-Project\GuideForDDOn\GuideForDDOn.Droid\obj\Debug\android\assets\SQLitePCLRaw.core.dll
@@ -21,12 +22,16 @@ C:\Users\huazi\Documents\Git\Xamarin-Project\GuideForDDOn\GuideForDDOn.Droid\obj
 C:\Users\huazi\Documents\Git\Xamarin-Project\GuideForDDOn\GuideForDDOn.Droid\obj\Debug\android\assets\XFGloss.dll
 C:\Users\huazi\Documents\Git\Xamarin-Project\GuideForDDOn\GuideForDDOn.Droid\obj\Debug\android\assets\XFGloss.Droid.dll
 C:\Users\huazi\Documents\Git\Xamarin-Project\GuideForDDOn\GuideForDDOn.Droid\obj\Debug\android\assets\Java.Interop.dll
+C:\Users\huazi\Documents\Git\Xamarin-Project\GuideForDDOn\GuideForDDOn.Droid\obj\Debug\android\assets\Microsoft.CSharp.dll
 C:\Users\huazi\Documents\Git\Xamarin-Project\GuideForDDOn\GuideForDDOn.Droid\obj\Debug\android\assets\Mono.Android.dll
 C:\Users\huazi\Documents\Git\Xamarin-Project\GuideForDDOn\GuideForDDOn.Droid\obj\Debug\android\assets\mscorlib.dll
 C:\Users\huazi\Documents\Git\Xamarin-Project\GuideForDDOn\GuideForDDOn.Droid\obj\Debug\android\assets\System.Core.dll
 C:\Users\huazi\Documents\Git\Xamarin-Project\GuideForDDOn\GuideForDDOn.Droid\obj\Debug\android\assets\System.dll
 C:\Users\huazi\Documents\Git\Xamarin-Project\GuideForDDOn\GuideForDDOn.Droid\obj\Debug\android\assets\System.Net.Http.dll
 C:\Users\huazi\Documents\Git\Xamarin-Project\GuideForDDOn\GuideForDDOn.Droid\obj\Debug\android\assets\System.Xml.dll
+C:\Users\huazi\Documents\Git\Xamarin-Project\GuideForDDOn\GuideForDDOn.Droid\obj\Debug\android\assets\System.Xml.Linq.dll
+C:\Users\huazi\Documents\Git\Xamarin-Project\GuideForDDOn\GuideForDDOn.Droid\obj\Debug\android\assets\System.Numerics.dll
 C:\Users\huazi\Documents\Git\Xamarin-Project\GuideForDDOn\GuideForDDOn.Droid\obj\Debug\android\assets\System.Runtime.Serialization.dll
 C:\Users\huazi\Documents\Git\Xamarin-Project\GuideForDDOn\GuideForDDOn.Droid\obj\Debug\android\assets\System.ServiceModel.Internals.dll
+C:\Users\huazi\Documents\Git\Xamarin-Project\GuideForDDOn\GuideForDDOn.Droid\obj\Debug\android\assets\Mono.CSharp.dll
 C:\Users\huazi\Documents\Git\Xamarin-Project\GuideForDDOn\GuideForDDOn.Droid\obj\Debug\android\assets\Mono.Security.dll

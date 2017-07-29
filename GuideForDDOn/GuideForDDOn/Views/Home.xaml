@@ -5,7 +5,7 @@
              xmlns:controls="clr-namespace:GuideForDDOn.Date;assembly=GuideForDDOn.Droid"
              x:Class="GuideForDDOn.Views.Home"
              xmlns:xfg="clr-namespace:XFGloss;assembly=XFGloss"
-             Title="Home">
+             Title="{Binding Labels.TitleHome}">
     <xfg:ContentPageGloss.BackgroundGradient>
         <xfg:Gradient Rotation="0">
             <xfg:GradientStep StepColor="#a5d3f3" StepPercentage="0" />

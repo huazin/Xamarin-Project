@@ -6,14 +6,16 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using Xamarin.Forms;
 
-namespace GuideForDDOn.ViewModel 
+namespace GuideForDDOn.ViewModel
 {
     public class MonstroDetalhesViewModel
     {
         ContentPage page;
         private MonstroDAO dao;
-        private SQLiteConnection con;
         private ObservableCollection<Monstro> listRef;
+        private LabelsIdiomas labels;
+
+        public LabelsIdiomas Labels { get { return LabelsIdiomasDAO.Label; } }
 
         public ObservableCollection<Monstro> ListRef
         {
@@ -26,45 +28,37 @@ namespace GuideForDDOn.ViewModel
                 listRef = value;
             }
         }
-        public MonstroDetalhesViewModel(SQLiteConnection Con, List<String> Nome,ContentPage Page)
+
+        public MonstroDetalhesViewModel(List<String> Nome, ContentPage Page)
         {
-            this.con = Con;
             this.page = Page;
             try
             {
-                this.dao = new MonstroDAO(con);
+                this.dao = new MonstroDAO();
                 int i = 0;
                 listRef = new ObservableCollection<Monstro>();
-                
-                    foreach (var a in Nome)
-                    {
+                foreach (var a in Nome)
+                {
                     try
                     {
                         listRef.Add(dao.GetMonstroExpecifico(Nome[i]));
                     }
                     catch (ExceptionNula e)
                     {
-                        this.page.DisplayAlert("Erro", "Inimigo não encontrado, Por favor entra em contanto para correção", "OK");
+                        this.page.DisplayAlert(LabelsIdiomasDAO.Label.Error, LabelsIdiomasDAO.Label.MonsterNotFound, "OK");
                     }
                     i++;
                 }
-                
+
 
             }
             catch (ExceptionNula e)
             {
             }
         }
-        public MonstroDetalhesViewModel(SQLiteConnection Con, int x)
+        public MonstroDetalhesViewModel(int x)
         {
-            this.con = Con;
-            this.dao = new MonstroDAO(con);
-            listRef = dao.GetOne(x);
-        }
-        public MonstroDetalhesViewModel(int x, SQLiteConnection Con)
-        {
-            this.con = Con;
-            this.dao = new MonstroDAO(con);
+            this.dao = new MonstroDAO();
             listRef = dao.GetExpecifico(x);
         }
     }

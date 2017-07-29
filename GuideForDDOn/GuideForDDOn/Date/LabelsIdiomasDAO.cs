@@ -1,26 +1,27 @@
 ﻿using GuideForDDOn.Model;
+using Newtonsoft.Json;
 using SQLite;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace GuideForDDOn.Date
 {
     public class LabelsIdiomasDAO
     {
-        public LabelsIdiomasDAO()
-        {
-        }
+        static public LabelsIdiomas Label { get; set; }
 
-        public LabelsIdiomas Get()
+        static public void Reload()
         {
-            return ConfiguracaoDAO.conexao.Get<LabelsIdiomas>(p => p.idiomaid == ConfiguracaoDAO.Conf.IdiomaPadrao);
+            Label = JsonConvert.DeserializeObject<LabelsIdiomas>(WebService.Get("labelsidiomas", ConfiguracaoDAO.Conf.IdiomaPadrao.ToString()));
+            //Label =  ConfiguracaoDAO.conexao.Get<LabelsIdiomas>(p => p.idiomaid == ConfiguracaoDAO.Conf.IdiomaPadrao);
         }
 
         public List<LabelsIdiomas> GetAll()
         {
-            return new List<LabelsIdiomas>(ConfiguracaoDAO.conexao.Table<LabelsIdiomas>());
+            return JsonConvert.DeserializeObject<List<LabelsIdiomas>>(WebService.Get("labelsidiomas", "0"));
         }
     }
 }
