@@ -13,6 +13,7 @@
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Date\ConfiguracaoDAO.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Date\EspecieDao.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Date\ExecptionNula.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Date\HabilidadeDAO.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Date\ISqLite.cs" />
@@ -27,6 +28,7 @@
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Model\Configuracao.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\Especie.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\Habilidades.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\Job.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\LabelsIdiomas.cs" />

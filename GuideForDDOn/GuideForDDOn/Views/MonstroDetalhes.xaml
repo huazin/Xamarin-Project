@@ -11,24 +11,24 @@
                     <ViewCell>
                         <ViewCell.View>
                             <StackLayout Orientation= "Vertical" VerticalOptions="FillAndExpand">
-                                <Label Text= "{Binding ListRef.Nome}" TextColor="#228B22" FontSize="18" HorizontalOptions="Center"/>
+                                <Label Text= "{Binding Nome}" TextColor="#228B22" FontSize="18" HorizontalOptions="Center"/>
                                 <StackLayout Orientation="Horizontal">
                                     <Label Text= "{Binding Labels.apelido}" TextColor="#00FF7F"/>
-                                    <Label Text= "{Binding ListRef.apelido}"/>
+                                    <Label Text= "{Binding apelido}"/>
                                 </StackLayout>
                                 <StackLayout Orientation="Horizontal" VerticalOptions="FillAndExpand">
                                     <Label Text= "{Binding Labels.especie}" TextColor="#00FF7F"/>
-                                    <Label Text= "{Binding ListRef.especie}"/>
+                                    <Label Text= "{Binding especie.nome}"/>
                                 </StackLayout>
                                 <Label Text= "{Binding Labels.pontoFraco}" TextColor="#00FF7F"/>
-                                <Label Text= "{Binding ListRef.pontoFraco}"/>
+                                <Label Text= "{Binding pontoFraco}"/>
                                     <Label Text= "{Binding Labels.elementoFraco}" TextColor="#00FF7F"/>
-                                <Label Text= "{Binding ListRef.elementoFraco}"/>
+                                <Label Text= "{Binding elementoFraco}"/>
                                 <Label Text= "{Binding Labels.drop}" TextColor="#00FF7F"/>
-                                <Label Text= "{Binding ListRef.drop}"/>
+                                <Label Text= "{Binding drop}"/>
                                 <Label Text=""/>
                                 <Label Text= "{Binding Labels.localizacao}" TextColor="#00FF7F"/>
-                                <Label Text= "{Binding ListRef.localizacao}"/>
+                                <Label Text= "{Binding localizacao}"/>
                                 <Label Text=""/>
                             </StackLayout>
                         </ViewCell.View>

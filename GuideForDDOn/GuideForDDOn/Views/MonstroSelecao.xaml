@@ -4,7 +4,7 @@
              x:Class="GuideForDDOn.Views.MonstroSelecao"
              xmlns:xfg="clr-namespace:XFGloss;assembly=XFGloss"
              xmlns:controls="clr-namespace:GuideForDDOn.Date;assembly=GuideForDDOn.Droid"
-             Title="{Binding ListRef[0].especie}">
+             Title="{Binding ListRef[0].Especie.Nome}">
     <xfg:ContentPageGloss.BackgroundGradient>
         <xfg:Gradient Rotation="0">
             <xfg:GradientStep StepColor="#a5d3f3" StepPercentage="0" />
@@ -20,8 +20,8 @@
                     <ViewCell>
                         <ViewCell.View>
                             <StackLayout Orientation= "Vertical" VerticalOptions="FillAndExpand">
-                                <Label Text= "{Binding Labels.NomeMonstro}" TextColor="#00FF7F"/>
-                                <Label Text= "{Binding Labels.apelido}"/>
+                                <Label Text= "{Binding nome}" TextColor="#00FF7F" XAlign="Center"/>
+                                <Label Text= "{Binding apelido}" XAlign="Center"/>
                             </StackLayout>
                         </ViewCell.View>
                     </ViewCell>

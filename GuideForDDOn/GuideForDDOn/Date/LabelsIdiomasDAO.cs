@@ -21,7 +21,7 @@ namespace GuideForDDOn.Date
 
         public List<LabelsIdiomas> GetAll()
         {
-            return JsonConvert.DeserializeObject<List<LabelsIdiomas>>(WebService.Get("labelsidiomas", "0"));
+            return JsonConvert.DeserializeObject<List<LabelsIdiomas>>(WebService.Get("labelsidiomas", string.Empty));
         }
     }
 }

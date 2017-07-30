@@ -5,6 +5,7 @@ using Newtonsoft;
 using System.Net.Http;
 using Newtonsoft.Json;
 using System.Threading.Tasks;
+using System.Net;
 
 namespace GuideForDDOn.Date
 {
@@ -25,12 +26,12 @@ namespace GuideForDDOn.Date
             client = new HttpClient();
             client.MaxResponseContentBufferSize = 256000;
 
-            string resul = GetRes().Result;
-            return resul;
+            return GetRes().Result;
         }
         static private async Task<string> GetRes()
         {
             var uri = new Uri(string.Format(Url + "/" + Controller + "/" + Arguments, string.Empty));
+            ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12;
             var response = await client.GetAsync(uri).ConfigureAwait(continueOnCapturedContext: false);
             if (response.IsSuccessStatusCode)
             {

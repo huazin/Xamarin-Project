@@ -1,4 +1,5 @@
-﻿using GuideForDDOn.ViewModel;
+﻿using GuideForDDOn.Model;
+using GuideForDDOn.ViewModel;
 using SQLite;
 using System;
 using System.Collections.Generic;
@@ -12,7 +13,7 @@ namespace GuideForDDOn.Views
 {
 	public partial class MonstroSelecao : ContentPage
 	{
-        public MonstroSelecao(int tipo, string especie)
+        public MonstroSelecao(int tipo, Especie especie)
         {
             MonstroSelecaoViewModel vm = new MonstroSelecaoViewModel(tipo, especie, this);
             BindingContext = vm;

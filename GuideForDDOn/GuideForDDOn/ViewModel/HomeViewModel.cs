@@ -46,22 +46,22 @@ namespace GuideForDDOn.ViewModel
         public void SmallFun()
         {
             MonstrosSeparacao Tela = new MonstrosSeparacao();
-            MonstroDAO dao = new MonstroDAO();
-            ObservableCollection<Monstro> listRef = dao.GetAllEspecie(1, ConfiguracaoDAO.Conf.IdiomaPadrao);
+            EspecieDao dao = new EspecieDao();
+            ObservableCollection<Especie> listRef = dao.GetAll(1);
             foreach (var a in listRef)
             {
-                Tela.Children.Add(new MonstroSelecao( a.categoria, a.especie));
+                Tela.Children.Add(new MonstroSelecao(1, a));
             }
             this.page.Navigation.PushAsync(Tela);
         }
         public void BigFun()
         {
             MonstrosSeparacao Tela = new MonstrosSeparacao();
-            MonstroDAO dao = new MonstroDAO();
-            ObservableCollection<Monstro> listRef = dao.GetAllEspecie(2, ConfiguracaoDAO.Conf.IdiomaPadrao);
+            EspecieDao dao = new EspecieDao();
+            ObservableCollection<Especie> listRef = dao.GetAll(2);
             foreach (var a in listRef)
             {
-                Tela.Children.Add(new MonstroSelecao(2, a.especie));
+                Tela.Children.Add(new MonstroSelecao(2, a));
             }
             this.page.Navigation.PushAsync(Tela);
         }

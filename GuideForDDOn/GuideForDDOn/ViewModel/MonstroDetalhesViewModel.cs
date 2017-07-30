@@ -13,8 +13,6 @@ namespace GuideForDDOn.ViewModel
         ContentPage page;
         private MonstroDAO dao;
         private ObservableCollection<Monstro> listRef;
-        private LabelsIdiomas labels;
-
         public LabelsIdiomas Labels { get { return LabelsIdiomasDAO.Label; } }
 
         public ObservableCollection<Monstro> ListRef

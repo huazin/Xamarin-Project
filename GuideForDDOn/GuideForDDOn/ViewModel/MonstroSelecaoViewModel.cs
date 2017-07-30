@@ -40,6 +40,7 @@ namespace GuideForDDOn.ViewModel
                 OnPropertyChanged("ItemSelecao");
             }
         }
+
         private void OnPropertyChanged(string nome)
         {
             Views.MonstroDetalhes tela = new Views.MonstroDetalhes(itemSelecao.id_Monstro);
@@ -47,11 +48,11 @@ namespace GuideForDDOn.ViewModel
             this.page.FindByName<ListView>("ListaDaView").SelectedItem = null;
         }
 
-        public MonstroSelecaoViewModel(int categoria, string especie, ContentPage Page)
+        public MonstroSelecaoViewModel(int categoria, Especie especie, ContentPage Page)
         {
             this.page = Page;
             MonstroDAO dao = new MonstroDAO();
-            listRef = dao.GetAllForEspecie(categoria, especie);
+            listRef = dao.GetAllForEspecie(categoria, especie.Id_Especie);
         }
     }
 }

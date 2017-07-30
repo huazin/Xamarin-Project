@@ -12,24 +12,19 @@ namespace GuideForDDOn.Date
     {
         public Monstro GetMonstroExpecifico(string x)
         {
-                Monstro Obj = JsonConvert.DeserializeObject<Monstro>(WebService.Get("Monstro", "?nome="+ x + "&idioma=" + ConfiguracaoDAO.Conf.IdiomaPadrao)); ;
+                Monstro Obj = JsonConvert.DeserializeObject<Monstro>(WebService.Get("Monstro", "?apelido="+ x + "&idioma=" + ConfiguracaoDAO.Conf.IdiomaPadrao)); ;
                 return Obj;
         }
         public ObservableCollection<Monstro> GetExpecifico(int id)
         {
-            ObservableCollection<Monstro> Obj = JsonConvert.DeserializeObject<ObservableCollection<Monstro>>(WebService.Get("Monstro", ""+ id));
-            return Obj;
+            return JsonConvert.DeserializeObject<ObservableCollection<Monstro>>(WebService.Get("Monstro", ""+ id));
         }
 
-        internal ObservableCollection<Monstro> GetAllEspecie(int categoria,int idioma)
+        internal ObservableCollection<Monstro> GetAllForEspecie(int categoria, int especie)
         {
-            return JsonConvert.DeserializeObject<ObservableCollection<Monstro>>(WebService.Get("MonstrosEspecies", "?categoria=" + categoria + "&idioma=" + idioma));
-
-        }
-
-        internal ObservableCollection<Monstro> GetAllForEspecie(int categoria, string especie)
-        {
-            return JsonConvert.DeserializeObject<ObservableCollection<Monstro>>(WebService.Get("MonstrosEspecies", "?categoria=" + categoria + "&especie=" + especie + "&idioma=" + ConfiguracaoDAO.Conf.IdiomaPadrao));
+            return JsonConvert.DeserializeObject<ObservableCollection<Monstro>>(
+                    WebService.Get("Monstro", "?categoria=" + categoria + "&id_especie=" + especie + "&idioma=" + ConfiguracaoDAO.Conf.IdiomaPadrao)
+                    );
         }
     }
 }

@@ -375,3 +375,7 @@ FakesAssemblies/
 *.pdb
 *.cache
 *.txt
+*.apk
+*.dll
+*.mdb
+*.pdb

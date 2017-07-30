@@ -1,4 +1,5 @@
-﻿using SQLite;
+﻿using Newtonsoft.Json;
+using SQLite;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,15 +12,18 @@ namespace GuideForDDOn.Model
     {
         [PrimaryKey, AutoIncrement]
         public int id_Monstro { get; set; }
-        public int categoria { get; private set; }
-        public string nome { get; private set; }
-        public string apelido { get; private set; }
-        public string especie { get; private set; }
-        public string pontoFraco { get; private set; }
-        public string obs { get; private set; }
-        public string elementoFraco { get; private set; }
-        public string drop { get; private set; }
-        public string localizacao { get; private set; }
+
+        public int categoria { get; set; }
+        public string nome { get; set; }
+        public string apelido { get; set; }
+        public int Id_Especie { get; set; }
+        public virtual Especie Especie { get; set; }
+        public string pontoFraco { get; set; }
+        public string obs { get; set; }
+        public string elementoFraco { get; set; }
+        public string drop { get; set; }
+        public string localizacao { get; set; }
+
         public int idiomaid { get; set; }
 
 
