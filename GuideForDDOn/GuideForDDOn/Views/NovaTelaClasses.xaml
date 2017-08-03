@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="GuideForDDOn.Views.NovaTelaClasses"
              xmlns:xfg="clr-namespace:XFGloss;assembly=XFGloss"
+             xmlns:controls="clr-namespace:GuideForDDOn.Date;assembly=GuideForDDOn.Droid"
              Title="Classes">
     <xfg:ContentPageGloss.BackgroundGradient>
         <xfg:Gradient Rotation="0">
@@ -12,119 +13,35 @@
             <xfg:GradientStep StepColor="#3f6197" StepPercentage="1" />
         </xfg:Gradient>
     </xfg:ContentPageGloss.BackgroundGradient>
-    <ContentPage.Resources>
-        <ResourceDictionary>
-            <Style x:Key="ImagemDano" TargetType="Image">
-                <Setter Property="Source" Value="GradRed.png"/>
-                <Setter Property="HeightRequest" Value="20"/>
-                <Setter Property="Aspect" Value="AspectFill"/>
-                <Setter Property="RelativeLayout.WidthConstraint" Value="{ConstraintExpression Type=RelativeToParent, Property=Width}"/>
-                <Setter Property="RelativeLayout.HeightConstraint" Value="{ConstraintExpression Type=RelativeToParent, Property=Height}"/>
-            </Style>
-            <Style x:Key="ImagemSup" TargetType="Image">
-                <Setter Property="Source" Value="GradYell.png"/>
-                <Setter Property="HeightRequest" Value="20"/>
-                <Setter Property="Aspect" Value="AspectFill"/>
-                <Setter Property="RelativeLayout.WidthConstraint" Value="{ConstraintExpression Type=RelativeToParent, Property=Width}"/>
-                <Setter Property="RelativeLayout.HeightConstraint" Value="{ConstraintExpression Type=RelativeToParent, Property=Height}"/>
-            </Style>
-            <Style x:Key="ImagemTank" TargetType="Image">
-                <Setter Property="Source" Value="GradBlue.png"/>
-                <Setter Property="HeightRequest" Value="20"/>
-                <Setter Property="Aspect" Value="AspectFill"/>
-                <Setter Property="RelativeLayout.WidthConstraint" Value="{ConstraintExpression Type=RelativeToParent, Property=Width}"/>
-                <Setter Property="RelativeLayout.HeightConstraint" Value="{ConstraintExpression Type=RelativeToParent, Property=Height}"/>
-            </Style>
-            <Style x:Key="ImagemSecre" TargetType="Image">
-                <Setter Property="Source" Value="GradPink.png"/>
-                <Setter Property="HeightRequest" Value="20"/>
-                <Setter Property="Aspect" Value="AspectFill"/>
-                <Setter Property="RelativeLayout.WidthConstraint" Value="{ConstraintExpression Type=RelativeToParent, Property=Width}"/>
-                <Setter Property="RelativeLayout.HeightConstraint" Value="{ConstraintExpression Type=RelativeToParent, Property=Height}"/>
-            </Style>
-            <Style x:Key="Bot" TargetType="Button">
-                <Setter Property="BackgroundColor" Value="Transparent"/>
-                <Setter Property="TextColor" Value="White" />
-                <Setter Property="RelativeLayout.WidthConstraint" Value="{ConstraintExpression Type=RelativeToParent, Property=Width}"/>
-                <Setter Property="RelativeLayout.HeightConstraint" Value="{ConstraintExpression Type=RelativeToParent, Property=Height}"/>
-            </Style>
-        </ResourceDictionary>
-    </ContentPage.Resources>
     <StackLayout Orientation="Vertical" >
-        <StackLayout >
-            <Grid VerticalOptions="StartAndExpand" HorizontalOptions="StartAndExpand">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*"/>
-                </Grid.ColumnDefinitions>
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="15*"/>
-                </Grid.RowDefinitions>
-                <Image Aspect="Fill" Source="ImagemTelaClasses.png" HeightRequest="150" HorizontalOptions="FillAndExpand"/>
-            </Grid>
-        </StackLayout>
-        <StackLayout Margin="1" Orientation="Vertical" VerticalOptions="FillAndExpand">
-            <Grid VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="*"/>
-                </Grid.RowDefinitions>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*"/>
-                </Grid.ColumnDefinitions>
-                <RelativeLayout x:Name="La1"  Grid.Row="0" Grid.Column="0" HorizontalOptions="Fill" VerticalOptions="Fill">
-                    <Image Style="{StaticResource ImagemDano}"/>
-                    <Button Text="Fighter" Style="{StaticResource Bot}" Command="{Binding BotaoClasse}" CommandParameter="1"/>
-                </RelativeLayout>
-
-                <RelativeLayout Grid.Row="0" Grid.Column="1" HorizontalOptions="Fill" VerticalOptions="Fill">
-                    <Image Style="{StaticResource ImagemDano}"/>
-                    <Button Text="Hunter" Style="{StaticResource Bot}" Command="{Binding BotaoClasse}" CommandParameter="2"/>
-                </RelativeLayout>
-
-                <RelativeLayout Grid.Row="0" Grid.Column="2" HorizontalOptions="Fill" VerticalOptions="Fill">
-                    <Image Style="{StaticResource ImagemSup}"/>
-                    <Button Text="Priest" Style="{StaticResource Bot}" Command="{Binding BotaoClasse}" CommandParameter="3"/>
-                </RelativeLayout>
-
-                <RelativeLayout Grid.Row="1" Grid.Column="0" HorizontalOptions="Fill" VerticalOptions="Fill">
-                    <Image Style="{StaticResource ImagemTank}"/>
-                    <Button Text="Shield Sage" Style="{StaticResource Bot}" Command="{Binding BotaoClasse}" CommandParameter="4"/>
-                </RelativeLayout>
-
-                <RelativeLayout Grid.Row="1" Grid.Column="1" HorizontalOptions="Fill" VerticalOptions="Fill">
-                    <Image Style="{StaticResource ImagemDano}"/>
-                    <Button Text="Sorcerer" Style="{StaticResource Bot}" Command="{Binding BotaoClasse}" CommandParameter="5"/>
-                </RelativeLayout>
-
-                <RelativeLayout Grid.Row="1" Grid.Column="2" HorizontalOptions="Fill" VerticalOptions="Fill">
-                    <Image Style="{StaticResource ImagemDano}"/>
-                    <Button Text="Sekker" Style="{StaticResource Bot}" Command="{Binding BotaoClasse}" CommandParameter="6"/>
-                </RelativeLayout>
-
-                <RelativeLayout Grid.Row="2" Grid.Column="0" HorizontalOptions="Fill" VerticalOptions="Fill">
-                    <Image Style="{StaticResource ImagemSup}"/>
-                    <Button Text="Elemental Archer" Style="{StaticResource Bot}" Command="{Binding BotaoClasse}" CommandParameter="7"/>
-                </RelativeLayout>
-
-                <RelativeLayout Grid.Row="2" Grid.Column="1" HorizontalOptions="Fill" VerticalOptions="Fill">
-                    <Image Style="{StaticResource ImagemDano}"/>
-                    <Button Text="Warrior" Grid.Row="2" Grid.Column="1"  Style="{StaticResource Bot}" Command="{Binding BotaoClasse}" CommandParameter="8"/>
-                </RelativeLayout>
-                
-                <RelativeLayout Grid.Row="2" Grid.Column="2" HorizontalOptions="Fill" VerticalOptions="Fill">
-                    <Image Style="{StaticResource ImagemTank}"/>
-                    <Button Text="Alchemist" Style="{StaticResource Bot}" Command="{Binding BotaoClasse}" CommandParameter="9"/>
-                </RelativeLayout>
-
-                <RelativeLayout Grid.Row="3" Grid.Column="0" HorizontalOptions="Fill" VerticalOptions="Fill">
-                    <Image Style="{StaticResource ImagemSup}"/>
-                    <Button Text="Spirit Lancer" Style="{StaticResource Bot}" Command="{Binding BotaoClasse}" CommandParameter="10" />
-                </RelativeLayout>
-
-                <RelativeLayout Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="2" HorizontalOptions="Fill" VerticalOptions="Fill">
-                    <Image Style="{StaticResource ImagemSecre}"/>
-                    <Button Text="Passivas Secretas" Style="{StaticResource Bot}"/>
-                </RelativeLayout>
-            </Grid>
-        </StackLayout>
+        <Grid VerticalOptions="StartAndExpand" HorizontalOptions="StartAndExpand">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="15*"/>
+            </Grid.RowDefinitions>
+            <Image Aspect="Fill" Source="ImagemTelaClasses.png" HeightRequest="150" HorizontalOptions="FillAndExpand"/>
+        </Grid>
+        <ListView ItemsSource= "{Binding ListRef}" x:Name="ListaDaView" SeparatorColor="AliceBlue"  SelectedItem="{Binding ItemSelecao, Mode=TwoWay}" VerticalOptions="FillAndExpand">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <ViewCell.View>
+                            <StackLayout Orientation= "Vertical" VerticalOptions="FillAndExpand">
+                                <Label Text= "{Binding Nome}" TextColor="#00FF7F" XAlign="Center"/>
+                                <Label Text= "{Binding TipoClasse.Nome}" XAlign="Center"/>
+                            </StackLayout>
+                        </ViewCell.View>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <Grid RowSpacing="0" VerticalOptions="End">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50"/>
+            </Grid.RowDefinitions>
+            <controls:MyBanner Grid.Row="0"/>
+        </Grid>
     </StackLayout>
 </ContentPage>

@@ -7,15 +7,19 @@ namespace GuideForDDOn.Model
 {
     public class Job
     {
-        [PrimaryKey, AutoIncrement]
-        public int id_Job { get; set; }
-        public string Nome { get; private set; }
-        public string Tipo { get; private set; }
+        public int Id_Job { get; set; }
+        public string Nome { get; set; }
+        public string Descricao { get; set; }
+        public int Id_Tipo { get; set; }
 
-        public Job() { }
+
+        public virtual TipoClasse TipoClasse { get; set; }
+        public virtual Passivas Passivas { get; set; }
+        public virtual Habilidades Habilidades { get; set; }
+
         public String Selecao()
         {
-            return id_Job + "";
+            return Id_Job + "";
         }
     }
 }

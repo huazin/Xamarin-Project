@@ -20,7 +20,6 @@ namespace GuideForDDOn.Droid
     public class SqLite_Android : ISqLite
     {
         String Folder = System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal);
-        static String nome = "DDON.db3";
 
         public SqLite_Android()
         {

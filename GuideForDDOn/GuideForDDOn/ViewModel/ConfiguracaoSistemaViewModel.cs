@@ -13,7 +13,6 @@ namespace GuideForDDOn.ViewModel
     public class ConfiguracaoSistemaViewModel
     {
         private ObservableCollection<string> idiomaTxt;
-        private int idiomaIndex;
         private List<LabelsIdiomas> Labels;
         private int selectedindex;
         private ContentPage Page;
@@ -40,11 +39,6 @@ namespace GuideForDDOn.ViewModel
             set { IdiomaTxt = value; }
         }
 
-        public int IdiomaIndex
-        {
-            get { return IdiomaIndex; }
-            set { IdiomaIndex = value; }
-        }
 
         public ConfiguracaoSistemaViewModel(ContentPage page)
         {

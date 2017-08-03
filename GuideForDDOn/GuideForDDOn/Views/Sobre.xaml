@@ -21,10 +21,10 @@
             <Label Text="{Binding Versao}"/>
             <Label Text=""/>
             <Label Text="{Binding Labels.Links}"/>
-            <Label Text="{Binding Sobre.Links}" TextColor="#FFFFFF"/>
+            <Label Text="{Binding Links}" TextColor="#FFFFFF"/>
             <Label Text=""/>
             <Label Text="{Binding Labels.Equip}"/>
-            <Label Text="{Binding Sobre.Equip}" TextColor="#FFFFFF" VerticalOptions="StartAndExpand"/>
+            <Label Text="{Binding Equip}" TextColor="#FFFFFF" VerticalOptions="StartAndExpand"/>
 
             <Grid RowSpacing="0" VerticalOptions="End">
                 <Grid.RowDefinitions>

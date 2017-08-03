@@ -15,7 +15,6 @@ namespace GuideForDDOn.ViewModel
     public class ClassesModelView : INotifyPropertyChanged
     {
         private ContentPage page;
-        private SQLiteConnection con;
         private Job job;
         private JobDAO dao;
         private ObservableCollection<Job> listRef;
@@ -69,14 +68,13 @@ namespace GuideForDDOn.ViewModel
             //Views.InfoDasJobs tela = new Views.InfoDasJobs();
             //tela.Children.Add(new InfoHabilidades(/*itemSelecao.id_Job*/ Convert.ToInt32(nome), con));
             //tela.Children.Add(new InfoPassivas(/*itemSelecao.id_Job*/ Convert.ToInt32(nome), con));
-            this.page.Navigation.PushAsync(new NovoInfoJob(con,nome));
+            //this.page.Navigation.PushAsync(new NovoInfoJob(con,nome));
             ////this.page.FindByName<ListView>("ListaDaView").SelectedItem = null;
         }
-        public ClassesModelView(ContentPage Page, SQLiteConnection Con)
+        public ClassesModelView(ContentPage Page)
         {
             this.page = Page;
-            this.con = Con;
-            this.dao = new JobDAO(con);
+            this.dao = new JobDAO();
             this.listRef = dao.GetAll();
             this.BotaoClasse = new Command<String>(OnPropertyChangedAsync);
         }

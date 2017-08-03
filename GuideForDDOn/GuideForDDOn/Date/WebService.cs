@@ -15,7 +15,6 @@ namespace GuideForDDOn.Date
         static private HttpClient client;
         static private string Controller;
         static private string Arguments;
-        static private string Resultado;
 
 
         static public string Get(string control, string Argu)
@@ -23,9 +22,10 @@ namespace GuideForDDOn.Date
             Controller = control;
             Arguments = Argu;
 
-            client = new HttpClient();
-            client.MaxResponseContentBufferSize = 256000;
-
+            client = new HttpClient()
+            {
+                MaxResponseContentBufferSize = 256000
+            };
             return GetRes().Result;
         }
         static private async Task<string> GetRes()

@@ -379,3 +379,11 @@ FakesAssemblies/
 *.dll
 *.mdb
 *.pdb
+*.config
+*.sln
+*.apk
+*.dll
+*.mdb
+*.pdb
+*.txt
+*.cache

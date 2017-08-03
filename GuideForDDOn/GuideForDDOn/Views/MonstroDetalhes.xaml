@@ -2,32 +2,42 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="GuideForDDOn.Views.MonstroDetalhes"
+             xmlns:xfg="clr-namespace:XFGloss;assembly=XFGloss"
              xmlns:controls="clr-namespace:GuideForDDOn.Date;assembly=GuideForDDOn.Droid"
              Title="{Binding Labels.TitleMonstros}">
+    <xfg:ContentPageGloss.BackgroundGradient>
+        <xfg:Gradient Rotation="0">
+            <xfg:GradientStep StepColor="#a5d3f3" StepPercentage="0" />
+            <xfg:GradientStep StepColor="#a5d3f3" StepPercentage=".2" />
+            <xfg:GradientStep StepColor="#3f6197" StepPercentage=".7" />
+            <xfg:GradientStep StepColor="#3f6197" StepPercentage="1" />
+        </xfg:Gradient>
+    </xfg:ContentPageGloss.BackgroundGradient>
     <StackLayout Orientation= "Vertical" VerticalOptions="FillAndExpand">
-        <ListView ItemsSource="{Binding ListRef}" VerticalOptions="FillAndExpand" HasUnevenRows="true" SeparatorColor="AliceBlue">
+        <ListView ItemsSource="{Binding ListRef}" x:Name="ListaDaView" SelectedItem="{Binding ItemSelecao, Mode=TwoWay}" VerticalOptions="FillAndExpand" HasUnevenRows="true" SeparatorColor="AliceBlue">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
                         <ViewCell.View>
                             <StackLayout Orientation= "Vertical" VerticalOptions="FillAndExpand">
-                                <Label Text= "{Binding Nome}" TextColor="#228B22" FontSize="18" HorizontalOptions="Center"/>
+                                <Label Text= "Japanese name:" TextColor="#228B22" FontSize="18" XAlign="Center"/>
+                                <Label Text= "{Binding nome}" TextColor="#228B22" FontSize="18" XAlign="Center"/>
                                 <StackLayout Orientation="Horizontal">
-                                    <Label Text= "{Binding Labels.apelido}" TextColor="#00FF7F"/>
+                                    <Label Text= "Name:" TextColor="#00FF7F"/>
                                     <Label Text= "{Binding apelido}"/>
                                 </StackLayout>
                                 <StackLayout Orientation="Horizontal" VerticalOptions="FillAndExpand">
-                                    <Label Text= "{Binding Labels.especie}" TextColor="#00FF7F"/>
-                                    <Label Text= "{Binding especie.nome}"/>
+                                    <Label Text= "Species:" TextColor="#00FF7F"/>
+                                    <Label Text= "{Binding Especie.Nome}"/>
                                 </StackLayout>
-                                <Label Text= "{Binding Labels.pontoFraco}" TextColor="#00FF7F"/>
+                                <Label Text= "Weakness:" TextColor="#00FF7F"/>
                                 <Label Text= "{Binding pontoFraco}"/>
-                                    <Label Text= "{Binding Labels.elementoFraco}" TextColor="#00FF7F"/>
+                                <Label Text= "Drops:" TextColor="#00FF7F"/>
                                 <Label Text= "{Binding elementoFraco}"/>
-                                <Label Text= "{Binding Labels.drop}" TextColor="#00FF7F"/>
+                                <Label Text= "Locations:" TextColor="#00FF7F"/>
                                 <Label Text= "{Binding drop}"/>
                                 <Label Text=""/>
-                                <Label Text= "{Binding Labels.localizacao}" TextColor="#00FF7F"/>
+                                <Label Text= "About" TextColor="#00FF7F"/>
                                 <Label Text= "{Binding localizacao}"/>
                                 <Label Text=""/>
                             </StackLayout>

@@ -20,7 +20,7 @@ namespace GuideForDDOn.Views
         }
         public MonstroDetalhes(int x)
         {
-            MonstroDetalhesViewModel vm = new MonstroDetalhesViewModel(x);
+            MonstroDetalhesViewModel vm = new MonstroDetalhesViewModel(x,this);
             BindingContext = vm;
             InitializeComponent();
         }

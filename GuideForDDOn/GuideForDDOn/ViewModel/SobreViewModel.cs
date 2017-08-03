@@ -11,7 +11,9 @@ namespace GuideForDDOn.ViewModel
     {
         public Sobres Sobre{ get; set; }
         public LabelsIdiomas Labels { get { return LabelsIdiomasDAO.Label; } }
-       // public string Versao { get { return (Labels.Versao + " " + ConfiguracaoDAO.Versao).Replace(",","."); } }
+        public string Links { get { return Sobre.Links.Replace("%", Environment.NewLine); } }
+        public string Equip { get { return Sobre.Equip.Replace("%", Environment.NewLine); } }
+        public string Versao { get { return (Labels.Versao + " " + ConfiguracaoDAO.Versao).Replace(",","."); } }
 
         public SobreViewModel()
         {

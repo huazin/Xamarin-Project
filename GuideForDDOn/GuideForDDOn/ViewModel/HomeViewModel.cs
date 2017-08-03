@@ -14,7 +14,6 @@ namespace GuideForDDOn.ViewModel
     public class HomeViewModel
     {
         private ContentPage page;
-        private LabelsIdiomas labels;
 
         public LabelsIdiomas Labels { get { return LabelsIdiomasDAO.Label; } }
 
@@ -36,8 +35,8 @@ namespace GuideForDDOn.ViewModel
         }
         public void ClassesFun()
         {
-            //Views.NovaTelaClasses tela = new NovaTelaClasses(con);
-            //this.page.Navigation.PushAsync(tela);
+            Views.NovaTelaClasses tela = new NovaTelaClasses();
+            this.page.Navigation.PushAsync(tela);
 
 
             //Views.Classes Tela = new Views.Classes(con);

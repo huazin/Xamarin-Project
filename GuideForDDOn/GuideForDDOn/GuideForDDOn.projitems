@@ -35,6 +35,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Model\Monstro.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\Passivas.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\Sobres.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\TipoClasse.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\ClassesModelView.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\ConfiguracaoSistemaViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\HabilidadeDetalhesModelView.cs" />

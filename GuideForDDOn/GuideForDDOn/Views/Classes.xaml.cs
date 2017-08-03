@@ -12,9 +12,9 @@ namespace GuideForDDOn.Views
 {
 	public partial class Classes : ContentPage
 	{
-        public Classes(SQLiteConnection Con)
+        public Classes()
         {
-            ClassesModelView vm = new ClassesModelView(this, Con);
+            ClassesModelView vm = new ClassesModelView(this);
             BindingContext = vm;
             InitializeComponent();
         }

@@ -4,7 +4,7 @@
              x:Class="GuideForDDOn.Views.MonstroSelecao"
              xmlns:xfg="clr-namespace:XFGloss;assembly=XFGloss"
              xmlns:controls="clr-namespace:GuideForDDOn.Date;assembly=GuideForDDOn.Droid"
-             Title="{Binding ListRef[0].Especie.Nome}">
+             Title="{Binding Especie}">
     <xfg:ContentPageGloss.BackgroundGradient>
         <xfg:Gradient Rotation="0">
             <xfg:GradientStep StepColor="#a5d3f3" StepPercentage="0" />

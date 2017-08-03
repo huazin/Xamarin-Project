@@ -17,6 +17,10 @@ namespace GuideForDDOn.Model
         public string monster5 { get; set; }
         public string monster6 { get; set; }
 
-        public Passivas() { }
+
+        public int idiomaId { get; set; }
+
+        public virtual Job Job { get; set; }
+
     }
 }

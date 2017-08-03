@@ -15,9 +15,16 @@ namespace GuideForDDOn.Views
 	{
         public MonstroSelecao(int tipo, Especie especie)
         {
-            MonstroSelecaoViewModel vm = new MonstroSelecaoViewModel(tipo, especie, this);
-            BindingContext = vm;
-            InitializeComponent();
+            try
+            {
+                MonstroSelecaoViewModel vm = new MonstroSelecaoViewModel(tipo, especie, this);
+                BindingContext = vm;
+                InitializeComponent();
+            }
+            catch(Exception e)
+            {
+                var Msg = e.Message;
+            }
         }
     }
 }

@@ -12,9 +12,9 @@ namespace GuideForDDOn.Views
 {
 	public partial class NovaTelaClasses : ContentPage
 	{
-		public NovaTelaClasses (SQLiteConnection Con)
+		public NovaTelaClasses ()
 		{
-            ClassesModelView vm = new ClassesModelView(this, Con);
+            ClassesModelView vm = new ClassesModelView(this);
             BindingContext = vm;
             InitializeComponent ();
 		}

@@ -24,6 +24,10 @@ namespace GuideForDDOn.Model
         public String monster8 { get; set; }
         public String monster9 { get; set; }
 
+        public int idiomaId { get; set; }
+
+        public virtual Job Job { get; set; }
+
         public Habilidades() { }
         /*public Habilidades(int idh, int idc, string Nome,String Descricao, String Nivel,int NivelForSix,String Obs, String AddUp, String Add6, String Monster5, String Monster6, String Monster7, String Monster8, String Monster9)
         {

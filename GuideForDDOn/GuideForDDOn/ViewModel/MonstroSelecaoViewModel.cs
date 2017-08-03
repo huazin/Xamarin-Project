@@ -15,18 +15,16 @@ namespace GuideForDDOn.ViewModel
         private Monstro itemSelecao;
         private ObservableCollection<Monstro> listRef;
         private ContentPage page;
+        private string especie;
         public LabelsIdiomas Labels { get { return LabelsIdiomasDAO.Label; } }
 
+        public string Especie
+        {
+            get { return especie; } set { especie = value; }
+        }
         public ObservableCollection<Monstro> ListRef
         {
-            get
-            {
-                return listRef;
-            }
-            set
-            {
-                this.listRef = value;
-            }
+            get{ return listRef;} set{ this.listRef = value;}
         }
         public Monstro ItemSelecao
         {
@@ -51,6 +49,7 @@ namespace GuideForDDOn.ViewModel
         public MonstroSelecaoViewModel(int categoria, Especie especie, ContentPage Page)
         {
             this.page = Page;
+            this.Especie = especie.Nome;
             MonstroDAO dao = new MonstroDAO();
             listRef = dao.GetAllForEspecie(categoria, especie.Id_Especie);
         }

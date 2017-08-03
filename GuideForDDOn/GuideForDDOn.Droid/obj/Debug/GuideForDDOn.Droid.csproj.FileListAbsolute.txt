@@ -191,12 +191,12 @@ C:\Users\huazi\Documents\Estudo\Git\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid
 C:\Users\huazi\Documents\Estudo\Git\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\obj\Debug\res\drawable\iconhabilidades.png
 C:\Users\huazi\Documents\Estudo\Git\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\obj\Debug\GuideForDDOn.Droid.Views.treino1.xaml.g.cs
 C:\Users\huazi\Documents\Estudo\Git\GuideForDDOn\GuideForDDOn\GuideForDDOn.Droid\obj\Debug\GuideForDDOn.Droid.dll.mdb
-C:\Users\huazi\Documents\Git\Xamarin-Project\GuideForDDOn\GuideForDDOn.Droid\obj\Debug\GuideForDDOn.Droid.csprojResolveAssemblyReference.cache
 C:\Users\huazi\Documents\Git\Xamarin-Project\GuideForDDOn\GuideForDDOn.Droid\bin\Debug\GuideForDDOn.Droid.dll
 C:\Users\huazi\Documents\Git\Xamarin-Project\GuideForDDOn\GuideForDDOn.Droid\bin\Debug\GuideForDDOn.Droid.pdb
 C:\Users\huazi\Documents\Git\Xamarin-Project\GuideForDDOn\GuideForDDOn.Droid\bin\Debug\GuideForDDOn.Droid.apk
 C:\Users\huazi\Documents\Git\Xamarin-Project\GuideForDDOn\GuideForDDOn.Droid\bin\Debug\GuideForDDOn.Droid-Signed.apk
 C:\Users\huazi\Documents\Git\Xamarin-Project\GuideForDDOn\GuideForDDOn.Droid\bin\Debug\FormsViewGroup.dll
+C:\Users\huazi\Documents\Git\Xamarin-Project\GuideForDDOn\GuideForDDOn.Droid\bin\Debug\Newtonsoft.Json.dll
 C:\Users\huazi\Documents\Git\Xamarin-Project\GuideForDDOn\GuideForDDOn.Droid\bin\Debug\SQLite-net.dll
 C:\Users\huazi\Documents\Git\Xamarin-Project\GuideForDDOn\GuideForDDOn.Droid\bin\Debug\SQLitePCLRaw.batteries_green.dll
 C:\Users\huazi\Documents\Git\Xamarin-Project\GuideForDDOn\GuideForDDOn.Droid\bin\Debug\SQLitePCLRaw.batteries_v2.dll
@@ -221,6 +221,7 @@ C:\Users\huazi\Documents\Git\Xamarin-Project\GuideForDDOn\GuideForDDOn.Droid\bin
 C:\Users\huazi\Documents\Git\Xamarin-Project\GuideForDDOn\GuideForDDOn.Droid\bin\Debug\XFGloss.Droid.dll
 C:\Users\huazi\Documents\Git\Xamarin-Project\GuideForDDOn\GuideForDDOn.Droid\bin\Debug\FormsViewGroup.pdb
 C:\Users\huazi\Documents\Git\Xamarin-Project\GuideForDDOn\GuideForDDOn.Droid\bin\Debug\FormsViewGroup.dll.mdb
+C:\Users\huazi\Documents\Git\Xamarin-Project\GuideForDDOn\GuideForDDOn.Droid\bin\Debug\Newtonsoft.Json.xml
 C:\Users\huazi\Documents\Git\Xamarin-Project\GuideForDDOn\GuideForDDOn.Droid\bin\Debug\SQLite-net.xml
 C:\Users\huazi\Documents\Git\Xamarin-Project\GuideForDDOn\GuideForDDOn.Droid\bin\Debug\SQLite-net.dll.mdb
 C:\Users\huazi\Documents\Git\Xamarin-Project\GuideForDDOn\GuideForDDOn.Droid\bin\Debug\Xamarin.Forms.Core.pdb
@@ -233,6 +234,7 @@ C:\Users\huazi\Documents\Git\Xamarin-Project\GuideForDDOn\GuideForDDOn.Droid\bin
 C:\Users\huazi\Documents\Git\Xamarin-Project\GuideForDDOn\GuideForDDOn.Droid\bin\Debug\Xamarin.Forms.Xaml.dll.mdb
 C:\Users\huazi\Documents\Git\Xamarin-Project\GuideForDDOn\GuideForDDOn.Droid\bin\Debug\XFGloss.xml
 C:\Users\huazi\Documents\Git\Xamarin-Project\GuideForDDOn\GuideForDDOn.Droid\bin\Debug\XFGloss.Droid.xml
+C:\Users\huazi\Documents\Git\Xamarin-Project\GuideForDDOn\GuideForDDOn.Droid\obj\Debug\GuideForDDOn.Droid.csprojResolveAssemblyReference.cache
 C:\Users\huazi\Documents\Git\Xamarin-Project\GuideForDDOn\GuideForDDOn.Droid\obj\Debug\GuideForDDOn.Droid.MainPage.xaml.g.cs
 C:\Users\huazi\Documents\Git\Xamarin-Project\GuideForDDOn\GuideForDDOn.Droid\obj\Debug\GuideForDDOn.Droid.App.xaml.g.cs
 C:\Users\huazi\Documents\Git\Xamarin-Project\GuideForDDOn\GuideForDDOn.Droid\obj\Debug\GuideForDDOn.Droid.Views.Classes.xaml.g.cs
@@ -273,5 +275,3 @@ C:\Users\huazi\Documents\Git\Xamarin-Project\GuideForDDOn\GuideForDDOn.Droid\obj
 C:\Users\huazi\Documents\Git\Xamarin-Project\GuideForDDOn\GuideForDDOn.Droid\obj\Debug\android\assets\Xamarin.Forms.Core.dll.mdb
 C:\Users\huazi\Documents\Git\Xamarin-Project\GuideForDDOn\GuideForDDOn.Droid\obj\Debug\android\assets\Xamarin.Forms.Platform.Android.dll.mdb
 C:\Users\huazi\Documents\Git\Xamarin-Project\GuideForDDOn\GuideForDDOn.Droid\obj\Debug\android\assets\Xamarin.Forms.Xaml.dll.mdb
-C:\Users\huazi\Documents\Git\Xamarin-Project\GuideForDDOn\GuideForDDOn.Droid\bin\Debug\Newtonsoft.Json.dll
-C:\Users\huazi\Documents\Git\Xamarin-Project\GuideForDDOn\GuideForDDOn.Droid\bin\Debug\Newtonsoft.Json.xml

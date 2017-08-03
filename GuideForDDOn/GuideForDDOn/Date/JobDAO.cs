@@ -1,4 +1,5 @@
 ﻿using GuideForDDOn.Model;
+using Newtonsoft.Json;
 using SQLite;
 using System;
 using System.Collections.Generic;
@@ -9,7 +10,6 @@ namespace GuideForDDOn.Date
 {
     class JobDAO
     {
-        SQLiteConnection conexao;
         private ObservableCollection<Job> lista;
 
         public ObservableCollection<Job> Lissta
@@ -28,12 +28,7 @@ namespace GuideForDDOn.Date
 
         public ObservableCollection<Job> GetAll()
         {
-            return new ObservableCollection<Job>(conexao.Table<Job>());
-        }
-
-        public JobDAO(SQLiteConnection con)
-        {
-            this.conexao = con;
+            return JsonConvert.DeserializeObject<ObservableCollection<Job>>(WebService.Get("Job",""));
         }
     }
 }

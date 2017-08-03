@@ -13,7 +13,26 @@ namespace GuideForDDOn.ViewModel
         ContentPage page;
         private MonstroDAO dao;
         private ObservableCollection<Monstro> listRef;
-        public LabelsIdiomas Labels { get { return LabelsIdiomasDAO.Label; } }
+        public  LabelsIdiomas Labels { get { return LabelsIdiomasDAO.Label; } }
+        public Monstro itemSelecao { get; set; }
+
+        public Monstro ItemSelecao
+        {
+            get
+            {
+                return itemSelecao;
+            }
+            set
+            {
+                itemSelecao = value;
+                OnPropertyChanged();
+            }
+        }
+
+        private void OnPropertyChanged()
+        {
+            this.page.FindByName<ListView>("ListaDaView").SelectedItem = null;
+        }
 
         public ObservableCollection<Monstro> ListRef
         {
@@ -33,19 +52,17 @@ namespace GuideForDDOn.ViewModel
             try
             {
                 this.dao = new MonstroDAO();
-                int i = 0;
                 listRef = new ObservableCollection<Monstro>();
                 foreach (var a in Nome)
                 {
                     try
                     {
-                        listRef.Add(dao.GetMonstroExpecifico(Nome[i]));
+                        listRef.Add(dao.GetMonstroExpecifico(a));
                     }
                     catch (ExceptionNula e)
                     {
                         this.page.DisplayAlert(LabelsIdiomasDAO.Label.Error, LabelsIdiomasDAO.Label.MonsterNotFound, "OK");
                     }
-                    i++;
                 }
 
 
@@ -54,8 +71,9 @@ namespace GuideForDDOn.ViewModel
             {
             }
         }
-        public MonstroDetalhesViewModel(int x)
+        public MonstroDetalhesViewModel(int x, ContentPage Page)
         {
+            this.page = Page;
             this.dao = new MonstroDAO();
             listRef = dao.GetExpecifico(x);
         }
