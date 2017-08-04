@@ -1,4 +1,5 @@
 ﻿using GuideForDDOn.Model;
+using Newtonsoft.Json;
 using SQLite;
 using System;
 using System.Collections.Generic;
@@ -9,19 +10,10 @@ namespace GuideForDDOn.Date
 {
     public class PassivasDAO
     {
-        private SQLiteConnection conexao;
-        public PassivasDAO(SQLiteConnection con)
-        {
-            this.conexao = con;
-        }
 
-        public ObservableCollection<Passivas> GetPassivaExpecifica(int x)
+        public ObservableCollection<Passivas> GetAll(int Id_Job)
         {
-            return new ObservableCollection<Passivas>(conexao.Query<Passivas>("select * from Passivas where id_Job = " + x));
-        }
-        internal ObservableCollection<Passivas> GetOne(int x)
-        {
-            return new ObservableCollection<Passivas>(conexao.Query<Passivas>("select * from Passivas where id_Passiva = " + x));
+            return JsonConvert.DeserializeObject<ObservableCollection<Passivas>>(WebService.Get("Passivas", "?idioma=" + ConfiguracaoDAO.Idioma + "&id_Job=" + Id_Job));
         }
     }
 }

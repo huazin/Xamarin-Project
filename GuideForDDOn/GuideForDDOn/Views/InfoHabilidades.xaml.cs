@@ -1,4 +1,5 @@
-﻿using GuideForDDOn.ViewModel;
+﻿using GuideForDDOn.Model;
+using GuideForDDOn.ViewModel;
 using SQLite;
 using System;
 using System.Collections.Generic;
@@ -12,9 +13,9 @@ namespace GuideForDDOn.Views
 {
 	public partial class InfoHabilidades : ContentPage
 	{
-        public InfoHabilidades(int job, SQLiteConnection con)
+        public InfoHabilidades(Job job)
         {
-            InfoHabilidadesViewModel vm = new InfoHabilidadesViewModel(job, con, this);
+            InfoHabilidadesViewModel vm = new InfoHabilidadesViewModel(job, this);
             BindingContext = vm;
             InitializeComponent();
         }

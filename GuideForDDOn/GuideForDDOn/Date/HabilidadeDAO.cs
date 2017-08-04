@@ -1,4 +1,5 @@
 ﻿using GuideForDDOn.Model;
+using Newtonsoft.Json;
 using SQLite;
 using System;
 using System.Collections.Generic;
@@ -9,21 +10,11 @@ namespace GuideForDDOn.Date
 {
     public class HabilidadeDAO
     {
-        SQLiteConnection conexao;
 
-        public ObservableCollection<Habilidades> GetHabiEx(int x)
+        public ObservableCollection<Habilidades> GetAll(int id_Job)
         {
             //return new ObservableCollection<Habilidades>(conexao.Table<Habilidades>());
-            return new ObservableCollection<Habilidades>(conexao.Query<Habilidades>("select * from Habilidades where id_Job = " + x));
-        }
-        public HabilidadeDAO(SQLiteConnection con)
-        {
-            this.conexao = con;
-        }
-
-        internal ObservableCollection<Habilidades> GetOne(int x)
-        {
-            return new ObservableCollection<Habilidades>(conexao.Query<Habilidades>("select * from Habilidades where id_Habilidade = " + x));
+            return JsonConvert.DeserializeObject<ObservableCollection<Habilidades>>(WebService.Get("Habilidades", "?idioma=" + ConfiguracaoDAO.Idioma + "&id_Job=" + id_Job));
         }
     }
 }

@@ -275,3 +275,4 @@ C:\Users\huazi\Documents\Git\Xamarin-Project\GuideForDDOn\GuideForDDOn.Droid\obj
 C:\Users\huazi\Documents\Git\Xamarin-Project\GuideForDDOn\GuideForDDOn.Droid\obj\Debug\android\assets\Xamarin.Forms.Core.dll.mdb
 C:\Users\huazi\Documents\Git\Xamarin-Project\GuideForDDOn\GuideForDDOn.Droid\obj\Debug\android\assets\Xamarin.Forms.Platform.Android.dll.mdb
 C:\Users\huazi\Documents\Git\Xamarin-Project\GuideForDDOn\GuideForDDOn.Droid\obj\Debug\android\assets\Xamarin.Forms.Xaml.dll.mdb
+C:\Users\huazi\Documents\Git\Xamarin-Project\GuideForDDOn\GuideForDDOn.Droid\obj\Debug\GuideForDDOn.Droid.Views.JobDetalhe.xaml.g.cs

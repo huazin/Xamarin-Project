@@ -2,7 +2,17 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="GuideForDDOn.Views.InfoPassivas"
-             Title="Passivas">
+             xmlns:controls="clr-namespace:GuideForDDOn.Date;assembly=GuideForDDOn.Droid"
+             xmlns:xfg="clr-namespace:XFGloss;assembly=XFGloss"
+             Title="Passive">
+    <xfg:ContentPageGloss.BackgroundGradient>
+        <xfg:Gradient Rotation="0">
+            <xfg:GradientStep StepColor="#a5d3f3" StepPercentage="0" />
+            <xfg:GradientStep StepColor="#a5d3f3" StepPercentage=".2" />
+            <xfg:GradientStep StepColor="#3f6197" StepPercentage=".7" />
+            <xfg:GradientStep StepColor="#3f6197" StepPercentage="1" />
+        </xfg:Gradient>
+    </xfg:ContentPageGloss.BackgroundGradient>
     <StackLayout>
         <ListView ItemsSource= "{Binding ListRef}" x:Name="ListaDaView" SelectedItem="{Binding ItemSelecao, Mode=TwoWay}" VerticalOptions="FillAndExpand" HasUnevenRows="true" SeparatorColor="AliceBlue">
             <ListView.ItemTemplate>
@@ -11,16 +21,16 @@
                         <ViewCell.View>
                             <StackLayout Orientation= "Vertical" VerticalOptions="FillAndExpand">
                                 <Label Text= "{Binding nome}" TextColor="#228B22" FontSize="18" HorizontalOptions="Center"/>
-                                <StackLayout Orientation= "Horizontal">
-                                    <Label Text= "Descrição: " TextColor="#00FF7F"/>
-                                </StackLayout>
+                                <Label Text= "Description: " TextColor="#00FF7F"/>
                                 <Label Text= "{Binding descricao}"/>
+                                
                                 <StackLayout Orientation= "Horizontal">
-                                    <Label Text= "Nivel: " TextColor="#00FF7F"/>
+                                    <Label Text= "Level: " TextColor="#00FF7F"/>
                                     <Label Text= "{Binding nivel}"/>
                                 </StackLayout>
+                                
                                 <StackLayout Orientation= "Horizontal">
-                                    <Label Text= "Custo de AP: " TextColor="#00FF7F"/>
+                                    <Label Text= "AP cost: " TextColor="#00FF7F"/>
                                     <Label Text= "{Binding ap}"/>
                                 </StackLayout>
                                 <Label Text= ""/>
@@ -30,5 +40,11 @@
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
+        <Grid RowSpacing="0" VerticalOptions="End">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50"/>
+            </Grid.RowDefinitions>
+            <controls:MyBanner Grid.Row="0"/>
+        </Grid>
     </StackLayout>
 </ContentPage>

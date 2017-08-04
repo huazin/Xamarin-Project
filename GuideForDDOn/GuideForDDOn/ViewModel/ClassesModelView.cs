@@ -19,8 +19,6 @@ namespace GuideForDDOn.ViewModel
         private JobDAO dao;
         private ObservableCollection<Job> listRef;
 
-        public ICommand BotaoClasse { get; private set; }
-
         public event PropertyChangedEventHandler PropertyChanged;
 
         private Job itemSelecao;
@@ -34,7 +32,7 @@ namespace GuideForDDOn.ViewModel
             set
             {
                 itemSelecao = value;
-                OnPropertyChangedAsync("ItemSelecao");
+                OnPropertyChangedAsync();
             }
         }
 
@@ -59,24 +57,25 @@ namespace GuideForDDOn.ViewModel
             set
             {
                 listRef = value;
+                
             }
         }
 
-        private void OnPropertyChangedAsync(String nome)
+        private void OnPropertyChangedAsync()
         {
             //PropertyChanged(this, new PropertyChangedEventArgs (nome));
-            //Views.InfoDasJobs tela = new Views.InfoDasJobs();
-            //tela.Children.Add(new InfoHabilidades(/*itemSelecao.id_Job*/ Convert.ToInt32(nome), con));
-            //tela.Children.Add(new InfoPassivas(/*itemSelecao.id_Job*/ Convert.ToInt32(nome), con));
-            //this.page.Navigation.PushAsync(new NovoInfoJob(con,nome));
-            ////this.page.FindByName<ListView>("ListaDaView").SelectedItem = null;
+            Views.InfoDasJobs tela = new Views.InfoDasJobs();
+            tela.Children.Add(new JobDetalhe(ItemSelecao, page));
+            tela.Children.Add(new InfoHabilidades(ItemSelecao));
+            tela.Children.Add(new InfoPassivas(ItemSelecao));
+            this.page.FindByName<ListView>("ListaDaView").SelectedItem = null;
+            page.Navigation.PushAsync(tela);
         }
         public ClassesModelView(ContentPage Page)
         {
             this.page = Page;
             this.dao = new JobDAO();
             this.listRef = dao.GetAll();
-            this.BotaoClasse = new Command<String>(OnPropertyChangedAsync);
         }
     }
 }

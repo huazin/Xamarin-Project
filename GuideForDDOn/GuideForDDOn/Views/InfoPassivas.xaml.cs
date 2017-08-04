@@ -1,4 +1,5 @@
-﻿using GuideForDDOn.ViewModel;
+﻿using GuideForDDOn.Model;
+using GuideForDDOn.ViewModel;
 using SQLite;
 using System;
 using System.Collections.Generic;
@@ -10,13 +11,20 @@ using Xamarin.Forms;
 
 namespace GuideForDDOn.Views
 {
-	public partial class InfoPassivas : ContentPage
-	{
-        public InfoPassivas(int job, SQLiteConnection con)
+    public partial class InfoPassivas : ContentPage
+    {
+        public InfoPassivas(Job job)
         {
-            InfoPassivasModelView vm = new InfoPassivasModelView(job, con,this);
-            BindingContext = vm;
-            InitializeComponent();
+            try
+            {
+                InfoPassivasModelView vm = new InfoPassivasModelView(job, this);
+                BindingContext = vm;
+                InitializeComponent();
+            }
+            catch (Exception e)
+            {
+
+            }
         }
     }
 }

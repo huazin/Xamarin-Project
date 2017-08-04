@@ -14,8 +14,8 @@ namespace GuideForDDOn.Model
 
 
         public virtual TipoClasse TipoClasse { get; set; }
-        public virtual Passivas Passivas { get; set; }
-        public virtual Habilidades Habilidades { get; set; }
+        public virtual ICollection<Passivas> Passivas { get; set; }
+        public virtual ICollection<Habilidades> Habilidades { get; set; }
 
         public String Selecao()
         {

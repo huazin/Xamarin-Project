@@ -63,8 +63,8 @@ namespace GuideForDDOn.ViewModel
         {
             this.page = Page;
             this.con = Con;
-            this.dao = new HabilidadeDAO(con);
-            this.listRef = dao.GetOne(Job);
+            //this.dao = new HabilidadeDAO(con);
+            //this.listRef = dao.GetOne(Job);
             Monstro = new Command(MonstroFuncao);
         }
     }

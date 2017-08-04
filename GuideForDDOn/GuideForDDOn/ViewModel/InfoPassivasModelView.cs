@@ -13,8 +13,6 @@ namespace GuideForDDOn.ViewModel
 {
     public class InfoPassivasModelView : INotifyPropertyChanged
     {
-        private SQLiteConnection con;
-        private PassivasDAO dao;
         private ObservableCollection<Passivas> listRef;
 
         public event PropertyChangedEventHandler PropertyChanged;
@@ -37,9 +35,9 @@ namespace GuideForDDOn.ViewModel
 
         private void OnPropertyChanged(string nome)
         {
-            Views.PassivasDetalhes tela = new Views.PassivasDetalhes(itemSelecao.id_Passiva, con);
-            this.page.Navigation.PushAsync(tela);
-            this.page.FindByName<ListView>("ListaDaView").SelectedItem = null;
+            //    Views.PassivasDetalhes tela = new Views.PassivasDetalhes(itemSelecao.id_Passiva, con);
+            //    this.page.Navigation.PushAsync(tela);
+            //    this.page.FindByName<ListView>("ListaDaView").SelectedItem = null;
         }
 
         public ObservableCollection<Passivas> ListRef
@@ -56,12 +54,10 @@ namespace GuideForDDOn.ViewModel
 
 
 
-        public InfoPassivasModelView(int Job, SQLiteConnection Con,ContentPage Page)
+        public InfoPassivasModelView(Job Job, ContentPage Page)
         {
             this.page = Page;
-            this.con = Con;
-            this.dao = new PassivasDAO(con);
-            this.listRef = dao.GetPassivaExpecifica(Job);
+            this.listRef = new PassivasDAO().GetAll(Job.Id_Job);
         }
     }
 }

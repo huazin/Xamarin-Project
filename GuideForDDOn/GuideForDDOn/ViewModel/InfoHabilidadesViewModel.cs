@@ -13,8 +13,6 @@ namespace GuideForDDOn.ViewModel
 {
     public class InfoHabilidadesViewModel : INotifyPropertyChanged
     {
-        private SQLiteConnection con;
-        private HabilidadeDAO dao;
         private ObservableCollection<Habilidades> listRef;
         private ContentPage page;
 
@@ -37,8 +35,8 @@ namespace GuideForDDOn.ViewModel
 
         private void OnPropertyChanged(string nome)
         {
-            Views.HabilidadeDetalhes tela = new Views.HabilidadeDetalhes(itemSelecao.id_Habilidade, con);
-            this.page.Navigation.PushAsync(tela);
+            //Views.HabilidadeDetalhes tela = new Views.HabilidadeDetalhes(itemSelecao.id_Habilidade);
+            //this.page.Navigation.PushAsync(tela);
             this.page.FindByName<ListView>("ListaDaView").SelectedItem = null;
         }
 
@@ -55,12 +53,10 @@ namespace GuideForDDOn.ViewModel
         }
 
 
-        public InfoHabilidadesViewModel(int Hab, SQLiteConnection Con, ContentPage Page)
+        public InfoHabilidadesViewModel(Job job,ContentPage Page)
         {
-            this.con = Con;
             this.page = Page;
-            this.dao = new HabilidadeDAO(con);
-            this.listRef = dao.GetHabiEx(Hab);
+            this.listRef = new HabilidadeDAO().GetAll(job.Id_Job);
         }
     }
 }

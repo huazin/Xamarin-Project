@@ -43,6 +43,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\InfoHabilidadesViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\InfoJobViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\InfoPassivasModelView.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModel\JobDetalheViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\MonstroDetalhesViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\MonstroSelecaoViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\PassivasDetalheViewModel.cs" />
@@ -74,6 +75,10 @@
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Views\InfoPassivas.xaml.cs">
       <DependentUpon>InfoPassivas.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\JobDetalhe.xaml.cs">
+      <DependentUpon>JobDetalhe.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Views\MonstroDetalhes.xaml.cs">
@@ -226,6 +231,12 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\ConfiguracaoSistema.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\JobDetalhe.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>

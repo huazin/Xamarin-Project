@@ -30,15 +30,22 @@ namespace GuideForDDOn.Date
         }
         static private async Task<string> GetRes()
         {
-            var uri = new Uri(string.Format(Url + "/" + Controller + "/" + Arguments, string.Empty));
-            ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12;
-            var response = await client.GetAsync(uri).ConfigureAwait(continueOnCapturedContext: false);
-            if (response.IsSuccessStatusCode)
+            try
             {
-                var content = await response.Content.ReadAsStringAsync();
-                return content;
+                var uri = new Uri(string.Format(Url + "/" + Controller + "/" + Arguments, string.Empty));
+                ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12;
+                var response = await client.GetAsync(uri).ConfigureAwait(continueOnCapturedContext: false);
+                if (response.IsSuccessStatusCode)
+                {
+                    var content = await response.Content.ReadAsStringAsync();
+                    return content;
+                }
+                return string.Empty;
             }
-            return string.Empty;
+            catch (Exception e)
+            {
+                return null;       
+            }
         }
     }
 }

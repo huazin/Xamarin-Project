@@ -64,8 +64,8 @@ namespace GuideForDDOn.ViewModel
         {
             con = Con;
             page = Page;
-            dao = new PassivasDAO(con);
-            listRef = dao.GetOne(Pas);
+            //dao = new PassivasDAO(con);
+            //listRef = dao.GetOne(Pas);
             Monstro = new Command(MonstroFuncao);
         }
     }

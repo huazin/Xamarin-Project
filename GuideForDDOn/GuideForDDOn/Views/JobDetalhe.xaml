@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:controls="clr-namespace:GuideForDDOn.Date;assembly=GuideForDDOn.Droid"
+             xmlns:xfg="clr-namespace:XFGloss;assembly=XFGloss"
+             x:Class="GuideForDDOn.Views.JobDetalhe"
+             Title="Details">
+    <xfg:ContentPageGloss.BackgroundGradient>
+        <xfg:Gradient Rotation="0">
+            <xfg:GradientStep StepColor="#a5d3f3" StepPercentage="0" />
+            <xfg:GradientStep StepColor="#a5d3f3" StepPercentage=".2" />
+            <xfg:GradientStep StepColor="#3f6197" StepPercentage=".7" />
+            <xfg:GradientStep StepColor="#3f6197" StepPercentage="1" />
+        </xfg:Gradient>
+    </xfg:ContentPageGloss.BackgroundGradient>
+    <StackLayout>
+        <StackLayout Orientation= "Vertical" VerticalOptions="FillAndExpand">
+            <Label Text= "{Binding job.Nome}" TextColor="#228B22" FontSize="18" HorizontalOptions="Center"/>
+            <Label Text= "Description: " TextColor="#00FF7F" XAlign="Center"/>
+            <Label Text= "{Binding job.descricao}" XAlign="Center"/>
+        </StackLayout>
+        <Grid RowSpacing="0" VerticalOptions="End">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50"/>
+            </Grid.RowDefinitions>
+            <controls:MyBanner Grid.Row="0"/>
+        </Grid>
+    </StackLayout>
+</ContentPage>
