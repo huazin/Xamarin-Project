@@ -22,10 +22,16 @@ namespace GuideForDDOn.ViewModel
         public ICommand BigMonster { get; protected set; }
         public ICommand Sobre { get; protected set; }
         public ICommand opcao { get; protected set; }
+        public ICommand News { get; protected set; }
 
         public void OpcaoFun()
         {
             ConfiguracaoSistema Tela = new ConfiguracaoSistema();
+            this.page.Navigation.PushAsync(Tela);
+        }
+        public void NewsFun()
+        {
+            Views.Novidades Tela = new Views.Novidades();
             this.page.Navigation.PushAsync(Tela);
         }
         public void SobreFun()
@@ -74,6 +80,7 @@ namespace GuideForDDOn.ViewModel
             SmallMonster = new Command(SmallFun);
             BigMonster = new Command(BigFun);
             opcao = new Command(OpcaoFun);
+            News = new Command(NewsFun);
         }
 
 

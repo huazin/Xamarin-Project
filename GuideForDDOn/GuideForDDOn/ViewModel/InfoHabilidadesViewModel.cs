@@ -15,6 +15,7 @@ namespace GuideForDDOn.ViewModel
     {
         private ObservableCollection<Habilidades> listRef;
         private ContentPage page;
+        public LabelsIdiomas Label { get { return LabelsIdiomasDAO.Label; } }
 
         public event PropertyChangedEventHandler PropertyChanged;
 
@@ -35,8 +36,8 @@ namespace GuideForDDOn.ViewModel
 
         private void OnPropertyChanged(string nome)
         {
-            //Views.HabilidadeDetalhes tela = new Views.HabilidadeDetalhes(itemSelecao.id_Habilidade);
-            //this.page.Navigation.PushAsync(tela);
+            Views.HabilidadeDetalhes tela = new Views.HabilidadeDetalhes(itemSelecao);
+            this.page.Navigation.PushAsync(tela);
             this.page.FindByName<ListView>("ListaDaView").SelectedItem = null;
         }
 

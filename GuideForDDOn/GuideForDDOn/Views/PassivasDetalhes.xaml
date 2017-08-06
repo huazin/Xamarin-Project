@@ -3,47 +3,56 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:controls="clr-namespace:GuideForDDOn.Date;assembly=GuideForDDOn.Droid"
              x:Class="GuideForDDOn.Views.PassivasDetalhes"
-             Title="Passiva Detalhe">
-    <StackLayout Orientation= "Vertical" VerticalOptions="FillAndExpand">
+             xmlns:xfg="clr-namespace:XFGloss;assembly=XFGloss"
+             Title="{Binding Label.TitlePassiva}">
+    <xfg:ContentPageGloss.BackgroundGradient>
+        <xfg:Gradient Rotation="0">
+            <xfg:GradientStep StepColor="#a5d3f3" StepPercentage="0" />
+            <xfg:GradientStep StepColor="#a5d3f3" StepPercentage=".2" />
+            <xfg:GradientStep StepColor="#3f6197" StepPercentage=".7" />
+            <xfg:GradientStep StepColor="#3f6197" StepPercentage="1" />
+        </xfg:Gradient>
+    </xfg:ContentPageGloss.BackgroundGradient>
+    <StackLayout Orientation= "Vertical">
         <ScrollView Orientation="Vertical" VerticalOptions="FillAndExpand">
-            <StackLayout Orientation= "Vertical" VerticalOptions="FillAndExpand">
-                <Label Text= "{Binding ListRef[0].nome}" TextColor="#228B22" FontSize="18" HorizontalOptions="Center"/>
-                <Label Text= "Descrição: " TextColor="#00FF7F"/>
-                <Label Text= "{Binding ListRef[0].descricao}"/>
+            <StackLayout Orientation= "Vertical">
+                <Label Text= "{Binding Passivas.nome}" FontSize="18" HorizontalOptions="Center"/>
+                <Label Text= "{Binding Label.descricao}" TextColor="#00FF7F"/>
+                <Label Text= "{Binding Passivas.descricao}"/>
                 <StackLayout Orientation="Horizontal">
-                    <Label Text= "Nivel: " TextColor="#00FF7F"/>
-                    <Label Text= "{Binding ListRef[0].nivel}"/>
+                    <Label Text= "{Binding Label.nivel}" TextColor="#00FF7F"/>
+                    <Label Text= "{Binding Passivas.nivel}"/>
                 </StackLayout>
                 <StackLayout Orientation="Horizontal">
-                    <Label Text= "AP: " TextColor="#00FF7F"/>
-                    <Label Text= "{Binding ListRef[0].ap}"/>
+                    <Label Text= "{Binding Label.apcost}" TextColor="#00FF7F"/>
+                    <Label Text= "{Binding Passivas.ap}"/>
                 </StackLayout>
                 <Label Text= ""/>
-                <Label Text= "Monstros para Subi de Nivel" TextColor="#228B22" FontSize="18" HorizontalOptions="Center"/>
-                <Label Text= "Nivel 4 pro 5: " TextColor="#00FF7F"/>
-                <Label Text= "{Binding ListRef[0].monster5}">
+                <Label Text= "{Binding Label.monstroparaupa}" FontSize="18" HorizontalOptions="Center"/>
+                <Label Text= "{Binding Label.monster4}" TextColor="#00FF7F"/>
+                <Label Text= "{Binding Passivas.monster5}">
                     <Label.GestureRecognizers>
                         <TapGestureRecognizer 
                             Command="{Binding Monstro}"
-                            CommandParameter="{Binding ListRef[0].monster5}"/>
+                            CommandParameter="{Binding Passivas.monster5}"/>
                     </Label.GestureRecognizers>
                 </Label>
-                <Label Text= "Nivel 5 pro 6: " TextColor="#00FF7F"/>
-                <Label Text= "{Binding ListRef[0].monster6}">
+                <Label Text= "{Binding Label.monster5}" TextColor="#00FF7F"/>
+                <Label Text= "{Binding Passivas.monster6}">
                     <Label.GestureRecognizers>
                         <TapGestureRecognizer 
                             Command="{Binding Monstro}"
-                            CommandParameter="{Binding ListRef[0].monster6}"/>
+                            CommandParameter="{Binding Passivas.monster6}"/>
                     </Label.GestureRecognizers>
                 </Label>
-                <Label Text= "Informação: A quantidade de monstros requeridos na quest podem varia para menos em jogo, a CAP fez algumas modificações" TextColor="#00FF7F" FontSize="8"/>
-                <Grid RowSpacing="0" VerticalOptions="End">
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="50"/>
-                    </Grid.RowDefinitions>
-                    <controls:MyBanner Grid.Row="0"/>
-                </Grid>
+                <Label Text= "{Binding Label.notificacao}" TextColor="#00FF7F" FontSize="8"/>
             </StackLayout>
         </ScrollView>
+        <Grid RowSpacing="0" VerticalOptions="End">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50"/>
+            </Grid.RowDefinitions>
+            <controls:MyBanner Grid.Row="0"/>
+        </Grid>
     </StackLayout>
 </ContentPage>

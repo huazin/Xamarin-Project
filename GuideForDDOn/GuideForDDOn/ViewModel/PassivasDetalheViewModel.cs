@@ -14,10 +14,9 @@ namespace GuideForDDOn.ViewModel
     class PassivasDetalheViewModel
     {
         private ContentPage page;
-        private SQLiteConnection con;
-        private PassivasDAO dao;
-        private ObservableCollection<Passivas> listRef;
+        private Passivas passivas;
         private string monstroParametro;
+        public LabelsIdiomas Label { get { return LabelsIdiomasDAO.Label; } }
 
         public string MonstroParametro
         {
@@ -30,28 +29,24 @@ namespace GuideForDDOn.ViewModel
                 monstroParametro = value;
             }
         }
-        public ObservableCollection<Passivas> ListRef
+        public Passivas Passivas
         {
             get
             {
-                return listRef;
+                return passivas;
             }
             set
             {
-                listRef = value;
+                passivas = value;
             }
         }
 
         public ICommand Monstro { get; protected set; }
         void MonstroFuncao(Object parametro)
         {
-            if (parametro.ToString().Equals("Já Liberado o nivel 6"))
+            if (parametro.ToString().Contains("Inimigos de BO"))
             {
-                this.page.DisplayAlert("Informação", "Habilidade já liberada", "OK");
-            }
-            else if (parametro.ToString().Contains("Inimigos de BO"))
-            {
-                this.page.DisplayAlert("Informação", "Essa habilidade precisa mata apenas Monstro com BO do nivel expecifico", "OK");
+                this.page.DisplayAlert("Alert", Label.skillbo, "OK");
             }
             else
             {
@@ -60,12 +55,10 @@ namespace GuideForDDOn.ViewModel
                 this.page.Navigation.PushAsync(tela);
             }
         }
-        public PassivasDetalheViewModel(int Pas, SQLiteConnection Con, ContentPage Page)
+        public PassivasDetalheViewModel(Passivas pas, ContentPage Page)
         {
-            con = Con;
             page = Page;
-            //dao = new PassivasDAO(con);
-            //listRef = dao.GetOne(Pas);
+            Passivas = pas;
             Monstro = new Command(MonstroFuncao);
         }
     }

@@ -21,6 +21,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Date\LabelsIdiomasDAO.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Date\MonstroDAO.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Date\MyBanner.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Date\NovidadesDAO.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Date\PassivasDAO.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Date\SobresDAO.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Date\WebService.cs" />
@@ -33,6 +34,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Model\Job.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\LabelsIdiomas.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\Monstro.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\Novidades.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\Passivas.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\Sobres.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\TipoClasse.cs" />
@@ -46,6 +48,8 @@
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\JobDetalheViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\MonstroDetalhesViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\MonstroSelecaoViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModel\NovidadesDetalhesViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModel\NovidadesViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\PassivasDetalheViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\SobreViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\TreinaModelView.cs" />
@@ -95,6 +99,14 @@
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Views\NovaTelaClasses.xaml.cs">
       <DependentUpon>NovaTelaClasses.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\Novidades.xaml.cs">
+      <DependentUpon>Novidades.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\NovidadesDetalhe.xaml.cs">
+      <DependentUpon>NovidadesDetalhe.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Views\NovoInfoJob.xaml.cs">
@@ -183,13 +195,6 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="$(MSBuildThisFileDirectory)GradBlue.png" />
-    <Content Include="$(MSBuildThisFileDirectory)GradPink.png" />
-    <Content Include="$(MSBuildThisFileDirectory)GradRed.png" />
-    <Content Include="$(MSBuildThisFileDirectory)GradYell.png" />
-    <Content Include="$(MSBuildThisFileDirectory)IconHabilidades.png" />
-    <Content Include="$(MSBuildThisFileDirectory)IconInfo.png" />
-    <Content Include="$(MSBuildThisFileDirectory)IconPassivas.png" />
     <Content Include="$(MSBuildThisFileDirectory)ImagemTelaClasses.jpg" />
     <Content Include="$(MSBuildThisFileDirectory)LogoHome.png" />
   </ItemGroup>
@@ -237,6 +242,18 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\JobDetalhe.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\Novidades.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\NovidadesDetalhe.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>

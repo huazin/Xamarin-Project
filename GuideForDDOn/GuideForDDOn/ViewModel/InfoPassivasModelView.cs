@@ -14,6 +14,7 @@ namespace GuideForDDOn.ViewModel
     public class InfoPassivasModelView : INotifyPropertyChanged
     {
         private ObservableCollection<Passivas> listRef;
+        public LabelsIdiomas Label { get { return LabelsIdiomasDAO.Label; } }
 
         public event PropertyChangedEventHandler PropertyChanged;
 
@@ -35,9 +36,9 @@ namespace GuideForDDOn.ViewModel
 
         private void OnPropertyChanged(string nome)
         {
-            //    Views.PassivasDetalhes tela = new Views.PassivasDetalhes(itemSelecao.id_Passiva, con);
-            //    this.page.Navigation.PushAsync(tela);
-            //    this.page.FindByName<ListView>("ListaDaView").SelectedItem = null;
+            Views.PassivasDetalhes tela = new Views.PassivasDetalhes(itemSelecao);
+            this.page.Navigation.PushAsync(tela);
+            this.page.FindByName<ListView>("ListaDaView").SelectedItem = null;
         }
 
         public ObservableCollection<Passivas> ListRef
@@ -51,8 +52,6 @@ namespace GuideForDDOn.ViewModel
                 listRef = value;
             }
         }
-
-
 
         public InfoPassivasModelView(Job Job, ContentPage Page)
         {

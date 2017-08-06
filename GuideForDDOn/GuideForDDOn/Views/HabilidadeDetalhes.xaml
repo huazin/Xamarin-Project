@@ -2,71 +2,87 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="GuideForDDOn.Views.HabilidadeDetalhes"
-             Title="Detalhes da Habilidade">
-    <StackLayout Orientation= "Vertical" VerticalOptions="FillAndExpand">
+             xmlns:controls="clr-namespace:GuideForDDOn.Date;assembly=GuideForDDOn.Droid"
+             xmlns:xfg="clr-namespace:XFGloss;assembly=XFGloss"
+             Title="{Binding Label.TitleHabilidade}">
+    <xfg:ContentPageGloss.BackgroundGradient>
+        <xfg:Gradient Rotation="0">
+            <xfg:GradientStep StepColor="#a5d3f3" StepPercentage="0" />
+            <xfg:GradientStep StepColor="#a5d3f3" StepPercentage=".2" />
+            <xfg:GradientStep StepColor="#3f6197" StepPercentage=".7" />
+            <xfg:GradientStep StepColor="#3f6197" StepPercentage="1" />
+        </xfg:Gradient>
+    </xfg:ContentPageGloss.BackgroundGradient>
+    <StackLayout Orientation= "Vertical">
         <ScrollView Orientation="Vertical" VerticalOptions="FillAndExpand">
-            <StackLayout Orientation= "Vertical" VerticalOptions="FillAndExpand">
-                <Label Text= "{Binding ListRef[0].nome}" TextColor="#228B22" FontSize="18" HorizontalOptions="Center"/>
-                <Label Text= "Descrição: " TextColor="#00FF7F"/>
-                <Label Text= "{Binding ListRef[0].descricao}"/>
+            <StackLayout Orientation= "Vertical">
+                <Label Text= "{Binding Habilidade.nome}" FontSize="18" HorizontalOptions="Center"/>
+                <Label Text= "{Binding Label.descricao} " TextColor="#00FF7F"/>
+                <Label Text= "{Binding Habilidade.descricao}"/>
                 <StackLayout Orientation="Horizontal">
-                    <Label Text= "Nivel: " TextColor="#00FF7F"/>
-                    <Label Text= "{Binding ListRef[0].nivel}"/>
+                    <Label Text= "{Binding Label.nivel}" TextColor="#00FF7F"/>
+                    <Label Text= "{Binding Habilidade.nivel}"/>
                 </StackLayout>
                 <!--
                 <Label Text= "Observação: " TextColor="#00FF7F"/>
-                    <Label Text= "{Binding ListRef[0].obs}"/>-->
-                
-                <Label Text= "Efeito Level Up: " TextColor="#00FF7F"/>
-                <Label Text= "{Binding ListRef[0].addUp}"/>
+                    <Label Text= "{Binding Habilidade.obs}"/>-->
+
+                <Label Text= "{Binding Label.addup}" TextColor="#00FF7F"/>
+                <Label Text= "{Binding Habilidade.addUp}"/>
                 <!-- <Label Text= "Nivel Necessario para nivel 6 " TextColor="#00FF7F"/>
-                <Label Text= "{Binding ListRef[0].nivelForSix}"/>-->
-                <Label Text= "Efeito Nivel 6: " TextColor="#00FF7F"/> 
-                <Label Text= "{Binding ListRef[0].add6}"/>
+                <Label Text= "{Binding Habilidade.nivelForSix}"/>-->
+                <Label Text= "{Binding Label.addsix}" TextColor="#00FF7F"/>
+                <Label Text= "{Binding Habilidade.add6}"/>
                 <Label Text= ""/>
-                <Label Text= "Monstros para Subi de Nivel" TextColor="#228B22" FontSize="18" HorizontalOptions="Center"/>
-                <Label Text= "Nivel 5 pro 6: " TextColor="#00FF7F"/>
-                <Label Text= "{Binding ListRef[0].monster5}">
+                <Label Text= "{Binding Label.monstroparaupa}" FontSize="18" HorizontalOptions="Center"/>
+                <Label Text= "{Binding Label.monster5}" TextColor="#00FF7F"/>
+                <Label Text= "{Binding Habilidade.monster5}">
                     <Label.GestureRecognizers>
                         <TapGestureRecognizer 
                             Command="{Binding Monstro}"
-                            CommandParameter="{Binding ListRef[0].monster5}"/>
+                            CommandParameter="{Binding Habilidade.monster5}"/>
                     </Label.GestureRecognizers>
                 </Label>
-                <Label Text= "Nivel 6 pro 7: " TextColor="#00FF7F"/>
-                <Label Text= "{Binding ListRef[0].monster6}">
+                <Label Text= "{Binding Label.monster6}" TextColor="#00FF7F"/>
+                <Label Text= "{Binding Habilidade.monster6}">
                     <Label.GestureRecognizers>
                         <TapGestureRecognizer 
                             Command="{Binding Monstro}"
-                            CommandParameter="{Binding ListRef[0].monster6}"/>
+                            CommandParameter="{Binding Habilidade.monster6}"/>
                     </Label.GestureRecognizers>
                 </Label>
-                <Label Text= "Nivel 7 pro 8: " TextColor="#00FF7F"/>
-                <Label Text= "{Binding ListRef[0].monster7}">
+                <Label Text= "{Binding Label.monster7}" TextColor="#00FF7F"/>
+                <Label Text= "{Binding Habilidade.monster7}">
                     <Label.GestureRecognizers>
                         <TapGestureRecognizer 
                             Command="{Binding Monstro}"
-                            CommandParameter="{Binding ListRef[0].monster7}"/>
+                            CommandParameter="{Binding Habilidade.monster7}"/>
                     </Label.GestureRecognizers>
                 </Label>
-                <Label Text= "Nivel 8 pro 9: " TextColor="#00FF7F"/>
-                <Label Text= "{Binding ListRef[0].monster8}">
+                <Label Text= "{Binding Label.monster8}" TextColor="#00FF7F"/>
+                <Label Text= "{Binding Habilidade.monster8}">
                     <Label.GestureRecognizers>
                         <TapGestureRecognizer 
                             Command="{Binding Monstro}"
-                            CommandParameter="{Binding ListRef[0].monster8}"/>
+                            CommandParameter="{Binding Habilidade.monster8}"/>
                     </Label.GestureRecognizers>
                 </Label>
-                <Label Text= "Nivel 9 pro 10: " TextColor="#00FF7F"/>
-                <Label Text= "{Binding ListRef[0].monster9}">
+                <Label Text= "{Binding Label.monster9}" TextColor="#00FF7F"/>
+                <Label Text= "{Binding Habilidade.monster9}">
                     <Label.GestureRecognizers>
                         <TapGestureRecognizer 
                             Command="{Binding Monstro}"
-                            CommandParameter="{Binding ListRef[0].monster9}"/>
+                            CommandParameter="{Binding Habilidade.monster9}"/>
                     </Label.GestureRecognizers>
                 </Label>
-                <Label Text= "Informação: A quantidade de monstros requeridos na quest podem varia para menos em jogo, a CAP fez algumas modificações" TextColor="#00FF7F" FontSize="8"/>
+                <Label Text= "{Binding Label.notificacao}" TextColor="#00FF7F" FontSize="8"/>
             </StackLayout>
         </ScrollView>
+        <Grid RowSpacing="0" VerticalOptions="End">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50"/>
+            </Grid.RowDefinitions>
+            <controls:MyBanner Grid.Row="0"/>
+        </Grid>
     </StackLayout>
 </ContentPage>

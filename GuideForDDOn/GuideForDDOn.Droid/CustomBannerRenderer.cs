@@ -29,8 +29,8 @@ namespace GuideForDDOn.Droid
             {
                 AdView ad = new AdView(this.Context);
                 ad.AdSize = AdSize.Banner;
-                //ad.AdUnitId = "ca-app-pub-7647930413486761/3301184531";
-                ad.AdUnitId = "ca-app-pub-3940256099942544/6300978111";
+                ad.AdUnitId = "ca-app-pub-7647930413486761/3301184531";
+                //ad.AdUnitId = "ca-app-pub-3940256099942544/6300978111";
 
                 var requestbuilder = new AdRequest.Builder();
                 ad.LoadAd(requestbuilder.Build());

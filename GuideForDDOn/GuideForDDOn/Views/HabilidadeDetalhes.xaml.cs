@@ -1,4 +1,5 @@
-﻿using GuideForDDOn.ViewModel;
+﻿using GuideForDDOn.Model;
+using GuideForDDOn.ViewModel;
 using SQLite;
 using System;
 using System.Collections.Generic;
@@ -12,9 +13,9 @@ namespace GuideForDDOn.Views
 {
     public partial class HabilidadeDetalhes : ContentPage
     {
-        public HabilidadeDetalhes(int Hab, SQLiteConnection Con)
+        public HabilidadeDetalhes(Habilidades Hab)
         {
-            HabilidadeDetalhesModelView vm = new HabilidadeDetalhesModelView(Hab, Con, this);
+            HabilidadeDetalhesModelView vm = new HabilidadeDetalhesModelView(Hab, this);
             BindingContext = vm;
             InitializeComponent();
         }

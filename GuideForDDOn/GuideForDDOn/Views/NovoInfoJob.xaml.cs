@@ -15,8 +15,6 @@ namespace GuideForDDOn.Views
 		public NovoInfoJob (SQLiteConnection con, string nome)
 		{
 			InitializeComponent ();
-            InfoJobViewModel vm = new InfoJobViewModel(con, nome);
-            BindingContext = vm;
 		}
 	}
 }

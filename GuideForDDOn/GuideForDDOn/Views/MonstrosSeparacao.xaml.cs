@@ -1,4 +1,6 @@
-﻿using System;
+﻿using GuideForDDOn.Date;
+using GuideForDDOn.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,8 +12,11 @@ namespace GuideForDDOn.Views
 {
     public partial class MonstrosSeparacao : TabbedPage
     {
+        public LabelsIdiomas Label { get{ return LabelsIdiomasDAO.Label; } }
+
         public MonstrosSeparacao()
         {
+            BindingContext = this;
             InitializeComponent();
         }
     }

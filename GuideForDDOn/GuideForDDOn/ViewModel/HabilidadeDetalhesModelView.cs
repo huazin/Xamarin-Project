@@ -13,11 +13,11 @@ namespace GuideForDDOn.ViewModel
 {
     public class HabilidadeDetalhesModelView
     {
-        private SQLiteConnection con;
-        private HabilidadeDAO dao;
-        private ObservableCollection<Habilidades> listRef;
+
+        private Habilidades Hab;
         private string monstroParametro;
         private ContentPage page;
+        public LabelsIdiomas Label { get { return LabelsIdiomasDAO.Label; } }
 
         public string MonstroParametro
         {
@@ -30,27 +30,27 @@ namespace GuideForDDOn.ViewModel
                 monstroParametro = value;
             }
         }
-        public ObservableCollection<Habilidades> ListRef
+        public Habilidades Habilidade
         {
             get
             {
-                return listRef;
+                return Hab;
             }
             set
             {
-                listRef = value;
+                Hab = value;
             }
         }
         public ICommand Monstro { get; protected set; }
         void MonstroFuncao(Object parametro)
         {
-            if(parametro.ToString().Equals("Já Liberado o nivel 6"))
+            if(parametro.ToString().Equals("Já Liberado o nivel 6") || parametro.ToString().Equals("Level 6 released"))
             {
-                this.page.DisplayAlert("Informação","Habilidade já liberada","OK");
+                this.page.DisplayAlert("Alert", Label.skillok, "OK");
             }
-            else if(parametro.ToString().Contains("Inimigos de BO"))
+            else if(parametro.ToString().Contains("Inimigos de BO") || parametro.ToString().Contains("Enemies of BO"))
             {
-                this.page.DisplayAlert("Informação", "Essa habilidade precisa mata apenas Monstro com BO do nivel expecifico", "OK");
+                this.page.DisplayAlert("Alert", Label.skillbo, "OK");
             }
             else
             {
@@ -59,12 +59,10 @@ namespace GuideForDDOn.ViewModel
                     this.page.Navigation.PushAsync(tela);
             }
         }
-        public HabilidadeDetalhesModelView(int Job, SQLiteConnection Con, ContentPage Page)
+        public HabilidadeDetalhesModelView(Habilidades Hab,ContentPage Page)
         {
             this.page = Page;
-            this.con = Con;
-            //this.dao = new HabilidadeDAO(con);
-            //this.listRef = dao.GetOne(Job);
+            Habilidade = Hab;
             Monstro = new Command(MonstroFuncao);
         }
     }

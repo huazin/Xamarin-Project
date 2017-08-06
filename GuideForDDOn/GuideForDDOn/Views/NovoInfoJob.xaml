@@ -3,28 +3,5 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="GuideForDDOn.Views.NovoInfoJob"
              xmlns:xfg="clr-namespace:XFGloss;assembly=XFGloss"
-             Title="Informação">
-    <xfg:ContentPageGloss.BackgroundGradient>
-        <xfg:Gradient Rotation="0">
-            <xfg:GradientStep StepColor="#a5d3f3" StepPercentage="0" />
-            <xfg:GradientStep StepColor="#a5d3f3" StepPercentage=".2" />
-            <xfg:GradientStep StepColor="#3f6197" StepPercentage=".7" />
-            <xfg:GradientStep StepColor="#3f6197" StepPercentage="1" />
-        </xfg:Gradient>
-    </xfg:ContentPageGloss.BackgroundGradient>
-    
-    <StackLayout Orientation="Horizontal">
-        <StackLayout Orientation="Vertical" WidthRequest="50" VerticalOptions="Fill" BackgroundColor="#1c294c">
-            <Grid>
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="*"/>
-                </Grid.RowDefinitions>
-                <Image Grid.Row="0" Source="IconInfo.png" Command="{Binding Inicio}"  HorizontalOptions="Center" VerticalOptions="Center"/>
-                <Image Grid.Row="1" Source="IconHabilidades.png" HorizontalOptions="Center"/>
-                <Image Grid.Row="2" Source="IconPassivas.png" HorizontalOptions="Center"/>
-            </Grid>
-        </StackLayout>
-        <StackLayout Orientation="Vertical" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
-        </StackLayout>
-    </StackLayout>
+             Title="{Binding Label.TituloJob}">
 </ContentPage>

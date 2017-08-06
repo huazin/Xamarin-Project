@@ -4,7 +4,7 @@
              xmlns:controls="clr-namespace:GuideForDDOn.Date;assembly=GuideForDDOn.Droid"
              xmlns:xfg="clr-namespace:XFGloss;assembly=XFGloss"
              x:Class="GuideForDDOn.Views.JobDetalhe"
-             Title="Details">
+             Title="{Binding Label.detalhes}">
     <xfg:ContentPageGloss.BackgroundGradient>
         <xfg:Gradient Rotation="0">
             <xfg:GradientStep StepColor="#a5d3f3" StepPercentage="0" />
@@ -15,8 +15,8 @@
     </xfg:ContentPageGloss.BackgroundGradient>
     <StackLayout>
         <StackLayout Orientation= "Vertical" VerticalOptions="FillAndExpand">
-            <Label Text= "{Binding job.Nome}" TextColor="#228B22" FontSize="18" HorizontalOptions="Center"/>
-            <Label Text= "Description: " TextColor="#00FF7F" XAlign="Center"/>
+            <Label Text= "{Binding job.Nome}" FontSize="18" HorizontalOptions="Center"/>
+            <Label Text= "{Binding Label.descricao}" TextColor="#00FF7F" XAlign="Center"/>
             <Label Text= "{Binding job.descricao}" XAlign="Center"/>
         </StackLayout>
         <Grid RowSpacing="0" VerticalOptions="End">

@@ -4,7 +4,7 @@
              x:Class="GuideForDDOn.Views.InfoHabilidades"
              xmlns:controls="clr-namespace:GuideForDDOn.Date;assembly=GuideForDDOn.Droid"
              xmlns:xfg="clr-namespace:XFGloss;assembly=XFGloss"
-             Title="Skills">
+             Title="{Binding Label.TitleHabilidade}">
     <xfg:ContentPageGloss.BackgroundGradient>
         <xfg:Gradient Rotation="0">
             <xfg:GradientStep StepColor="#a5d3f3" StepPercentage="0" />
@@ -20,18 +20,18 @@
                     <ViewCell>
                         <ViewCell.View>
                             <StackLayout Orientation= "Vertical" VerticalOptions="FillAndExpand">
-                                <Label Text= "{Binding nome}" TextColor="#228B22" FontSize="18" HorizontalOptions="Center"/>
-                                <Label Text= "Description: " TextColor="#00FF7F"/>
+                                <Label Text= "{Binding nome}" FontSize="18" HorizontalOptions="Center"/>
+                                <Label Text= "{Binding Label.descricao}" TextColor="#00FF7F"/>
                                 <Label Text= "{Binding descricao}"/>
 
                                 <StackLayout Orientation="Horizontal">
-                                    <Label Text= "Level: " TextColor="#00FF7F"/>
+                                    <Label Text= "{Binding Label.nivel} " TextColor="#00FF7F"/>
                                     <Label Text= "{Binding nivel}"/>
                                 </StackLayout>
 
-                                <Label Text= "Level Up Effect: " TextColor="#00FF7F"/>
+                                <Label Text= "{Binding Label.addup} " TextColor="#00FF7F"/>
                                 <Label Text= "{Binding addUp}"/>
-                                <Label Text= "Level 6 Effect: " TextColor="#00FF7F"/>
+                                <Label Text= "{Binding Label.addsix} " TextColor="#00FF7F"/>
                                 <Label Text= "{Binding add6}"/>
                                 <Label Text= ""/>
                             </StackLayout>

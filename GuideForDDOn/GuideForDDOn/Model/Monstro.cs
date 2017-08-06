@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json;
+﻿using GuideForDDOn.Date;
+using Newtonsoft.Json;
 using SQLite;
 using System;
 using System.Collections.Generic;
@@ -37,5 +38,8 @@ namespace GuideForDDOn.Model
             List<string> listaDeNomes = Parametro.Split(',').ToList(); ;
             return listaDeNomes;
         }
+        [JsonIgnore]
+        public LabelsIdiomas Label { get { return LabelsIdiomasDAO.Label; } }
     }
+
 }

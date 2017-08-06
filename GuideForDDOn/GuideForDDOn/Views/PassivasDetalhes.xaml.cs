@@ -7,14 +7,15 @@ using System.Threading.Tasks;
 using GuideForDDOn.ViewModel;
 
 using Xamarin.Forms;
+using GuideForDDOn.Model;
 
 namespace GuideForDDOn.Views
 {
 	public partial class PassivasDetalhes : ContentPage
 	{
-        public PassivasDetalhes(int Pas, SQLiteConnection Con)
+        public PassivasDetalhes(Passivas pas)
         {
-            PassivasDetalheViewModel vm = new PassivasDetalheViewModel(Pas, Con, this);
+            PassivasDetalheViewModel vm = new PassivasDetalheViewModel(pas, this);
             BindingContext = vm;
             InitializeComponent();
         }

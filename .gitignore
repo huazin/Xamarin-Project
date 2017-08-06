@@ -394,3 +394,10 @@ FakesAssemblies/
 *.txt
 *.cache
 *.projitems
+*.apk
+*.dll
+*.mdb
+*.pdb
+*.txt
+*.cache
+GuideForDDOn/GuideForDDOn.Droid/CustomBannerRenderer.cs

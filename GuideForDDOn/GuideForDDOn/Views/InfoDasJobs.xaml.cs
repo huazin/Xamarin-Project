@@ -1,4 +1,5 @@
-﻿using System;
+﻿using GuideForDDOn.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,8 +11,10 @@ namespace GuideForDDOn.Views
 {
 	public partial class InfoDasJobs : TabbedPage
     {
-		public InfoDasJobs ()
+        public LabelsIdiomas Label { get; set; }
+        public InfoDasJobs ()
 		{
+            BindingContext = this;
 			InitializeComponent ();
 		}
 	}

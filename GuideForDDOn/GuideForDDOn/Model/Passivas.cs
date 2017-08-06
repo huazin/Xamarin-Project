@@ -1,4 +1,6 @@
-﻿using SQLite;
+﻿using GuideForDDOn.Date;
+using Newtonsoft.Json;
+using SQLite;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -21,6 +23,7 @@ namespace GuideForDDOn.Model
         public int idiomaId { get; set; }
 
         public virtual Job Job { get; set; }
-
+        [JsonIgnore]
+        public LabelsIdiomas Label { get { return LabelsIdiomasDAO.Label; } }
     }
 }
