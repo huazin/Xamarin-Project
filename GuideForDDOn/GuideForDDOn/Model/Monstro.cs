@@ -31,7 +31,9 @@ namespace GuideForDDOn.Model
         public static List<string> SeparandoNomes(Object x)
         {
             string Parametro = x.ToString();
-            Parametro = Regex.Replace(Parametro, @"[\d-]", String.Empty);
+            Parametro = Regex.Replace(Parametro, @"[\d]", String.Empty);
+            Parametro = Regex.Replace(Parametro, @"[\r]", String.Empty);
+            Parametro = Regex.Replace(Parametro, @" - ", String.Empty);
             Parametro = Parametro.Replace(" de nivel  ou superior", String.Empty);
             Parametro = Parametro.Replace("  ", String.Empty);
             Parametro = Parametro.Replace(Environment.NewLine, ",");

@@ -18,6 +18,7 @@ namespace GuideForDDOn.Views
         {
             BindingContext = this;
             InitializeComponent();
+            this.Title = Label.monstrospequenos;
         }
     }
 }

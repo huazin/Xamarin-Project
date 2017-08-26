@@ -4,6 +4,7 @@ using SQLite;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using Xamarin.Forms;
 
 namespace GuideForDDOn.Model
 {
@@ -29,6 +30,21 @@ namespace GuideForDDOn.Model
         public int idiomaId { get; set; }
 
         public virtual Job Job { get; set; }
+
+        public int imagem { get; set; }
+
+        [JsonIgnore]
+        public ImageSource Image
+        {
+            get
+            {
+                return  ImageSource.FromFile(logos[imagem - 1]);
+            }
+        }
+
+        [JsonIgnore]
+        private String[] logos = new String[] { "hab.png", "hab2.png", "hab3.png", "hab4.png", "hab5.png", "hab6.png", "hab7.png", "hab8.png",
+            "hab9.png","hab10.png","hab11.png" };
 
         [JsonIgnore]
         public LabelsIdiomas Label { get { return LabelsIdiomasDAO.Label; } }

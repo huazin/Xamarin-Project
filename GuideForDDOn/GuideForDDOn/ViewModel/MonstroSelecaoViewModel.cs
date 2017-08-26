@@ -7,6 +7,7 @@ using System.Collections.ObjectModel;
 using System.Text;
 using Xamarin.Forms;
 using GuideForDDOn.Views;
+using System.Linq;
 
 namespace GuideForDDOn.ViewModel
 {
@@ -41,7 +42,7 @@ namespace GuideForDDOn.ViewModel
 
         private void OnPropertyChanged(string nome)
         {
-            Views.MonstroDetalhes tela = new Views.MonstroDetalhes(itemSelecao.id_Monstro);
+            MonstroDetalhes tela = new MonstroDetalhes(itemSelecao);
             this.page.Navigation.PushAsync(tela);
             this.page.FindByName<ListView>("ListaDaView").SelectedItem = null;
         }
@@ -50,8 +51,7 @@ namespace GuideForDDOn.ViewModel
         {
             this.page = Page;
             this.Especie = especie.Nome;
-            MonstroDAO dao = new MonstroDAO();
-            listRef = dao.GetAllForEspecie(categoria, especie.Id_Especie);
+            listRef = new ObservableCollection<Monstro>(MonstroDAO.PreMonstros.Where(p => p.categoria == categoria && p.Especie.Id_Especie == especie.Id_Especie));
         }
     }
 }

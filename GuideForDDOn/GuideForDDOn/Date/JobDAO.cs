@@ -8,27 +8,19 @@ using System.Text;
 
 namespace GuideForDDOn.Date
 {
-    class JobDAO
+    public class JobDAO
     {
-        private ObservableCollection<Job> lista;
+        public static ObservableCollection<Job> PreJob { get; set; }
 
-        public ObservableCollection<Job> Lissta
-        {
-            get
-            {
-                if (lista == null)
-                    lista = GetAll();
-                return lista;
-            }
-            private set
-            {
-                this.lista = value;
-            }
-        }
-
+        
         public ObservableCollection<Job> GetAll()
         {
             return JsonConvert.DeserializeObject<ObservableCollection<Job>>(WebService.Get("Job",""));
+        }
+
+        public static void PreLoad()
+        {
+            PreJob = JsonConvert.DeserializeObject<ObservableCollection<Job>>(WebService.Get("Job", ""));
         }
     }
 }

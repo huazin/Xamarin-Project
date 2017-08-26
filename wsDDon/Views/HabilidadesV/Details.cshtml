@@ -1,0 +1,138 @@
+﻿@model wsDDon.Models.Habilidades
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Detalhes</h2>
+
+<div>
+    <h4>Habilidades</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            ID:
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.id_Habilidade)
+        </dd>
+
+        <dt>
+            ID Classe:
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.id_Job)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.nome)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nome)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.descricao)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.descricao)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.nivel)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nivel)
+        </dd>
+
+        <dt>
+           Nivel para nivel 6
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nivelForSix)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.obs)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.obs)
+        </dd>
+
+        <dt>
+            Aumento no nivel up
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.addUp)
+        </dd>
+
+        <dt>
+            Upgrade no nivel 6
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.add6)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.monster5)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.monster5)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.monster6)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.monster6)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.monster7)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.monster7)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.monster8)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.monster8)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.monster9)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.monster9)
+        </dd>
+
+        <dt>
+            Idioma ID:
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.idiomaId)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Editar", "Edit", new { id = Model.id_Habilidade})
+</p>

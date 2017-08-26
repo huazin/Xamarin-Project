@@ -1,0 +1,105 @@
+﻿@model wsDDon.Models.Monstro
+
+@{
+    ViewBag.Title = "Detalhes";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Detalhes</h2>
+
+<div>
+    <h4>Monstro</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.categoria)
+        </dt>
+
+        <dd>
+            @if (Model.categoria == 1)
+            { <label>Normal</label> }
+            else
+            { <label>Grandes</label>}
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.nome)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nome)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.apelido)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.apelido)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Id_Especie)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Especie.Nome)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.pontoFraco)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.pontoFraco)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.obs)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.obs)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.elementoFraco)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.elementoFraco)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.drop)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.drop)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.localizacao)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.localizacao)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.idiomaid)
+        </dt>
+
+        <dd>
+            @if (Model.idiomaid == 1)
+            { <label>PT-BR</label> }
+            else
+            { <label>USA</label>}
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Editar", "Edit", new { id = Model.id_Monstro }) |
+    @Html.ActionLink("Voltar para a lista", "Index")
+</p>

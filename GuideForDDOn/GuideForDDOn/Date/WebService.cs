@@ -11,7 +11,7 @@ namespace GuideForDDOn.Date
 {
     static public class WebService
     {
-        static private string Url = "http://wsddon.us-east-2.elasticbeanstalk.com/api/";
+        static private string Url = "http://guideforddon.com/api";
         static private HttpClient client;
         static private string Controller;
         static private string Arguments;

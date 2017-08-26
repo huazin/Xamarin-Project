@@ -11,14 +11,17 @@ using Xamarin.Forms;
 
 namespace GuideForDDOn.Views
 {
-	public partial class Home : ContentPage
-	{
+    public partial class Home : ContentPage
+    {
         public Home()
         {
             InitializeComponent();
-           
+            SQLiteConnection con = DependencyService.Get<ISqLite>().GetConnection();
+            ConfiguracaoDAO confi = new ConfiguracaoDAO(con);
+            LabelsIdiomasDAO.Reload();
             HomeViewModel vm = new HomeViewModel(this);
             BindingContext = vm;
+            NavigationPage.SetHasNavigationBar(this, true);
         }
     }
 }

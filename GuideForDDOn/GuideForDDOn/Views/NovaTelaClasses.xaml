@@ -7,10 +7,8 @@
              Title="Classes">
     <xfg:ContentPageGloss.BackgroundGradient>
         <xfg:Gradient Rotation="0">
-            <xfg:GradientStep StepColor="#a5d3f3" StepPercentage="0" />
-            <xfg:GradientStep StepColor="#a5d3f3" StepPercentage=".2" />
-            <xfg:GradientStep StepColor="#3f6197" StepPercentage=".7" />
-            <xfg:GradientStep StepColor="#3f6197" StepPercentage="1" />
+            <xfg:GradientStep StepColor="#400b09" StepPercentage="0" />
+            <xfg:GradientStep StepColor="#130c0a" StepPercentage="1" />
         </xfg:Gradient>
     </xfg:ContentPageGloss.BackgroundGradient>
     <StackLayout Orientation="Vertical" >

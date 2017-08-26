@@ -1,4 +1,5 @@
-﻿using GuideForDDOn.ViewModel;
+﻿using GuideForDDOn.Model;
+using GuideForDDOn.ViewModel;
 using SQLite;
 using System;
 using System.Collections.Generic;
@@ -18,7 +19,7 @@ namespace GuideForDDOn.Views
             BindingContext = vm;
             InitializeComponent();
         }
-        public MonstroDetalhes(int x)
+        public MonstroDetalhes(Monstro x)
         {
             MonstroDetalhesViewModel vm = new MonstroDetalhesViewModel(x,this);
             BindingContext = vm;

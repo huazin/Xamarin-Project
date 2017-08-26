@@ -10,6 +10,12 @@ namespace GuideForDDOn.Date
 {
     public class PassivasDAO
     {
+        public static ObservableCollection<Passivas> PrePassivas { get; set; }
+
+        public static void PreLoad()
+        {
+            PrePassivas = JsonConvert.DeserializeObject<ObservableCollection<Passivas>>(WebService.Get("Passivas", "?idioma=" + ConfiguracaoDAO.Idioma + "&idiomas=ok"));     
+        }
 
         public ObservableCollection<Passivas> GetAll(int Id_Job)
         {

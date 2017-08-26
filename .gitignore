@@ -401,3 +401,7 @@ FakesAssemblies/
 *.txt
 *.cache
 GuideForDDOn/GuideForDDOn.Droid/CustomBannerRenderer.cs
+*.apk
+*.mdb
+*.pdb
+*.dll

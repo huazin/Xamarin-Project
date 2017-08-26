@@ -44,7 +44,7 @@ namespace GuideForDDOn.ViewModel
         {
             Page = page;
             SelectedIndex = ConfiguracaoDAO.Idioma - 1;
-            Labels = new LabelsIdiomasDAO().GetAll();
+            Labels = LabelsIdiomasDAO.PreLabels;
             idiomaTxt = new ObservableCollection<string>();
             foreach(var lab in Labels)
             {

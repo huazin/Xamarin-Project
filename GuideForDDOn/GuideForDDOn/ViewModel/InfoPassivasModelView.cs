@@ -8,6 +8,7 @@ using System.Text;
 using GuideForDDOn.Views;
 using Xamarin.Forms;
 using System.ComponentModel;
+using System.Linq;
 
 namespace GuideForDDOn.ViewModel
 {
@@ -56,7 +57,7 @@ namespace GuideForDDOn.ViewModel
         public InfoPassivasModelView(Job Job, ContentPage Page)
         {
             this.page = Page;
-            this.listRef = new PassivasDAO().GetAll(Job.Id_Job);
+            this.listRef = new ObservableCollection<Passivas>(PassivasDAO.PrePassivas.Where(p => p.id_Job == Job.Id_Job));
         }
     }
 }

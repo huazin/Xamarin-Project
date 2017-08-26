@@ -51,8 +51,7 @@ namespace GuideForDDOn.ViewModel
         public void SmallFun()
         {
             MonstrosSeparacao Tela = new MonstrosSeparacao();
-            EspecieDao dao = new EspecieDao();
-            ObservableCollection<Especie> listRef = dao.GetAll(1);
+            ObservableCollection<Especie> listRef = EspecieDao.PreEspecieSmall;
             foreach (var a in listRef)
             {
                 Tela.Children.Add(new MonstroSelecao(1, a));
@@ -62,8 +61,7 @@ namespace GuideForDDOn.ViewModel
         public void BigFun()
         {
             MonstrosSeparacao Tela = new MonstrosSeparacao();
-            EspecieDao dao = new EspecieDao();
-            ObservableCollection<Especie> listRef = dao.GetAll(2);
+            ObservableCollection<Especie> listRef = EspecieDao.PreEspecieBig;
             foreach (var a in listRef)
             {
                 Tela.Children.Add(new MonstroSelecao(2, a));

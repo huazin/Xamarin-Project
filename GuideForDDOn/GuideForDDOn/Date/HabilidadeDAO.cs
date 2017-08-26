@@ -10,6 +10,13 @@ namespace GuideForDDOn.Date
 {
     public class HabilidadeDAO
     {
+        public static ObservableCollection<Habilidades> PreHabilidades { get; set; }
+
+        public static void PreLoad()
+        {
+             PreHabilidades = JsonConvert.DeserializeObject<ObservableCollection<Habilidades>>(WebService.Get("Habilidades", "?idioma=" + ConfiguracaoDAO.Idioma + "&idiomas=ok"));
+
+        }
 
         public ObservableCollection<Habilidades> GetAll(int id_Job)
         {

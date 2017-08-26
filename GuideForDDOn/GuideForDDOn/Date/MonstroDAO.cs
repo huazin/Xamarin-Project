@@ -10,6 +10,15 @@ namespace GuideForDDOn.Date
 {
     public class MonstroDAO
     {
+        static public ObservableCollection<Monstro> PreMonstros { get; set; }
+
+        static public void PreLoad()
+        {
+            PreMonstros = JsonConvert.DeserializeObject<ObservableCollection<Monstro>>(
+                    WebService.Get("Monstro", "?idioma=" + ConfiguracaoDAO.Conf.IdiomaPadrao + "&idiomas=ok")
+                    );
+        }
+
         public Monstro GetMonstroExpecifico(string x)
         {
                 Monstro Obj = JsonConvert.DeserializeObject<Monstro>(WebService.Get("Monstro", "?apelido="+ x + "&idioma=" + ConfiguracaoDAO.Conf.IdiomaPadrao)); ;

@@ -1,0 +1,86 @@
+﻿@model IEnumerable<wsDDon.Models.Novidades>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Nova Novidade", "Create")
+</p>
+<h3>Em Portugues:</h3>
+<table class="table">
+    <tr>
+        <th>
+            ID
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Titulo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Descricao)
+        </th>
+        <th>Açóes</th>
+    </tr>
+
+    @foreach (var item in Model.Where(p => p.IdiomaId == 1))
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Id_Novidades)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Titulo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Data)
+            </td>
+            <td>
+                @Html.ActionLink("Editar", "Edit", new { id = item.Id_Novidades }) |
+                @Html.ActionLink("Detalhes", "Details", new { id = item.Id_Novidades }) |
+                @Html.ActionLink("Deletar", "Delete", new { id = item.Id_Novidades })
+            </td>
+        </tr>
+    }
+
+</table>
+
+
+<h3>Em Ingles:</h3>
+<table class="table">
+    <tr>
+        <th>
+            ID
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Titulo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Descricao)
+        </th>
+        <th>Açóes</th>
+    </tr>
+
+    @foreach (var item in Model.Where(p => p.IdiomaId == 2))
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Id_Novidades)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Titulo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Data)
+            </td>
+            <td>
+                @Html.ActionLink("Editar", "Edit", new { id = item.Id_Novidades }) |
+                @Html.ActionLink("Detalhes", "Details", new { id = item.Id_Novidades }) |
+                @Html.ActionLink("Deletar", "Delete", new { id = item.Id_Novidades })
+            </td>
+        </tr>
+    }
+
+</table>

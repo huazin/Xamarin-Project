@@ -11,11 +11,11 @@ namespace GuideForDDOn.Views
 {
 	public partial class InfoDasJobs : TabbedPage
     {
-        public LabelsIdiomas Label { get; set; }
         public InfoDasJobs ()
 		{
             BindingContext = this;
 			InitializeComponent ();
+            this.Title = "Job";
 		}
 	}
 }

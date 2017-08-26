@@ -15,12 +15,25 @@ namespace GuideForDDOn
         public App()
         {
             InitializeComponent();
-            SQLiteConnection con = DependencyService.Get<ISqLite>().GetConnection();
-            ConfiguracaoDAO confi = new ConfiguracaoDAO(con);
-            LabelsIdiomasDAO.Reload();
+            PreLoads();
             Home page = new Home();
             NavigationPage tela = new NavigationPage(page);
             MainPage = tela;
+        }
+
+        public void PreLoads()
+        {
+            SQLiteConnection con = DependencyService.Get<ISqLite>().GetConnection();
+            ConfiguracaoDAO confi = new ConfiguracaoDAO(con);
+            LabelsIdiomasDAO.Reload();
+            SobresDAO.PreLoad();
+            LabelsIdiomasDAO.PreLoad();
+            EspecieDao.PreLoad();
+            MonstroDAO.PreLoad();
+            JobDAO.PreLoad();
+            HabilidadeDAO.PreLoad();
+            PassivasDAO.PreLoad();
+
         }
 
         protected override void OnStart()

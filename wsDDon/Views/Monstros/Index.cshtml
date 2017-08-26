@@ -1,0 +1,126 @@
+﻿@model IEnumerable<wsDDon.Models.Monstro>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var Especies = (List<wsDDon.Models.Especie>)TempData["Especie"];
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Novo Monstro", "Create")
+</p>
+
+<h3>
+    Monstros em Portugues:
+</h3>
+
+@foreach (var esp in Especies)
+{
+    <h5>@esp.Nome</h5>
+    <table class="table">
+        <tr>
+            <th>
+                ID
+            </th>
+            <th>
+                Categoria
+            </th>
+            <th>
+                Nome
+            </th>
+            <th>
+                Apelido
+            </th>
+            <th>
+                Ações
+            </th>
+        </tr>
+
+        @foreach (var item in Model.Where(p => p.idiomaid == 1 && p.Id_Especie == esp.Id_Especie).OrderBy(p => p.categoria))
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.id_Monstro)
+                </td>
+                <td>
+                    @if (item.categoria == 1)
+                    { <label>Normal</label> }
+                    else
+                    { <label>Grandes</label>}
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.nome)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.apelido)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.id_Monstro }) |
+                    @Html.ActionLink("Details", "Details", new { id = item.id_Monstro }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.id_Monstro })
+                </td>
+            </tr>
+        }
+    </table>
+
+
+}
+
+
+<h3>
+    Monstros em Ingles:
+</h3>
+
+@foreach (var esp in Especies)
+{
+    <h5>@esp.Nome</h5>
+    <table class="table">
+        <tr>
+            <th>
+                ID
+            </th>
+            <th>
+                Categoria
+            </th>
+            <th>
+                Nome
+            </th>
+            <th>
+                Apelido
+            </th>
+            <th>
+                Ações
+            </th>
+        </tr>
+
+        @foreach (var item in Model.Where(p => p.idiomaid == 2 && p.Id_Especie == esp.Id_Especie).OrderBy(p => p.categoria))
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.id_Monstro)
+                </td>
+                <td>
+                    @if (item.categoria == 1)
+                    { <label>Normal</label> }
+                    else
+                    { <label>Grandes</label>}
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.nome)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.apelido)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.id_Monstro }) |
+                    @Html.ActionLink("Details", "Details", new { id = item.id_Monstro }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.id_Monstro })
+                </td>
+            </tr>
+        }
+    </table>
+
+
+}

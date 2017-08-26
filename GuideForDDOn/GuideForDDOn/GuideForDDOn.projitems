@@ -53,10 +53,6 @@
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\PassivasDetalheViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\SobreViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\TreinaModelView.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Views\Classes.xaml.cs">
-      <DependentUpon>Classes.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Views\ConfiguracaoSistema.xaml.cs">
       <DependentUpon>ConfiguracaoSistema.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -121,14 +117,6 @@
       <DependentUpon>Sobre.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)Views\Treino.xaml.cs">
-      <DependentUpon>Treino.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)Views\treino1.xaml.cs">
-      <DependentUpon>treino1.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)MainPage.xaml">
@@ -136,12 +124,6 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)App.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\Classes.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
@@ -195,8 +177,27 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="$(MSBuildThisFileDirectory)hab10.png" />
+    <Content Include="$(MSBuildThisFileDirectory)hab11.png" />
+    <Content Include="$(MSBuildThisFileDirectory)hab2.png" />
+    <Content Include="$(MSBuildThisFileDirectory)hab3.png" />
+    <Content Include="$(MSBuildThisFileDirectory)hab4.png" />
+    <Content Include="$(MSBuildThisFileDirectory)hab5.png" />
+    <Content Include="$(MSBuildThisFileDirectory)hab6.png" />
+    <Content Include="$(MSBuildThisFileDirectory)hab7.png" />
+    <Content Include="$(MSBuildThisFileDirectory)hab8.png" />
+    <Content Include="$(MSBuildThisFileDirectory)hab9.png" />
     <Content Include="$(MSBuildThisFileDirectory)ImagemTelaClasses.jpg" />
-    <Content Include="$(MSBuildThisFileDirectory)LogoHome.png" />
+    <Content Include="$(MSBuildThisFileDirectory)pass.png" />
+    <Content Include="$(MSBuildThisFileDirectory)pass10.png" />
+    <Content Include="$(MSBuildThisFileDirectory)pass2.png" />
+    <Content Include="$(MSBuildThisFileDirectory)pass3.png" />
+    <Content Include="$(MSBuildThisFileDirectory)pass4.png" />
+    <Content Include="$(MSBuildThisFileDirectory)pass5.png" />
+    <Content Include="$(MSBuildThisFileDirectory)pass6.png" />
+    <Content Include="$(MSBuildThisFileDirectory)pass7.png" />
+    <Content Include="$(MSBuildThisFileDirectory)pass8.png" />
+    <Content Include="$(MSBuildThisFileDirectory)pass9.png" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\PassivasDetalhes.xaml">
@@ -217,19 +218,7 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\Treino.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\NovoInfoJob.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\treino1.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>

@@ -1,0 +1,42 @@
+﻿@model IEnumerable<wsDDon.Models.Job>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Novo Classe", "Create")
+</p>
+
+<table class="table">
+    <tr>
+        <th>
+            Nome
+        </th>
+        <th>
+            Tipo
+        </th>
+        <th>
+            açóes
+        </th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nome)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TipoClasse.Nome)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id=item.Id_Job }) |
+                @Html.ActionLink("Details", "Details", new { id = item.Id_Job })
+            </td>
+        </tr>
+    }
+</table>

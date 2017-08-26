@@ -1,0 +1,75 @@
+﻿@model wsDDon.Models.Novidades
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var Idioma = new List<SelectListItem>(){
+        new SelectListItem(){Value="1",Text="PT-BR"},
+        new SelectListItem(){Value="2",Text="USA"},
+    };
+}
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Novidades</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            ID:
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Id_Novidades)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Titulo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Titulo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Data)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Data)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Descricao)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Descricao)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IdiomaId)
+        </dt>
+
+        <dd>
+            @if (Model.IdiomaId == 1)
+            { <label>PT-BR</label>}
+            else
+            {  <label>USA</label>}
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.URL)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.URL)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Editar", "Edit", new { id = Model.Id_Novidades}) |
+    @Html.ActionLink("Voltar para lista", "Index")
+</p>

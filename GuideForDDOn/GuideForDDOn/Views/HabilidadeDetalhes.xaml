@@ -7,82 +7,90 @@
              Title="{Binding Label.TitleHabilidade}">
     <xfg:ContentPageGloss.BackgroundGradient>
         <xfg:Gradient Rotation="0">
-            <xfg:GradientStep StepColor="#a5d3f3" StepPercentage="0" />
-            <xfg:GradientStep StepColor="#a5d3f3" StepPercentage=".2" />
-            <xfg:GradientStep StepColor="#3f6197" StepPercentage=".7" />
-            <xfg:GradientStep StepColor="#3f6197" StepPercentage="1" />
+            <xfg:GradientStep StepColor="#400b09" StepPercentage="0" />
+            <xfg:GradientStep StepColor="#130c0a" StepPercentage="1" />
         </xfg:Gradient>
     </xfg:ContentPageGloss.BackgroundGradient>
     <StackLayout Orientation= "Vertical">
-        <ScrollView Orientation="Vertical" VerticalOptions="FillAndExpand">
-            <StackLayout Orientation= "Vertical">
-                <Label Text= "{Binding Habilidade.nome}" FontSize="18" HorizontalOptions="Center"/>
-                <Label Text= "{Binding Label.descricao} " TextColor="#00FF7F"/>
-                <Label Text= "{Binding Habilidade.descricao}"/>
-                <StackLayout Orientation="Horizontal">
-                    <Label Text= "{Binding Label.nivel}" TextColor="#00FF7F"/>
-                    <Label Text= "{Binding Habilidade.nivel}"/>
-                </StackLayout>
-                <!--
+        <Grid VerticalOptions="FillAndExpand">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="5*"/>
+                <ColumnDefinition Width="90*"/>
+                <ColumnDefinition Width="5*"/>
+            </Grid.ColumnDefinitions>
+            <ScrollView Grid.Row="0" Grid.Column="1" Orientation="Vertical" VerticalOptions="FillAndExpand">
+                <StackLayout Orientation= "Vertical">
+                    <StackLayout Orientation="Horizontal" VerticalOptions="Fill">
+                        <Image Source="{Binding Habilidade.Image}"/>
+                        <Label Text= "{Binding Habilidade.nome}" FontSize="18" VerticalOptions="Center" HorizontalOptions="Center"/>
+                    </StackLayout>
+                    <Label Text= "{Binding Label.descricao} " TextColor="#00FF7F"/>
+                    <Label Text= "{Binding Habilidade.descricao}"/>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text= "{Binding Label.nivel}" TextColor="#00FF7F"/>
+                        <Label Text= "{Binding Habilidade.nivel}"/>
+                    </StackLayout>
+                    <!--
                 <Label Text= "Observação: " TextColor="#00FF7F"/>
                     <Label Text= "{Binding Habilidade.obs}"/>-->
 
-                <Label Text= "{Binding Label.addup}" TextColor="#00FF7F"/>
-                <Label Text= "{Binding Habilidade.addUp}"/>
-                <!-- <Label Text= "Nivel Necessario para nivel 6 " TextColor="#00FF7F"/>
+                    <Label Text= "{Binding Label.addup}" TextColor="#00FF7F"/>
+                    <Label Text= "{Binding Habilidade.addUp}"/>
+                    <!-- <Label Text= "Nivel Necessario para nivel 6 " TextColor="#00FF7F"/>
                 <Label Text= "{Binding Habilidade.nivelForSix}"/>-->
-                <Label Text= "{Binding Label.addsix}" TextColor="#00FF7F"/>
-                <Label Text= "{Binding Habilidade.add6}"/>
-                <Label Text= ""/>
-                <Label Text= "{Binding Label.monstroparaupa}" FontSize="18" HorizontalOptions="Center"/>
-                <Label Text= "{Binding Label.monster5}" TextColor="#00FF7F"/>
-                <Label Text= "{Binding Habilidade.monster5}">
-                    <Label.GestureRecognizers>
-                        <TapGestureRecognizer 
+                    <Label Text= "{Binding Label.addsix}" TextColor="#00FF7F"/>
+                    <Label Text= "{Binding Habilidade.add6}"/>
+                    <Label Text= ""/>
+                    <Label Text= "{Binding Label.monstroparaupa}" FontSize="18" HorizontalOptions="Center"/>
+                    <Label Text= "{Binding Label.monster5}" TextColor="#00FF7F"/>
+                    <Label Text= "{Binding Habilidade.monster5}">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer 
                             Command="{Binding Monstro}"
                             CommandParameter="{Binding Habilidade.monster5}"/>
-                    </Label.GestureRecognizers>
-                </Label>
-                <Label Text= "{Binding Label.monster6}" TextColor="#00FF7F"/>
-                <Label Text= "{Binding Habilidade.monster6}">
-                    <Label.GestureRecognizers>
-                        <TapGestureRecognizer 
+                        </Label.GestureRecognizers>
+                    </Label>
+                    <Label Text= "{Binding Label.monster6}" TextColor="#00FF7F"/>
+                    <Label Text= "{Binding Habilidade.monster6}">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer 
                             Command="{Binding Monstro}"
                             CommandParameter="{Binding Habilidade.monster6}"/>
-                    </Label.GestureRecognizers>
-                </Label>
-                <Label Text= "{Binding Label.monster7}" TextColor="#00FF7F"/>
-                <Label Text= "{Binding Habilidade.monster7}">
-                    <Label.GestureRecognizers>
-                        <TapGestureRecognizer 
+                        </Label.GestureRecognizers>
+                    </Label>
+                    <Label Text= "{Binding Label.monster7}" TextColor="#00FF7F"/>
+                    <Label Text= "{Binding Habilidade.monster7}">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer 
                             Command="{Binding Monstro}"
                             CommandParameter="{Binding Habilidade.monster7}"/>
-                    </Label.GestureRecognizers>
-                </Label>
-                <Label Text= "{Binding Label.monster8}" TextColor="#00FF7F"/>
-                <Label Text= "{Binding Habilidade.monster8}">
-                    <Label.GestureRecognizers>
-                        <TapGestureRecognizer 
+                        </Label.GestureRecognizers>
+                    </Label>
+                    <Label Text= "{Binding Label.monster8}" TextColor="#00FF7F"/>
+                    <Label Text= "{Binding Habilidade.monster8}">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer 
                             Command="{Binding Monstro}"
                             CommandParameter="{Binding Habilidade.monster8}"/>
-                    </Label.GestureRecognizers>
-                </Label>
-                <Label Text= "{Binding Label.monster9}" TextColor="#00FF7F"/>
-                <Label Text= "{Binding Habilidade.monster9}">
-                    <Label.GestureRecognizers>
-                        <TapGestureRecognizer 
+                        </Label.GestureRecognizers>
+                    </Label>
+                    <Label Text= "{Binding Label.monster9}" TextColor="#00FF7F"/>
+                    <Label Text= "{Binding Habilidade.monster9}">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer 
                             Command="{Binding Monstro}"
                             CommandParameter="{Binding Habilidade.monster9}"/>
-                    </Label.GestureRecognizers>
-                </Label>
-                <Label Text= "{Binding Label.notificacao}" TextColor="#00FF7F" FontSize="8"/>
-            </StackLayout>
-        </ScrollView>
+                        </Label.GestureRecognizers>
+                    </Label>
+                    <Label Text= "{Binding Label.notificacao}" TextColor="#00FF7F" FontSize="8"/>
+                </StackLayout>
+            </ScrollView>
+        </Grid>
         <Grid RowSpacing="0" VerticalOptions="End">
             <Grid.RowDefinitions>
                 <RowDefinition Height="50"/>
             </Grid.RowDefinitions>
-            <controls:MyBanner Grid.Row="0"/>
+            <controls:MyBannerSkill Grid.Row="0"/>
         </Grid>
     </StackLayout>
 </ContentPage>

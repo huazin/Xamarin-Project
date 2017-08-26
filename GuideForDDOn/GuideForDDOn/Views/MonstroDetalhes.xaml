@@ -7,50 +7,56 @@
              Title="{Binding Labels.TitleMonstros}">
     <xfg:ContentPageGloss.BackgroundGradient>
         <xfg:Gradient Rotation="0">
-            <xfg:GradientStep StepColor="#a5d3f3" StepPercentage="0" />
-            <xfg:GradientStep StepColor="#a5d3f3" StepPercentage=".2" />
-            <xfg:GradientStep StepColor="#3f6197" StepPercentage=".7" />
-            <xfg:GradientStep StepColor="#3f6197" StepPercentage="1" />
+            <xfg:GradientStep StepColor="#400b09" StepPercentage="0" />
+            <xfg:GradientStep StepColor="#130c0a" StepPercentage="1" />
         </xfg:Gradient>
     </xfg:ContentPageGloss.BackgroundGradient>
-    <StackLayout Orientation= "Vertical" VerticalOptions="FillAndExpand">
-        <ListView ItemsSource="{Binding ListRef}" x:Name="ListaDaView" SelectedItem="{Binding ItemSelecao, Mode=TwoWay}" VerticalOptions="FillAndExpand" HasUnevenRows="true" SeparatorColor="AliceBlue">
-            <ListView.ItemTemplate>
-                <DataTemplate>
-                    <ViewCell>
-                        <ViewCell.View>
-                            <StackLayout Orientation= "Vertical" VerticalOptions="FillAndExpand">
-                                <Label Text= "{Binding Label.NomeMonstro}" TextColor="#00FF7F" FontSize="18" XAlign="Center"/>
-                                <Label Text= "{Binding nome}" FontSize="18" XAlign="Center"/>
-                                <StackLayout Orientation="Horizontal">
-                                    <Label Text= "{Binding Label.apelido}" TextColor="#00FF7F"/>
-                                    <Label Text= "{Binding apelido}"/>
+    <StackLayout Orientation= "Vertical">
+        <ScrollView VerticalOptions="FillAndExpand">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="5*"/>
+                <ColumnDefinition Width="90*"/>
+                <ColumnDefinition Width="5*"/>
+            </Grid.ColumnDefinitions>
+                <ListView  Grid.Row="0" Grid.Column="1"  HasUnevenRows="true" ItemsSource= "{Binding ListRef}" x:Name="ListaDaView" SeparatorColor="AliceBlue"  SelectedItem="{Binding ItemSelecao, Mode=TwoWay}" VerticalOptions="FillAndExpand">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <ViewCell.View>
+                                <StackLayout Orientation= "Vertical" VerticalOptions="FillAndExpand">
+                                    <Label Text= "{Binding Label.NomeMonstro}" TextColor="#00FF7F" FontSize="18" XAlign="Center"/>
+                                    <Label Text= "{Binding nome}" FontSize="18" XAlign="Center"/>
+                                    <StackLayout Orientation="Horizontal">
+                                        <Label Text= "{Binding Label.apelido}" TextColor="#00FF7F"/>
+                                        <Label Text= "{Binding apelido}"/>
+                                    </StackLayout>
+                                    <StackLayout Orientation="Horizontal" VerticalOptions="Fill">
+                                        <Label Text= "{Binding Label.especie}" TextColor="#00FF7F"/>
+                                        <Label Text= "{Binding Especie.Nome}"/>
+                                    </StackLayout>
+                                    <Label Text= "{Binding Label.pontoFraco}" TextColor="#00FF7F"/>
+                                    <Label Text= "{Binding pontoFraco}"/>
+                                    <Label Text=""/>
+                                        <Label Text= "{Binding Label.elementoFraco}" TextColor="#00FF7F"/>
+                                        <Label Text= "{Binding elementoFraco}" TextColor="#00FF7F"/>
+                                        <Label Text=""/>
+                                    <Label Text= "{Binding Label.localizacao}" TextColor="#00FF7F"/>
+                                    <Label Text= "{Binding localizacao}"/>
+                                    <Label Text=""/>
                                 </StackLayout>
-                                <StackLayout Orientation="Horizontal" VerticalOptions="FillAndExpand">
-                                    <Label Text= "{Binding Label.especie}" TextColor="#00FF7F"/>
-                                    <Label Text= "{Binding Especie.Nome}"/>
-                                </StackLayout>
-                                <Label Text= "{Binding Label.pontoFraco}" TextColor="#00FF7F"/>
-                                <Label Text= "{Binding pontoFraco}"/>
-                                <Label Text= "{Binding Label.drop}" TextColor="#00FF7F"/>
-                                <Label Text= "{Binding elementoFraco}"/>
-                                <Label Text= "{Binding Label.elementoFraco}" TextColor="#00FF7F"/>
-                                <Label Text= "{Binding drop}"/>
-                                <Label Text=""/>
-                                <Label Text= "{Binding Label.localizacao}" TextColor="#00FF7F"/>
-                                <Label Text= "{Binding localizacao}"/>
-                                <Label Text=""/>
-                            </StackLayout>
-                        </ViewCell.View>
-                    </ViewCell>
-                </DataTemplate>
-            </ListView.ItemTemplate>
-        </ListView>
+                            </ViewCell.View>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </Grid>
+        </ScrollView>
         <Grid RowSpacing="0" VerticalOptions="End">
             <Grid.RowDefinitions>
                 <RowDefinition Height="50"/>
             </Grid.RowDefinitions>
-            <controls:MyBanner Grid.Row="0"/>
+            <controls:MyBannerMonstroDetalhe Grid.Row="0"/>
         </Grid>
     </StackLayout>
 </ContentPage>

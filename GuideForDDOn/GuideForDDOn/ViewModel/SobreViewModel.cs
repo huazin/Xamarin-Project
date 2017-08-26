@@ -17,7 +17,7 @@ namespace GuideForDDOn.ViewModel
 
         public SobreViewModel()
         {
-            Sobre = new SobresDAO().Get();
+            Sobre = SobresDAO.PreSobres;
         }
     }
 }

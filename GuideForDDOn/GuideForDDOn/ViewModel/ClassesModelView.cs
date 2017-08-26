@@ -16,7 +16,6 @@ namespace GuideForDDOn.ViewModel
     {
         private ContentPage page;
         private Job job;
-        private JobDAO dao;
         private ObservableCollection<Job> listRef;
 
         public event PropertyChangedEventHandler PropertyChanged;
@@ -74,8 +73,7 @@ namespace GuideForDDOn.ViewModel
         public ClassesModelView(ContentPage Page)
         {
             this.page = Page;
-            this.dao = new JobDAO();
-            this.listRef = dao.GetAll();
+            this.listRef = JobDAO.PreJob;
         }
     }
 }

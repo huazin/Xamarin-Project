@@ -9,4 +9,24 @@ namespace GuideForDDOn.Date
     {
 
     }
+
+    public class MyBannerMonstro : View
+    {
+
+    }
+
+    public class MyBannerSkill : View
+    {
+
+    }
+
+    public class MyBannerTelaFull : View
+    {
+
+    }
+
+    public class MyBannerMonstroDetalhe : View
+    {
+
+    }
 }

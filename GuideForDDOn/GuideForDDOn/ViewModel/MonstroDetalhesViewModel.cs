@@ -4,6 +4,7 @@ using SQLite;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Linq;
 using Xamarin.Forms;
 
 namespace GuideForDDOn.ViewModel
@@ -51,15 +52,14 @@ namespace GuideForDDOn.ViewModel
             this.page = Page;
             try
             {
-                this.dao = new MonstroDAO();
                 listRef = new ObservableCollection<Monstro>();
                 foreach (var a in Nome)
                 {
                     try
                     {
-                        listRef.Add(dao.GetMonstroExpecifico(a));
+                        listRef.Add(MonstroDAO.PreMonstros.Where(p => p.apelido == a && p.idiomaid == ConfiguracaoDAO.Conf.IdiomaPadrao).First());
                     }
-                    catch (ExceptionNula e)
+                    catch (Exception e)
                     {
                         this.page.DisplayAlert(LabelsIdiomasDAO.Label.Error, LabelsIdiomasDAO.Label.MonsterNotFound, "OK");
                     }
@@ -71,11 +71,11 @@ namespace GuideForDDOn.ViewModel
             {
             }
         }
-        public MonstroDetalhesViewModel(int x, ContentPage Page)
+        public MonstroDetalhesViewModel(Monstro x, ContentPage Page)
         {
             this.page = Page;
-            this.dao = new MonstroDAO();
-            listRef = dao.GetExpecifico(x);
+            listRef = new ObservableCollection<Monstro>();
+            listRef.Add(x);
         }
     }
 }

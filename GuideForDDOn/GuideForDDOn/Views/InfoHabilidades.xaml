@@ -7,10 +7,8 @@
              Title="{Binding Label.TitleHabilidade}">
     <xfg:ContentPageGloss.BackgroundGradient>
         <xfg:Gradient Rotation="0">
-            <xfg:GradientStep StepColor="#a5d3f3" StepPercentage="0" />
-            <xfg:GradientStep StepColor="#a5d3f3" StepPercentage=".2" />
-            <xfg:GradientStep StepColor="#3f6197" StepPercentage=".7" />
-            <xfg:GradientStep StepColor="#3f6197" StepPercentage="1" />
+            <xfg:GradientStep StepColor="#400b09" StepPercentage="0" />
+            <xfg:GradientStep StepColor="#130c0a" StepPercentage="1" />
         </xfg:Gradient>
     </xfg:ContentPageGloss.BackgroundGradient>
     <StackLayout>
@@ -20,7 +18,11 @@
                     <ViewCell>
                         <ViewCell.View>
                             <StackLayout Orientation= "Vertical" VerticalOptions="FillAndExpand">
-                                <Label Text= "{Binding nome}" FontSize="18" HorizontalOptions="Center"/>
+                                <StackLayout Orientation="Horizontal" VerticalOptions="Fill">
+                                    <Image Source="{Binding Image}"/>
+                                    <Label Text= "{Binding nome}" FontSize="18" VerticalOptions="Center" HorizontalOptions="Center"/>
+                                </StackLayout>
+
                                 <Label Text= "{Binding Label.descricao}" TextColor="#00FF7F"/>
                                 <Label Text= "{Binding descricao}"/>
 
@@ -44,7 +46,7 @@
             <Grid.RowDefinitions>
                 <RowDefinition Height="50"/>
             </Grid.RowDefinitions>
-            <controls:MyBanner Grid.Row="0"/>
+            <controls:MyBannerSkill Grid.Row="0"/>
         </Grid>
     </StackLayout>
 </ContentPage>

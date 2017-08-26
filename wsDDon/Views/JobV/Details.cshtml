@@ -1,0 +1,231 @@
+﻿@model wsDDon.Models.Job
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var HabilidadesPT = (List<wsDDon.Models.Habilidades>)TempData["HabPt"];
+    var HabilidadesUSA = (List<wsDDon.Models.Habilidades>)TempData["HabUs"];
+    var PassivaPT = (List<wsDDon.Models.Passivas>)TempData["PasPt"];
+    var PassivaUSA = (List<wsDDon.Models.Passivas>)TempData["PasUs"];
+}
+
+<h2>Detalhes</h2>
+
+<div>
+    <h4>Job</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            ID:
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Id_Job)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Nome):
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nome)
+        </dd>
+
+        <dt>
+            Descriçáo:
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Descricao)
+        </dd>
+
+        <dt>
+            Tipo:
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TipoClasse.Nome)
+        </dd>
+
+    </dl>
+</div>
+<div>
+    <ul class="nav nav-tabs">
+
+        <li class="dropdown active">
+            <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+                Habilidades <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+                <li><a href="#HabPT" data-toggle="tab">Portugues</a></li>
+                <li class="divider"></li>
+                <li><a href="#HabUSA" data-toggle="tab">Ingles</a></li>
+            </ul>
+        </li>
+        <li class="dropdown">
+            <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+                Passivas <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+                <li><a href="#PasPT" data-toggle="tab">Portugues</a></li>
+                <li class="divider"></li>
+                <li><a href="#PasUSA" data-toggle="tab">Ingles</a></li>
+            </ul>
+        </li>
+        <li class="disabled"><a>Dicas</a></li>
+    </ul>
+    <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade active in" id="HabPT">
+            @Html.ActionLink("Nova Habilidade", "Create", "HabilidadesV", new { }, null)
+            <table class="table">
+                <tr>
+                    <th>
+                        ID
+                    </th>
+                    <th>
+                        Nome
+                    </th>
+                    <th>
+                        Nivel
+                    </th>
+                    <th>
+                        Ações
+                    </th>
+                </tr>
+                @foreach (var item in HabilidadesPT)
+            {
+                    <tr>
+                        <th>
+                            @item.id_Habilidade
+                        </th>
+                        <th>
+                            @item.nome
+                        </th>
+                        <th>
+                            @item.nivel
+                        </th>
+                        <th>
+                            @Html.ActionLink("Editar", "Edit", "HabilidadesV", new { id = item.id_Habilidade }, null) |
+                            @Html.ActionLink("Detalhes", "Details", "HabilidadesV", new { id = item.id_Habilidade }, null)
+                        </th>
+                    </tr>
+                }
+            </table>
+        </div>
+        <div class="tab-pane fade" id="HabUSA">
+            @Html.ActionLink("Nova Habilidade", "Create", "HabilidadesV", new { }, null)
+            <table class="table">
+                <tr>
+                    <th>
+                        ID
+                    </th>
+                    <th>
+                        Nome
+                    </th>
+                    <th>
+                        Nivel
+                    </th>
+                    <th>
+                        Ações
+                    </th>
+                </tr>
+                @foreach (var item in HabilidadesUSA)
+            {
+                    <tr>
+                        <th>
+                            @item.id_Habilidade
+                        </th>
+                        <th>
+                            @item.nome
+                        </th>
+                        <th>
+                            @item.nivel
+                        </th>
+                        <th>
+                            @Html.ActionLink("Editar", "Edit", "HabilidadesV", new { id = item.id_Habilidade }, null) |
+                            @Html.ActionLink("Detalhes", "Details", "HabilidadesV", new { id = item.id_Habilidade }, null)
+                        </th>
+                    </tr>
+                }
+            </table>
+        </div>
+        <div class="tab-pane fade" id="PasPT">
+            @Html.ActionLink("Nova Passiva", "Create", "PassivasV", new { }, null)
+            <table class="table">
+                <tr>
+                    <th>
+                        ID
+                    </th>
+                    <th>
+                        Nome
+                    </th>
+                    <th>
+                        Nivel
+                    </th>
+                    <th>
+                        Ações
+                    </th>
+                </tr>
+                @foreach (var item in PassivaPT)
+            {
+                    <tr>
+                        <th>
+                            @item.id_Passiva
+                        </th>
+                        <th>
+                            @item.nome
+                        </th>
+                        <th>
+                            @item.nivel
+                        </th>
+                        <th>
+                            @Html.ActionLink("Editar", "Edit", "PassivasV", new { id = item.id_Passiva }, null) |
+                            @Html.ActionLink("Detalhe", "Details", "PassivasV", new { id = item.id_Passiva }, null)
+                        </th>
+                    </tr>
+                }
+            </table>
+        </div>
+        <div class="tab-pane fade" id="PasUSA">
+            @Html.ActionLink("Nova Passiva", "Create", "PassivasV", new { }, null)
+            <table class="table">
+                <tr>
+                    <th>
+                        ID
+                    </th>
+                    <th>
+                        Nome
+                    </th>
+                    <th>
+                        Nivel
+                    </th>
+                    <th>
+                        Ações
+                    </th>
+                </tr>
+                @foreach (var item in PassivaUSA)
+            {
+                    <tr>
+                        <th>
+                            @item.id_Passiva
+                        </th>
+                        <th>
+                            @item.nome
+                        </th>
+                        <th>
+                            @item.nivel
+                        </th>
+                        <th>
+                            @Html.ActionLink("Editar", "Edit", "PassivasV", new { id = item.id_Passiva }, null) |
+                            @Html.ActionLink("Detalhe", "Details", "PassivasV", new { id = item.id_Passiva }, null)
+                        </th>
+                    </tr>
+                }
+            </table>
+        </div>
+    </div>
+</div>
+<p>
+    @Html.ActionLink("Editar", "Edit", new { id = Model.Id_Job }) |
+    @Html.ActionLink("Voltar a Lista", "Index")
+</p>

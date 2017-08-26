@@ -7,14 +7,12 @@
              Title="{Binding Especie}">
     <xfg:ContentPageGloss.BackgroundGradient>
         <xfg:Gradient Rotation="0">
-            <xfg:GradientStep StepColor="#a5d3f3" StepPercentage="0" />
-            <xfg:GradientStep StepColor="#a5d3f3" StepPercentage=".2" />
-            <xfg:GradientStep StepColor="#3f6197" StepPercentage=".7" />
-            <xfg:GradientStep StepColor="#3f6197" StepPercentage="1" />
+            <xfg:GradientStep StepColor="#400b09" StepPercentage="0" />
+            <xfg:GradientStep StepColor="#130c0a" StepPercentage="1" />
         </xfg:Gradient>
     </xfg:ContentPageGloss.BackgroundGradient>
     <StackLayout Orientation= "Vertical">
-        <ListView ItemsSource= "{Binding ListRef}" x:Name="ListaDaView" SeparatorColor="AliceBlue"  SelectedItem="{Binding ItemSelecao, Mode=TwoWay}" VerticalOptions="FillAndExpand">
+        <ListView ItemsSource="{Binding ListRef}" x:Name="ListaDaView" SeparatorColor="AliceBlue"  SelectedItem="{Binding ItemSelecao, Mode=TwoWay}" VerticalOptions="FillAndExpand">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
@@ -32,7 +30,7 @@
             <Grid.RowDefinitions>
                 <RowDefinition Height="50"/>
             </Grid.RowDefinitions>
-            <controls:MyBanner Grid.Row="0"/>
+            <controls:MyBannerMonstro Grid.Row="0"/>
         </Grid>
     </StackLayout>
 </ContentPage>

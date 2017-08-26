@@ -7,52 +7,60 @@
              Title="{Binding Label.TitlePassiva}">
     <xfg:ContentPageGloss.BackgroundGradient>
         <xfg:Gradient Rotation="0">
-            <xfg:GradientStep StepColor="#a5d3f3" StepPercentage="0" />
-            <xfg:GradientStep StepColor="#a5d3f3" StepPercentage=".2" />
-            <xfg:GradientStep StepColor="#3f6197" StepPercentage=".7" />
-            <xfg:GradientStep StepColor="#3f6197" StepPercentage="1" />
+            <xfg:GradientStep StepColor="#400b09" StepPercentage="0" />
+            <xfg:GradientStep StepColor="#130c0a" StepPercentage="1" />
         </xfg:Gradient>
     </xfg:ContentPageGloss.BackgroundGradient>
     <StackLayout Orientation= "Vertical">
-        <ScrollView Orientation="Vertical" VerticalOptions="FillAndExpand">
-            <StackLayout Orientation= "Vertical">
-                <Label Text= "{Binding Passivas.nome}" FontSize="18" HorizontalOptions="Center"/>
-                <Label Text= "{Binding Label.descricao}" TextColor="#00FF7F"/>
-                <Label Text= "{Binding Passivas.descricao}"/>
-                <StackLayout Orientation="Horizontal">
-                    <Label Text= "{Binding Label.nivel}" TextColor="#00FF7F"/>
-                    <Label Text= "{Binding Passivas.nivel}"/>
-                </StackLayout>
-                <StackLayout Orientation="Horizontal">
-                    <Label Text= "{Binding Label.apcost}" TextColor="#00FF7F"/>
-                    <Label Text= "{Binding Passivas.ap}"/>
-                </StackLayout>
-                <Label Text= ""/>
-                <Label Text= "{Binding Label.monstroparaupa}" FontSize="18" HorizontalOptions="Center"/>
-                <Label Text= "{Binding Label.monster4}" TextColor="#00FF7F"/>
-                <Label Text= "{Binding Passivas.monster5}">
-                    <Label.GestureRecognizers>
-                        <TapGestureRecognizer 
+        <Grid VerticalOptions="FillAndExpand">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="5*"/>
+                <ColumnDefinition Width="90*"/>
+                <ColumnDefinition Width="5*"/>
+            </Grid.ColumnDefinitions>
+            <ScrollView Grid.Row="0" Grid.Column="1" Orientation="Vertical" VerticalOptions="FillAndExpand">
+                <StackLayout Orientation= "Vertical">
+                    <StackLayout Orientation="Horizontal" VerticalOptions="Fill">
+                        <Image Source="{Binding Passivas.Image}"/>
+                        <Label Text= "{Binding Passivas.nome}" FontSize="18" VerticalOptions="Center" HorizontalOptions="Center"/>
+                    </StackLayout>
+                    <Label Text= "{Binding Label.descricao}" TextColor="#00FF7F"/>
+                    <Label Text= "{Binding Passivas.descricao}"/>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text= "{Binding Label.nivel}" TextColor="#00FF7F"/>
+                        <Label Text= "{Binding Passivas.nivel}"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text= "{Binding Label.apcost}" TextColor="#00FF7F"/>
+                        <Label Text= "{Binding Passivas.ap}"/>
+                    </StackLayout>
+                    <Label Text= ""/>
+                    <Label Text= "{Binding Label.monstroparaupa}" FontSize="18" HorizontalOptions="Center"/>
+                    <Label Text= "{Binding Label.monster4}" TextColor="#00FF7F"/>
+                    <Label Text= "{Binding Passivas.monster5}">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer 
                             Command="{Binding Monstro}"
                             CommandParameter="{Binding Passivas.monster5}"/>
-                    </Label.GestureRecognizers>
-                </Label>
-                <Label Text= "{Binding Label.monster5}" TextColor="#00FF7F"/>
-                <Label Text= "{Binding Passivas.monster6}">
-                    <Label.GestureRecognizers>
-                        <TapGestureRecognizer 
+                        </Label.GestureRecognizers>
+                    </Label>
+                    <Label Text= "{Binding Label.monster5}" TextColor="#00FF7F"/>
+                    <Label Text= "{Binding Passivas.monster6}">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer 
                             Command="{Binding Monstro}"
                             CommandParameter="{Binding Passivas.monster6}"/>
-                    </Label.GestureRecognizers>
-                </Label>
-                <Label Text= "{Binding Label.notificacao}" TextColor="#00FF7F" FontSize="8"/>
-            </StackLayout>
-        </ScrollView>
+                        </Label.GestureRecognizers>
+                    </Label>
+                    <Label Text= "{Binding Label.notificacao}" TextColor="#00FF7F" FontSize="8"/>
+                </StackLayout>
+            </ScrollView>
+        </Grid>
         <Grid RowSpacing="0" VerticalOptions="End">
             <Grid.RowDefinitions>
                 <RowDefinition Height="50"/>
             </Grid.RowDefinitions>
-            <controls:MyBanner Grid.Row="0"/>
+            <controls:MyBannerSkill Grid.Row="0"/>
         </Grid>
     </StackLayout>
 </ContentPage>

@@ -12,6 +12,7 @@ namespace GuideForDDOn.Date
     public class LabelsIdiomasDAO
     {
         static public LabelsIdiomas Label { get; set; }
+        static public List<LabelsIdiomas> PreLabels { get; set; }
 
         static public void Reload()
         {
@@ -19,9 +20,9 @@ namespace GuideForDDOn.Date
             //Label =  ConfiguracaoDAO.conexao.Get<LabelsIdiomas>(p => p.idiomaid == ConfiguracaoDAO.Conf.IdiomaPadrao);
         }
 
-        public List<LabelsIdiomas> GetAll()
+        static public void PreLoad()
         {
-            return JsonConvert.DeserializeObject<List<LabelsIdiomas>>(WebService.Get("labelsidiomas", string.Empty));
+            PreLabels = JsonConvert.DeserializeObject<List<LabelsIdiomas>>(WebService.Get("labelsidiomas", string.Empty));
         }
     }
 }

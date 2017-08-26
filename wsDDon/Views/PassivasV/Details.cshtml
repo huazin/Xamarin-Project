@@ -1,0 +1,90 @@
+﻿@model wsDDon.Models.Passivas
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Detalhes</h2>
+
+<div>
+    <h4>Passivas</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            ID
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.id_Passiva)
+        </dd>
+
+        <dt>
+            Id Job
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.id_Job)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.nome)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nome)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ap)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ap)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.nivel)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nivel)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.descricao)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.descricao)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.monster5)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.monster5)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.monster6)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.monster6)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.idiomaId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.idiomaId)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id_Passiva })
+</p>

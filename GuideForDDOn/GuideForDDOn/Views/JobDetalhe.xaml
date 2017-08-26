@@ -7,17 +7,15 @@
              Title="{Binding Label.detalhes}">
     <xfg:ContentPageGloss.BackgroundGradient>
         <xfg:Gradient Rotation="0">
-            <xfg:GradientStep StepColor="#a5d3f3" StepPercentage="0" />
-            <xfg:GradientStep StepColor="#a5d3f3" StepPercentage=".2" />
-            <xfg:GradientStep StepColor="#3f6197" StepPercentage=".7" />
-            <xfg:GradientStep StepColor="#3f6197" StepPercentage="1" />
+            <xfg:GradientStep StepColor="#400b09" StepPercentage="0" />
+            <xfg:GradientStep StepColor="#130c0a" StepPercentage="1" />
         </xfg:Gradient>
     </xfg:ContentPageGloss.BackgroundGradient>
     <StackLayout>
         <StackLayout Orientation= "Vertical" VerticalOptions="FillAndExpand">
             <Label Text= "{Binding job.Nome}" FontSize="18" HorizontalOptions="Center"/>
             <Label Text= "{Binding Label.descricao}" TextColor="#00FF7F" XAlign="Center"/>
-            <Label Text= "{Binding job.descricao}" XAlign="Center"/>
+            <Label Text= "{Binding job.Des}" XAlign="Center"/>
         </StackLayout>
         <Grid RowSpacing="0" VerticalOptions="End">
             <Grid.RowDefinitions>

@@ -8,6 +8,7 @@ using System.ComponentModel;
 using System.Text;
 using Xamarin.Forms;
 using GuideForDDOn.Views;
+using System.Linq;
 
 namespace GuideForDDOn.ViewModel
 {
@@ -53,11 +54,10 @@ namespace GuideForDDOn.ViewModel
             }
         }
 
-
         public InfoHabilidadesViewModel(Job job,ContentPage Page)
         {
             this.page = Page;
-            this.listRef = new HabilidadeDAO().GetAll(job.Id_Job);
+            listRef = new ObservableCollection<Habilidades> (HabilidadeDAO.PreHabilidades.Where(p => p.id_Job == job.Id_Job));
         }
     }
 }
