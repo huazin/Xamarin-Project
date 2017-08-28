@@ -25,6 +25,7 @@ namespace wsDDon.Infra
         public DbSet<Habilidades> Habilidades { get; set; }
         public DbSet<Passivas> Passivas { get; set; }
         public DbSet<Novidades> Novidades { get; set; }
+        public DbSet<Dicionario> Dicionario { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
@@ -41,6 +42,7 @@ namespace wsDDon.Infra
             modelBuilder.Configurations.Add(new HabilidadesConfig());
             modelBuilder.Configurations.Add(new PassivasConfig());
             modelBuilder.Configurations.Add(new NovidadesConfig());
+            modelBuilder.Configurations.Add(new DicionarioConfig());
 
             base.OnModelCreating(modelBuilder);
         }

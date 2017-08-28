@@ -9,6 +9,20 @@
         new SelectListItem(){Value="1",Text="PT-BR"},
         new SelectListItem(){Value="2",Text="USA"},
     };
+
+    var Icone = new List<SelectListItem>(){
+        new SelectListItem(){Value="1",Text="Espadas/Flecha"},
+        new SelectListItem(){Value="2",Text="Agilidade"},
+        new SelectListItem(){Value="3",Text="Aura"},
+        new SelectListItem(){Value="4",Text="2 espadas"},
+        new SelectListItem(){Value="5",Text="Poder"},
+        new SelectListItem(){Value="6",Text="Aventura"},
+        new SelectListItem(){Value="7",Text="Setas pra cima"},
+        // new SelectListItem(){Value="9",Text=""}, erro 
+        new SelectListItem(){Value="8",Text="Concentração"},
+        new SelectListItem(){Value="9",Text="icone 9"},
+        new SelectListItem(){Value="10",Text="Escudo"},
+    };
 }
 
 <h2>Nova</h2>
@@ -83,6 +97,14 @@
             <div class="col-md-10">
                 @Html.DropDownListFor(model => model.idiomaId, Idioma, new { htmlAttributes = new { @class = "form-control" } })
                 @Html.ValidationMessageFor(model => model.idiomaId, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.imagem, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownListFor(model => model.imagem, Icone, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.imagem, "", new { @class = "text-danger" })
             </div>
         </div>
 

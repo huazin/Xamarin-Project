@@ -200,6 +200,7 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\DicionarioController.cs" />
     <Compile Include="Controllers\HabilidadesController.cs" />
     <Compile Include="Controllers\HabilidadesVController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -219,6 +220,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Infra\Context.cs" />
+    <Compile Include="Infra\EntityConfig\DicionarioConfig.cs" />
     <Compile Include="Infra\EntityConfig\EspecieConfig.cs" />
     <Compile Include="Infra\EntityConfig\HabilidadesConfig.cs" />
     <Compile Include="Infra\EntityConfig\JobConfig.cs" />
@@ -228,6 +230,7 @@
     <Compile Include="Infra\EntityConfig\SobreConfig.cs" />
     <Compile Include="Infra\EntityConfig\TipoClasseConfiguration.cs" />
     <Compile Include="Infra\EntityConfig\NovidadesConfig.cs" />
+    <Compile Include="Infra\Repository\DicionarioRepository.cs" />
     <Compile Include="Infra\Repository\EspecieRepository.cs" />
     <Compile Include="Infra\Repository\HabilidadesRepository.cs" />
     <Compile Include="Infra\Repository\ICrud.cs" />
@@ -240,6 +243,7 @@
     <Compile Include="Infra\Repository\TipoClasseRepository.cs" />
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\Dicionario.cs" />
     <Compile Include="Models\Especie.cs" />
     <Compile Include="Models\Habilidades.cs" />
     <Compile Include="Models\IdentityModels.cs" />
