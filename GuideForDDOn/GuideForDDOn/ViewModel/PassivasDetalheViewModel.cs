@@ -5,6 +5,7 @@ using SQLite;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Linq;
 using System.Text;
 using System.Windows.Input;
 using Xamarin.Forms;
@@ -17,6 +18,7 @@ namespace GuideForDDOn.ViewModel
         private Passivas passivas;
         private string monstroParametro;
         public LabelsIdiomas Label { get { return LabelsIdiomasDAO.Label; } }
+        public string Dicionario { get; set; }
 
         public string MonstroParametro
         {
@@ -60,6 +62,16 @@ namespace GuideForDDOn.ViewModel
             page = Page;
             Passivas = pas;
             Monstro = new Command(MonstroFuncao);
+            if (Passivas.descricao.Contains("\""))
+            {
+                foreach (var Palavra in DicionarioDAO.PreDicionario.Where(p => Passivas.descricao.Contains("\"" + p.Palavra + "\"")))
+                {
+                    if (Dicionario == string.Empty)
+                        Dicionario = Palavra.Significado;
+                    else
+                        Dicionario += Environment.NewLine + Palavra.Significado;
+                }
+            }
         }
     }
 }

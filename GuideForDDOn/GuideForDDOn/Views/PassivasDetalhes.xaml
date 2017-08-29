@@ -34,6 +34,7 @@
                         <Label Text= "{Binding Label.apcost}" TextColor="#00FF7F"/>
                         <Label Text= "{Binding Passivas.ap}"/>
                     </StackLayout>
+                    <Label Text= "{Binding Dicionario}" TextColor="#00FF7F" FontSize="8"/>
                     <Label Text= ""/>
                     <Label Text= "{Binding Label.monstroparaupa}" FontSize="18" HorizontalOptions="Center"/>
                     <Label Text= "{Binding Label.monster4}" TextColor="#00FF7F"/>

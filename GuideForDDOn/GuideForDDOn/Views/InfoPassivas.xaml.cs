@@ -23,7 +23,7 @@ namespace GuideForDDOn.Views
             }
             catch (Exception e)
             {
-
+                string erro = e.Message;
             }
         }
     }

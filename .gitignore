@@ -405,3 +405,9 @@ GuideForDDOn/GuideForDDOn.Droid/CustomBannerRenderer.cs
 *.mdb
 *.pdb
 *.dll
+*.dll
+*.dll
+*.mdb
+*.dll
+*.dll
+GuideForDDOn/GuideForDDOn.Droid/bin/Debug/GuideForDDOn.Droid.dll

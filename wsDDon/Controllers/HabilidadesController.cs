@@ -19,21 +19,14 @@ namespace wsDDon.Controllers
         }
 
         // GET: api/Habilidades/5
-        public Habilidades Get(int id)
+        public IEnumerable<Habilidades> Get(int idioma)
         {
-            return Db.FindById(id);
+            return Db.List(idioma);
         }
 
         public IEnumerable<Habilidades> Get()
         {
             return Db.List();
         }
-
-        public IEnumerable<Habilidades> Get(int idioma, string idiomas)
-        {
-            return Db.List(idioma);
-        }
-
-
     }
 }

@@ -14,14 +14,14 @@ namespace GuideForDDOn.Date
 
         public static void PreLoad()
         {
-             PreHabilidades = JsonConvert.DeserializeObject<ObservableCollection<Habilidades>>(WebService.Get("Habilidades", "?idioma=" + ConfiguracaoDAO.Idioma + "&idiomas=ok"));
+             PreHabilidades = JsonConvert.DeserializeObject<ObservableCollection<Habilidades>>(WebService.Get("Habilidades", "?" + ConfiguracaoDAO.Idioma));
 
         }
 
         public ObservableCollection<Habilidades> GetAll(int id_Job)
         {
             //return new ObservableCollection<Habilidades>(conexao.Table<Habilidades>());
-            return JsonConvert.DeserializeObject<ObservableCollection<Habilidades>>(WebService.Get("Habilidades", "?idioma=" + ConfiguracaoDAO.Idioma + "&id_Job=" + id_Job));
+            return JsonConvert.DeserializeObject<ObservableCollection<Habilidades>>(WebService.Get("Habilidades", "?"+ ConfiguracaoDAO.Idioma + "&id_Job=" + id_Job));
         }
     }
 }

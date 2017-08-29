@@ -20,6 +20,12 @@ namespace GuideForDDOn.Date
             Conf = conexao.Table<Configuracao>().First();
         }
 
+        public static void PreLoad(SQLiteConnection con)
+        {
+            conexao = con;
+            Conf = conexao.Table<Configuracao>().First();
+        }
+
         public static void MudarIdioma(int i)
         {
             Conf.IdiomaPadrao = i;

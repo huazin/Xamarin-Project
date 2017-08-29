@@ -15,9 +15,16 @@ namespace GuideForDDOn.Views
 	{
         public InfoHabilidades(Job job)
         {
-            InfoHabilidadesViewModel vm = new InfoHabilidadesViewModel(job, this);
-            BindingContext = vm;
-            InitializeComponent();
+            try
+            {
+                InfoHabilidadesViewModel vm = new InfoHabilidadesViewModel(job, this);
+                BindingContext = vm;
+                InitializeComponent();
+            }
+            catch(Exception e)
+            {
+                string erro = e.Message;
+            }
         }
     }
 }

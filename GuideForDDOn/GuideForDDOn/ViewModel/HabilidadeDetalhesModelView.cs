@@ -8,6 +8,7 @@ using System.Text;
 using System.Windows.Input;
 using Xamarin.Forms;
 using GuideForDDOn.Views;
+using System.Linq;
 
 namespace GuideForDDOn.ViewModel
 {
@@ -18,6 +19,7 @@ namespace GuideForDDOn.ViewModel
         private string monstroParametro;
         private ContentPage page;
         public LabelsIdiomas Label { get { return LabelsIdiomasDAO.Label; } }
+        public string Dicionario { get; set; }
 
         public string MonstroParametro
         {
@@ -64,6 +66,16 @@ namespace GuideForDDOn.ViewModel
             this.page = Page;
             Habilidade = Hab;
             Monstro = new Command(MonstroFuncao);
+            if(Habilidade.descricao.Contains("\""))
+            { 
+                foreach (var Palavra in DicionarioDAO.PreDicionario.Where(p => Habilidade.descricao.Contains("\"" + p.Palavra + "\"")))
+                {
+                    if (Dicionario == string.Empty)
+                        Dicionario = Palavra.Significado;
+                    else
+                        Dicionario += Environment.NewLine + Palavra.Significado;
+                }
+            }
         }
     }
 }

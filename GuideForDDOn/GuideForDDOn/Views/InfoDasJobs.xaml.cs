@@ -9,13 +9,21 @@ using Xamarin.Forms;
 
 namespace GuideForDDOn.Views
 {
-	public partial class InfoDasJobs : TabbedPage
+    public partial class InfoDasJobs : TabbedPage
     {
-        public InfoDasJobs ()
-		{
-            BindingContext = this;
-			InitializeComponent ();
-            this.Title = "Job";
-		}
-	}
+        public InfoDasJobs()
+        {
+            try
+            {
+
+                BindingContext = this;
+                InitializeComponent();
+                this.Title = "Job";
+            }
+            catch (Exception e)
+            {
+                string erro = e.Message;
+            }
+        }
+    }
 }

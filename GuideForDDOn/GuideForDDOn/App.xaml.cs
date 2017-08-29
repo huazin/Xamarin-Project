@@ -24,7 +24,7 @@ namespace GuideForDDOn
         public void PreLoads()
         {
             SQLiteConnection con = DependencyService.Get<ISqLite>().GetConnection();
-            ConfiguracaoDAO confi = new ConfiguracaoDAO(con);
+            ConfiguracaoDAO.PreLoad(con);
             LabelsIdiomasDAO.Reload();
             SobresDAO.PreLoad();
             LabelsIdiomasDAO.PreLoad();
@@ -33,6 +33,7 @@ namespace GuideForDDOn
             JobDAO.PreLoad();
             HabilidadeDAO.PreLoad();
             PassivasDAO.PreLoad();
+            DicionarioDAO.PreLoad();
 
         }
 
